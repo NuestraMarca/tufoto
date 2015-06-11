@@ -1,0 +1,1143 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot?mw0fuw');
+	src:url('/fonts/icomoon.eot?#iefixmw0fuw') format('embedded-opentype'),
+		url('/fonts/icomoon.woff?mw0fuw') format('woff'),
+		url('/fonts/icomoon.ttf?mw0fuw') format('truetype'),
+		url('/fonts/icomoon.svg?mw0fuw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: black;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-double-down:before {
+	content: "\e600";
+}
+
+.icon-image:before {
+	content: "\e90d";
+}
+
+.icon-google-plus2:before {
+	content: "\ea89";
+}
+
+.icon-facebook2:before {
+	content: "\ea8d";
+	color: #4182f2;
+}
+
+.icon-instagram:before {
+	content: "\ea90";
+	color: #9e8748;
+}
+
+.icon-twitter2:before {
+	content: "\ea92";
+}
+
+.icon-youtube3:before {
+	content: "\ea99";
+}
+
+.icon-blogger2:before {
+	content: "\eaba";
+	color: #ff940a;
+}
+
+.icon-pinterest2:before {
+	content: "\ead1";
+	color: #f72a59;
+}
+
+.icon-html5:before {
+	content: "\eadf";
+}
+
+span.text-email
+{
+	color: #00ADF4;
+	font-weight: bold;
+}
+
+h1.section-title
+{
+	font-family: Raleway;
+	margin-top: 1em;
+	text-align: center;
+	color: #00ADF4;
+	font-size: 2.5em;
+}
+
+article.frequently-asked-questions
+{
+	font-family: Raleway;
+}
+
+article.frequently-asked-questions h2
+{
+	font-size: 1.6em;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+article.frequently-asked-questions p
+{
+	font-size: 1.3em;
+	margin-top: 0.5em;
+	margin-left: 1em;
+}
+
+.fb-like
+{
+	text-align: center;
+  	width: 100%;
+}
+
+section#main-slide { 
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+#main-slide > figure { 
+    position: absolute; 
+    top: 1px; 
+    left: 1px; 
+    right: 1px; 
+    bottom: 1px;
+    overflow: hidden; 
+    margin: 0;
+}
+
+#main-slide figure img
+{
+	width: 100%;
+}
+
+article#we-description
+{
+	padding: 0.2em 5%;
+	width: 90%;
+	font-size: 1.1em;
+	font-family: Raleway;
+}
+
+article#we-description p#we-contact
+{
+	text-align: right;
+  	margin-top: 150px;
+}
+
+
+article#we-description h1
+{
+	font-size: 2em;
+	font-weight: 700;
+	font-family: Raleway;
+	color: #00ADF4;
+}
+
+body
+{
+	margin: 0;
+	font-size: 16px;
+}
+
+div.section-bordered
+{
+	border: solid 1px #e5e5e5;
+	overflow: hidden;
+}
+
+div.booking
+{
+	padding: 45px 5%;
+}
+
+div.section-container 
+{
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section#we-pictures
+{
+	margin: 0 0 15px 0;
+	width: 100%;
+}
+
+section#we-pictures, article#we-description 
+{
+	float: left;
+}
+
+section#we-pictures figure.we-picture img 
+{
+	width: 100%;
+}
+
+section#we-pictures figure.we-picture:first-child
+{
+	width: 100%;
+}
+
+section#we-pictures figure.we-picture 
+{
+	width: 49%;
+	float: left;
+	margin: 0 0 5px 1%;
+}
+
+footer
+{
+	position: fixed;
+	bottom: 0;
+	padding: 10px 10%;
+	text-align: center;
+	background: white;
+	width: 80%;
+	min-height: 50px;
+}
+
+footer p
+{
+	margin: 5px;
+	font-size: 1em;
+	color: gray;
+}
+
+header
+{
+	margin: 0;
+	padding: 20px 20%;
+}
+
+header h2#title-menu
+{
+	font-family: Raleway;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 25px;
+	font-weight: 300;
+}
+
+header hr 
+{
+	width: 80%;
+	float: right;
+	border: gray 1px gray; 
+	display: none;
+}
+
+header figure#header-logo  
+{
+	margin: 0;	
+}
+
+header figure#header-logo img 
+{
+	width: 70%;
+	margin: auto 15%;
+}
+
+header section#number-whatsapp
+{
+	text-align: center;
+	margin-top:	0px; 
+}
+
+header section#number-whatsapp img#image-whatsapp
+{
+	width: 30px;
+ 	display: inline-block;
+  	vertical-align: middle;
+  	margin: 0;
+}
+
+header section#number-whatsapp a#text-whatsapp
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2.4em;
+	text-align: center;
+	font-family: Hind;
+	font-weight: 300;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+
+header ul.social-icons
+{
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin-top: 25px;
+}
+
+header ul.social-icons li
+{
+	list-style: none;	
+	display: inline-block;
+	margin: 0 3%;
+}
+
+
+header ul.social-icons li a
+{
+	font-size: 2.6em;
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+header ul.social-icons li a:hover
+{
+	opacity: 1;
+}
+
+/* Main Menú */
+
+nav #icon-menu-responsive
+{
+	position: fixed;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.8);
+	top: 0;
+	right: 0;
+	border: 2px solid;
+	border-color: #ededed;
+	text-align: center;
+	padding: 10px 15px;
+	color: grey;
+}
+
+nav #icon-menu-responsive span#icon-menu
+{
+	font-size: 2.5em;
+	color: #429aed;
+}
+
+nav ul#main-menu {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.8);
+	border: 2px solid;
+	border-color: #ededed;
+	
+	color: grey;
+	width: 35%;
+	margin-top: 0;
+
+	opacity:0;
+    clear: both;
+    height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	
+}
+
+nav ul#main-menu.close-menu {
+	opacity:1;
+    height: 0;
+    padding: 0;
+}
+
+nav ul#main-menu.open-menu {
+	opacity:1;
+    height: auto;
+    padding: 85px 5% 0px 5%;
+}
+
+nav ul#main-menu li{
+	list-style: none;	
+	text-align: right;
+	padding: 16px 0;
+	font-family: 'Raleway';
+}
+
+nav ul#main-menu li a {
+	text-decoration: none; 
+	color: grey;
+	font-size: 1.3em;
+}
+
+nav ul#main-menu li a:hover {
+	color: #03AEF4;
+}
+
+nav ul#main-menu li a.current-menu {
+	color: #03AEF4;
+}
+
+/* End Main Menú */
+
+section#breadcrumbs
+{
+	text-align: right;
+	font-size: 0.9em;
+	margin-top: -10px;
+  	margin-bottom: 20px;
+}
+
+section#breadcrumbs .breadcrumbs
+{
+	font-family: hind;
+	list-style: none;
+}
+
+section#breadcrumbs .breadcrumb li 
+{
+  display: inline-block;
+}
+
+section#breadcrumbs .breadcrumb li a 
+{
+  color: #03AEF4;
+}
+
+section#breadcrumbs .breadcrumb>li+li:before {
+  padding: 0 1px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+section#container
+{
+	margin: 0 0 80px 0;
+	overflow: hidden;
+} 
+
+section.cover-gallery
+{
+	width: 100%;
+}
+
+section.cover-gallery figure.cover-photo
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	margin-bottom: 4px;
+	overflow: hidden;
+}
+
+section.cover-gallery figure.cover-photo h2.cover-text
+{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+  	top: 35%;
+  	color: #474747;
+  	font-family: 'Raleway';
+	font-style: normal;
+	font-size: 1.3em;
+	font-weight: 400;
+	
+}
+
+section.cover-gallery figure.cover-photo img
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	opacity: 0.2;
+	transition: opacity 0.7s ease-out;
+}
+
+section.cover-gallery figure.cover-photo img:hover + h2.cover-text
+{
+	display: none;
+}
+
+section.cover-gallery figure.cover-photo img:hover
+{
+	opacity: 1;
+}
+
+section.form-booking
+{
+	width: 60%;
+}
+
+section.form-booking, figure#image-booking
+{
+	margin: 0;
+	float: left;
+}
+
+section.form-booking h1
+{
+	margin-top: 0;
+	font-family: Raleway;
+	font-weight: 400;
+}
+
+section.form-booking p
+{
+	font-family: Raleway;
+ 	font-size: 1.2em;
+ 	width: 85%;
+}
+
+section.form-booking input, section.form-booking textarea
+{
+	display: block;
+	padding: 0.7em;
+	font-size: 1em;
+	margin: 1em 0;
+	width: 85%;
+}
+
+section.form-booking .button
+{
+	width: auto;
+	color: white;
+	background-color: #00ADF4;
+	padding: 0.8em 1.7em;
+	border: 0;
+}
+
+
+figure#image-booking
+{
+	width: 40%;
+	margin-top: 10px;
+}
+
+figure#image-booking img
+{
+	width: 100%;
+}
+
+section#gallery-detail h1
+{
+	font-weight: 300;
+	font-size: 1.3em;
+	margin: 0;
+	text-transform: uppercase;
+} 
+
+section#gallery-detail h2
+{
+	color: #00ADF4;
+	font-size: 3em;
+	margin: 0.1em 0 0.5em 0;
+} 
+
+section#gallery-detail figure 
+{
+	margin: 1em 2.5%;
+	width: 95%;
+}
+
+section#gallery-detail figure img
+{
+	margin: 0;
+	width: 100%;
+}
+
+section#gallery-detail article
+{
+	margin: 1em 2em 2em 2em;
+	font-size: 1.1em;
+} 
+
+section#gallery-detail span#gallery-date
+{
+	color: black;
+ 	font-weight: 600;
+}
+
+section#gallery-detail h1, section#gallery-detail h2, section#gallery-detail article 
+{
+	text-align: center;
+	font-family: Raleway;
+} 
+
+/* Pricing and Plans */
+
+section.plan-options h1
+{
+	font-size: 1.6em;
+	text-align: center;
+}
+
+section.plan-options .price-as-low-as 
+{
+  display: block;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+section.plan-options .plan-title 
+{
+  font-size: 2em;
+  color: #222;
+  font-weight: 400;
+}
+
+section.plan-options .plan-subtitle {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #999;
+}
+
+section.plan-options .price-graphic 
+{
+  margin: 15px;
+}
+
+section.plan-options .price-graphic .price 
+{
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  letter-spacing: -1px;
+  color: #222;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+section.plan-options .price-graphic .price .currency 
+{
+  font-size: 1.9em;
+}
+section.plan-options .price-graphic .price .currency, .plan-options .price-graphic .price .fraction 
+{
+  vertical-align: top;
+}
+section.plan-options .price-graphic .price .currency, .plan-options .price-graphic .price .unit, .plan-options .price-graphic .price .fraction 
+{
+  font-weight: 400;
+}
+
+section.plan-options .price-graphic .price .fraction 
+{
+  position: relative;
+  display: inline-block;
+  margin-top: 1px;
+  font-size: 1.7em;
+}
+
+section.plan-options .price-graphic .price .fraction .term 
+{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 3px;
+  font-size: 0.3em;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section.plan-options .price-graphic .price .unit 
+{
+  font-size: 2em;
+}
+
+section.plan-options table 
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+section.plan-options table .arrow 
+{
+  position: relative;
+  left: 50%;
+  width: 0;
+}
+
+section.plan-options table .arrow:after 
+{
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  content: " ";
+  margin-left: -14px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 14px;
+}
+
+section.plan-options table .arrow-down:after 
+{
+  bottom: -22.5px;
+  border-top: 13px solid #4f535e;
+}
+
+section.plan-options table .arrow-up:after 
+{
+  top: -49.4px;
+  border-bottom: 13px solid #4f535e;
+}
+
+section.plan-options table .entitlements .x-mark 
+{
+  padding: 5px 0 0;
+  cursor: default;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+section.plan-options table .entitlements .x-mark:after {
+  font-family: Arial,sans-serif;
+  vertical-align: middle;
+  line-height: 1px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ccc;
+  content: "\00d7";
+}
+
+section.plan-options table col.highlight 
+{
+  background-color: #f6f8fb;
+}
+
+section.plan-options table .rnd-top 
+{
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+section.plan-options table td 
+{
+  padding: 20px 0;
+  border-color: #fff #ccc #eaeaea #ccc;
+  border-width: 0 1px 1px 1px;
+  border-style: solid; 
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  color: #222;
+  font-weight: 200;
+}
+
+section.plan-options table td.highlight, .plan-options table th.highlight 
+{
+  color: #222;
+  font-weight: 400;
+}
+
+section.plan-options table th 
+{
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 30px 70px 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+section.plan-options table tr.standout .col-standout 
+{
+  font-size: 1.4em;
+  background-color: #4f535e;
+  color: #fff;
+  padding: 10px 0;
+}
+
+section.plan-options table tr.standout td 
+{
+  border: none;
+}
+
+section.plan-options .webs-ext-btn 
+{
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  height: 37px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.3);
+  -webkit-transition: background-color .1s ease-in 0s;
+  transition: background-color .1s ease-in 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+section.plan-options .webs-ext-btn.webs-ext-btn-green 
+{
+  background-color: #69a133;
+}
+
+section.plan-options .webs-ext-btn span 
+{
+  display: block;
+  height: 37px;
+  padding: 0 25px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  line-height: 37px;
+}
+
+
+/* End Pricing and Plans */
+
+@media (min-width: 1px) and (max-width: 700px){
+
+	section.plan-options table
+	{
+  		display: block;
+	}
+
+	section.plan-options table tr {
+	  display: block;
+	  width: 100%;
+	}
+
+	section.plan-options table tr th {
+	  	display: block;
+		margin: 30px 5%;
+  		width: 70%;
+  		padding-left: 10%;
+  		padding-right: 10%;
+	}
+
+	section.plan-options table td, tr#botons-bottom {
+	  	display: none;
+	}
+}
+
+@media (min-width: 701px) {
+	section.plan-options table
+	{
+		table-layout: fixed;
+	}
+}
+
+@media (min-width: 845px) {
+	
+	nav ul#main-menu.close-menu 
+	{
+		opacity:1;
+	    height: auto;
+	}
+
+	nav #icon-menu-responsive
+	{
+		display: none;
+	}
+	
+	div#main
+	{
+		width: 96%;
+		padding: 40px 2%;
+	}
+
+	footer p
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	header
+	{
+		width: 20%;
+		position: fixed;
+	} 
+
+	header hr 
+	{
+		display: block;
+	}
+
+	header h2#title-menu
+	{
+		font-size: 0.9em;
+		text-align: right;
+		margin-right: 15%;
+		margin-top: 15px;
+	}
+
+	header h2#title-menu span
+	{
+		display: block;
+	}
+
+	header ul.social-icons
+	{
+		margin-top: 15px;
+		width: 85%;
+		margin-right: 15%;
+		text-align: right;
+	}
+
+	header ul.social-icons li
+	{
+		margin: 0 2%;
+	}
+
+	header ul.social-icons li a
+	{
+		font-size: 1.3em;
+	}
+
+	header, section#container, ul#main-menu
+	{
+		display: inline-block;
+		padding: 0;
+		vertical-align: top;
+	}
+
+	header section#number-whatsapp
+	{
+		margin: 0 15%;
+		text-align: right;
+	}
+
+	header section#number-whatsapp img#image-whatsapp
+	{
+		width: 20px;
+	}
+
+	header section#number-whatsapp a#text-whatsapp
+	{
+		font-size: 1.1em;
+	}
+
+	nav ul#main-menu
+	{
+	  	position: relative;
+	  	opacity: 1;
+	  	width: 85%;
+	  	padding: 0 15% 0 0;
+	  	margin: 0;
+	  	border: none;
+	  	background: none;
+    	height: auto;
+	}
+
+	nav ul#main-menu li {
+		padding: 5px 0;
+		text-align: right;
+	}
+
+	nav ul#main-menu li a {
+		font-size: 0.8em;
+	}
+
+	nav ul#main-menu li input#search-menu
+	{
+		padding: 5px 7%;
+		width: 80%;
+		float: right;
+		border: 1px solid gray;
+		border-radius: 8px;
+		font-size: 0.8em;
+	}
+
+	section#container 
+	{
+		width: 76%;
+		margin-left: 24%;
+	}
+
+	section.cover-gallery figure.cover-photo
+	{
+		margin: 0 1% 5px 0;
+		width: 48%;
+	}
+
+	section.plan-options h1
+	{
+		font-size: 2em;
+	}
+
+	article#we-description
+	{
+		width: 45%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+
+	section#we-pictures
+	{
+		width: 50%;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	
+	header h2#title-menu
+	{
+		font-size: 1.2em;
+		margin-top: 15px;
+	}
+
+	header ul.social-icons
+	{
+		margin-top: 15px;
+	}
+
+	header ul.social-icons li
+	{
+		margin: 0 2%;
+	}
+
+	header ul.social-icons li a
+	{
+		font-size: 1.8em;
+	}
+
+	nav ul#main-menu li {
+		padding: 5px 0;
+	}
+
+	nav ul#main-menu li a {
+		font-size: 1em;
+	}
+
+	header section#number-whatsapp img#image-whatsapp
+	{
+		width: 18px;
+	}
+
+	header section#number-whatsapp a#text-whatsapp
+	{
+		font-size: 1.3em;
+	}
+
+
+}
+
+@media (min-width: 1200px) {
+
+	div#main
+	{
+		width: 80%;
+		padding: 40px 10%;
+	}
+
+	header ul.social-icons li
+	{
+		margin: 0 2.8%;
+	}
+
+	header ul.social-icons li:last-child {
+	    margin-right: 0;
+	}
+
+	header ul.social-icons li a
+	{
+		font-size: 2em;
+	}
+
+	nav ul#main-menu li input#search-menu
+	{
+		padding: 10px 7%;
+		font-size: 1em;
+	}
+
+	section.cover-gallery figure.cover-photo
+	{
+		margin: 0 0.7% 5px 0;
+		width: 32.6%;
+	}
+
+	header section#number-whatsapp a#text-whatsapp
+	{
+		font-size: 1.6em;
+	}
+
+}	
+
+@media (min-width: 1500px) {
+
+	header h2#title-menu
+	{
+		font-size: 1.4em;
+	}
+
+	header ul.social-icons li
+	{
+		margin: 0 4.1%;
+	}
+
+	header ul.social-icons li a
+	{
+		font-size: 1.9em;
+	}
+
+	section.cover-gallery figure.cover-photo
+	{
+		margin: 0 0.7% 5px 0;
+		width: 32.6%;
+	}
+
+	header section#number-whatsapp a#text-whatsapp
+	{
+		font-size: 2em;
+	}
+
+	header
+	{
+		width: 18%;
+		position: fixed;
+	} 
+
+	section#container 
+	{
+		width: 80%;
+		margin-left: 22%;
+	}
+
+	nav ul#main-menu li {
+		padding: 8px 0;
+	}
+
+	nav ul#main-menu li a {
+		font-size: 1.2em;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

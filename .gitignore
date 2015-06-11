@@ -1,0 +1,5 @@
+/vendor
+/node_modules
+.env
+/public/images/galleries/*/*/*.jpg
+/public/images/galleries/*/*/*/*.jpg
