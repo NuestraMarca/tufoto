@@ -21,7 +21,7 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><img src="/images/logo_tufoto_co.jpg" alt="Logo TuFoto.co"></figure>
+				<figure id="header-logo"><a href="/"><img src="/images/logo_tufoto_co.gif" alt="Logo TuFoto.co"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
 					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" target="_blank"></a></li>
@@ -38,8 +38,8 @@
 						<li><a class="current-menu"href="/">Inicio</a></li>
 						<li><a href="/galerias">Galerias</a></li>
 						<li><a href="/producto">Producto</a></li>
-						<li><a href="/tarifas">Tarifas</a></li>
-						<li><a href="/reservas">Reservas</a></li>
+						<li><a href="/tarifas">Tarifas y Preguntas</a></li>
+						<li><a href="/contacto">Contacto</a></li>
 						<li><a href="/nosotros">Quiénes somos</a></li>
 						<li > <hr> </li>
 						<li> 

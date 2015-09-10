@@ -18,14 +18,13 @@ class Gallery extends Model {
 
 	public static function findOrFailByUrl($url)
 	{
-		$gallery = self::whereUrl($url)->first();
-		
-		if(is_null($gallery))
-		{
-			\App::abort('404');
-		}
-
+		$gallery = self::whereUrl($url)->firstOrFail();
 		return $gallery;
+	}
+
+	static public function getSearch($search)
+	{
+		return self::where('title', 'like', '%'. $search . '%')->get();
 	}
 
 	public function getPathAttribute()

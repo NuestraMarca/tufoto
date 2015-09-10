@@ -16,7 +16,7 @@ class CreateGaleriesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('title');
-			$table->string('description');
+			$table->text('description');
 			$table->date('date');
 			$table->string('alt');
 			$table->string('url');

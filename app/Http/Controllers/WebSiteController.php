@@ -1,9 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\BookingRequest;
+use App\Http\Requests\ContactRequest;
 
 use App\Entities\Gallery;
+use App\Entities\Message;
 
 class WebSiteController extends Controller {
 
@@ -46,7 +47,6 @@ class WebSiteController extends Controller {
 	 */
 	public function product()
 	{
-		$images = glob('images/product' . '/*.*');
 		return view('website.product', compact('images'));
 	}
 
@@ -75,9 +75,9 @@ class WebSiteController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function booking()
+	public function contact()
 	{
-		return view('website.booking');
+		return view('website.contact');
 	}
 
 	/**
@@ -85,11 +85,12 @@ class WebSiteController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function postBooking(BookingRequest $request)
-	{
-		dd($request->all());
-		Reservation::create([$request->all()]);
-		return view('website.booking');
+	public function postContact(ContactRequest $request)
+	{		
+		$message = Message::create($request->all());
+		$message->sendEmail();
+
+		return redirect()->route('website.index');
 	}
 
 	/**
@@ -100,7 +101,7 @@ class WebSiteController extends Controller {
 	public function search(Request $request)
 	{
 		$search = $request->input('search');
-		$galleries = Gallery::where('title', 'like', '%'. $search . '%')->get();
+		$galleries = Gallery::getSearch($search);
 		return view('website.gallery.search', compact('galleries', 'search'));
 	}
 }

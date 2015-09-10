@@ -65,8 +65,12 @@
 				Desde 2010 decidimos tomar fotografías para matrimonios y convertirlos en una gran experiencia para nuestros clientes. Cada día buscamos mejorar en todos los sentidos y para lograrlo nos capacitamos frecuentemente al lado de los mejores.
 			</p>
 			<p>	
+				Estamos actualmente ubicados en Villavicencio - Meta. Pero si tu matrimonio es un una ciudad diferente, contamos con la disposición y la facilidad de podernos transportar a cualquier lugar del país.
+			</p>
+			<p>
 				Gracias por elegirnos y darnos el privilegio de acompañarlos en el día más importante de sus vidas.
 			</p>
+
 			<p id="we-contact">
 				Johannes Duque Castañeda <br>
 				<b> 310 551 8362 - 313 308 4219</b> <br>

@@ -208,6 +208,16 @@ section#we-pictures figure.we-picture
 	margin: 0 0 5px 1%;
 }
 
+section#gallery-detail p
+{
+	display: inline;
+}
+
+section#gallery-detail a
+{
+	color: #00ADF4;
+}
+
 footer
 {
 	position: fixed;
@@ -499,7 +509,7 @@ section.form-booking h1
 
 section.form-booking p
 {
-	font-family: Raleway;
+	font-family: 'Raleway';
  	font-size: 1.2em;
  	width: 85%;
 }
@@ -581,10 +591,16 @@ section#gallery-detail h1, section#gallery-detail h2, section#gallery-detail art
 
 /* Pricing and Plans */
 
+section.plan-options 
+{
+	font-family: Raleway;
+}
+
 section.plan-options h1
 {
 	font-size: 1.6em;
 	text-align: center;
+	margin-top: 0;
 }
 
 section.plan-options .price-as-low-as 
@@ -611,7 +627,8 @@ section.plan-options .plan-subtitle {
 
 section.plan-options .price-graphic 
 {
-  margin: 15px;
+	font-family: hind;
+  	margin: 15px;
 }
 
 section.plan-options .price-graphic .price 
@@ -792,7 +809,7 @@ section.plan-options .webs-ext-btn
 
 section.plan-options .webs-ext-btn.webs-ext-btn-green 
 {
-  background-color: #69a133;
+  background-color: #00ADF4;
 }
 
 section.plan-options .webs-ext-btn span 
@@ -974,6 +991,16 @@ section.plan-options .webs-ext-btn span
 	{
 		margin: 0 1% 5px 0;
 		width: 48%;
+	}
+
+	section.cover-gallery .tag-image
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: #00ADF4;
+		padding: 0.2em;
+		color: white;
 	}
 
 	section.plan-options h1

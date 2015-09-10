@@ -31,7 +31,7 @@
 		<h2> {{ $gallery->title }}</h2>
 		<div class="fb-like" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 		<article>
-			<span id="gallery-date">{{ $gallery->date }}</span> - {{ $gallery->description }}
+			<span id="gallery-date">{{ $gallery->date }} - </span> {!! $gallery->description !!}
 		</article>
 		<section class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			@foreach($gallery->photos as $photo)

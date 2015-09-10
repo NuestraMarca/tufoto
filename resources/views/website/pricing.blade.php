@@ -24,7 +24,7 @@
 				</colgroup><thead>
 				<tr>
 					<th>
-						<div class="plan-title">Basic</div>
+						<div class="plan-title">Plata</div>
 						<hr>
 						<div class="price-graphic">
 							<div class="price">
@@ -39,7 +39,7 @@
 
 					</th>
 					<th>
-						<div class="plan-title">Standard</div>
+						<div class="plan-title">Oro</div>
 						<hr>
 						<div class="price-graphic">
 							<div class="price">
@@ -53,7 +53,7 @@
 						</a>
 					</th>
 					<th class="highlight">
-						<div class="plan-title">Premium</div>
+						<div class="plan-title">Diamante</div>
 						<hr>
 						<div class="price-graphic">
 							<div class="price">

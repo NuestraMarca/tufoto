@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('/', 'WebSiteController@index');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+Route::get('/', ['uses' => 'WebSiteController@index', 'as' => 'website.index']);
 Route::get('producto', 'WebSiteController@product');
 Route::get('tarifas', 'WebSiteController@pricing');
 Route::get('nosotros', 'WebSiteController@we');
-Route::get('reservas', 'WebSiteController@booking');
-Route::post('reservas/reservar', 'WebSiteController@postBooking');
+Route::get('contacto', 'WebSiteController@contact');
+Route::post('contacto/contactar', 'WebSiteController@postContact');
 Route::get('buscar', 'WebSiteController@search');
 
 Route::resource('galerias', 'CategoriesController', ['only' => ['index', 'show']]);

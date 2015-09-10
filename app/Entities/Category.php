@@ -17,13 +17,7 @@ class Category extends Model {
 
 	public static function findOrFailByUrl($url)
 	{
-		$category = self::whereUrl($url)->first();
-		
-		if(is_null($category))
-		{
-			\App::abort('404');
-		}
-
+		$category = self::whereUrl($url)->firstOrFail();
 		return $category;
 	}
 

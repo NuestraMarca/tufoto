@@ -9,6 +9,10 @@
 	Fotolibro con estuche de madera, Dvd's con todas las fotografías de su boda, video clips y obsequios adicionales.
 @endsection
 
+@section('extra-css')
+	@include('_partials.photoswipe-css')
+@endsection
+
 @section('breadcrumbs')
 	{!! Breadcrumbs::render('product') !!}
 @endsection
@@ -17,10 +21,23 @@
 
 	<iframe width="100%" height="80%" src="https://www.youtube.com/embed/9120G_stCTM" frameborder="0" allowfullscreen></iframe>
 	
-	<section style="margin-top:15px;">
+	<section style="margin-top:15px;" id="gallery-detail" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 		@foreach($images as $image)
-			<img src="{{ $image }}" style="width:100%; margin-bottom: 15px;">
+
+			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="/{{ $image }}" itemprop="contentUrl" data-size="1200x800">
+					<img src="/{{ $image }}" itemprop="thumbnail" alt="Productos de fotografía para Matrimonios - TuFoto.co"></img>
+				</a>
+				<figcaption itemprop="caption description">Productos de fotografía para Matrimonios - TuFoto.co</figcaption>
+			</figure>
+
 		@endforeach
 	</section>
 
+	@include('_partials.photoswipe')
+
+@endsection
+
+@section('extra-js')
+	@include('_partials.photoswipe-js')
 @endsection
