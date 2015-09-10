@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>@yield('title', 'tuFoto.co')</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="@yield('description', 'Fotografía para toda la vida')">
 		
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">

@@ -16,7 +16,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'preboda-alex-y-barbara',
 	    		'alt' => 'Fotografias de la Preboda de Alex y Barbara en Villavicencio 2015',
-	    		'folder'	=> '002-Preboda-Alex-y-Barbara',
+	    		'folder'	=> '002 Preboda Alex y Barbara',
 	    		'category_id'	=> 1,
 	    		'tag'	=> 'Preboda'
 	    	]);
@@ -27,7 +27,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'alex-y-barbara',
 	    		'alt' => 'Fotografias del Matrimonio de Alex y Barbara en Villavicencio 2015',
-	    		'folder'	=> '007-Alex-y-Barbara',
+	    		'folder'	=> '007 Alex y Barbara',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -37,7 +37,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'preboda-alexis-y-maye',
 	    		'alt' => 'Fotografias de la Preboda de Alexis y Maye en Villavicencio 2015',
-	    		'folder'	=> '001-Preboda-Alexis-y-Maye',
+	    		'folder'	=> '001 Preboda Alexis y Maye',
 	    		'category_id'	=> 1,
 	    		'tag'	=> 'Preboda'
 	    	]);
@@ -48,7 +48,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'alexis-y-maye',
 	    		'alt' => 'Fotografias del Matrimonio de Alexis y Maye en Villavicencio 2015',
-	    		'folder'	=> '006-Alexis-y-Maye',
+	    		'folder'	=> '006 Alexis y Maye',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -58,7 +58,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'diana-se-caso-de-rojo',
 	    		'alt' => 'Fotografias del Matrimonio de Diana en Villavicencio 2015',
-	    		'folder'	=> '005-Diana-se-caso de-rojo',
+	    		'folder'	=> '005 Diana se caso de rojo',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -68,7 +68,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'omar-y-edith',
 	    		'alt' => 'Fotografias del Matrimonio de Omar y Edith en Villavicencio 2015',
-	    		'folder'	=> '004-Omar-y-Edith',
+	    		'folder'	=> '004 Omar y Edith',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -78,7 +78,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'joaquin-y-miryam',
 	    		'alt' => 'Fotografias del Matrimonio de Joaquin y Miryam en Villavicencio 2015',
-	    		'folder'	=> '003-Joaquin-y-Miryam',
+	    		'folder'	=> '003 Joaquin y Miryam',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -88,7 +88,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'alvaro-y-lina',
 	    		'alt' => 'Fotografias del Matrimonio de Alvaro y Lina en Villavicencio 2015',
-	    		'folder'	=> '002-Alvaro-y-Lina',
+	    		'folder'	=> '002 Alvaro y Lina',
 	    		'category_id'	=> 1
 	    	]);
 
@@ -98,7 +98,7 @@
 	    		'date'	=> '2015-01-01',
 	    		'url' => 'propuesta-bleimer-y-mery',
 	    		'alt' => 'Fotografias de la Propuesta de Bleimer y Mery en Villavicencio 2015',
-	    		'folder'	=> '003-Propuesta-Bleimer-y-Mery',
+	    		'folder'	=> '003 Propuesta Bleimer y Mery',
 	    		'category_id'	=> 1,
 	    		'tag'	=> 'Propuesta'
 	    	]);
@@ -109,8 +109,50 @@
 	    		'date'	=> '2010-11-27',
 	    		'alt' => 'Fotografias del Matrimonio de Oscar y Luti en Villavicencio 2015',
 	    		'url' => 'matrimonio-de-oscar-y-luti-en-villavicencio',
-	    		'folder'	=> '001-Oscar-y-Luti',
+	    		'folder'	=> '001 Oscar y Luti',
 	    		'category_id'	=> 1
+	    	]);
+
+	    	Gallery::create([
+	    		'title' => 'Andrés y Lorena',
+	    		'description'	=> '<p>Parejas felices nos recomiendan y gracias a esa sugerencia, conocimos a Andrés y Lorena que se casarán este 19 de septiembre. La sesión de Preboda fue programada para el sábado pasado a las 3 p.m. en el <a href=""https://www.facebook.com/clubvillavicencio.meta"">Club Villavicencio.</a> La última fotografía la hicimos en el centro comercial <a href=""https://www.facebook.com/CCVIVAVillavicencio"">VIVA del Éxito de La Sabana.</a> Y así disfrutaron su sesión de preboda.</p>',
+	    		'date'	=> '2015-08-29',
+	    		'alt' => 'Fotografías de la Preboda de Andres y Lorena en Villavicencio',
+	    		'url' => 'andres-y-lorena',
+	    		'folder'	=> '007 Andres y Lorena',
+	    		'category_id'	=> 1,
+	    		'tag'		=> 'Preboda'
+	    	]);
+
+	    	Gallery::create([
+	    		'title' => 'Daniel y Tatiana',
+	    		'description'	=> '<p>Es la primera vez que conocemos el “novio” hasta el día de la boda. Siempre acostumbramos tener una cita con la pareja para conocerlos y saber que desean de su matrimonio. Esta vez fue distinto, Judith estuvo muy pendiente de todos los detalles para el matrimonio de su hija Tatiana. Nos contó todo lo que tenía planeado y hasta hubo sorpresas para nosotros!</p> <p>Gracias por permitirnos ser testigos del gran amor que existe entre ustedes y por confiar en nuestra experiencia.</p>',
+	    		'date'	=> '2015-08-15',
+	    		'alt' => 'Fotografias del Matrimonio de Daniel y Tatiana en Villavicencio 2015',
+	    		'url' => 'daniel-y-tatiana',
+	    		'folder'	=> '009 Daniel y Tatiana',
+	    		'category_id'	=> 1
+	    	]);
+
+	    	Gallery::create([
+	    		'title' => 'Paulo y Lucy',
+	    		'description'	=> '<p>Desde muy temprano acompañamos a Lucy y tuvimos la oportunidad de conocer a su familia. En ocasiones fue difícil tomar fotos, pues su hermano mayor no paraba de hacernos reír.</p> <p>Hubo un momento muy gracioso en la recepción para cuando hicimos la foto con toda la familia de fondo… comencé a quitarme los zapatos y las medias, remangarme el pantalón para meterme en la piscina para lograr el ángulo que quería para la foto y desde arriba gritaron: -¡Ese es el streaper que contrataron!???...</p> <p>Disfrutamos mucho con mi esposa de este matrimonio, les deseamos una vida llena de alegrías y éxitos.</p> <p>Muy pronto la sesión postboda</p>',
+	    		'date'	=> '2015-07-27',
+	    		'alt' => 'Fotografias del Matrimonio de Paulo y Lucy en Villavicencio 2015',
+	    		'url' => 'pablo-y-lucy',
+	    		'folder'	=> '008 Paulo y Lucy',
+	    		'category_id'	=> 1
+	    	]);
+
+	    	Gallery::create([
+	    		'title' => 'Daniel y Wendy',
+	    		'description'	=> '<p>En esta ocasión Daniel y Wendy querían algo diferente. Después de un largo recorrido, llegamos al  Ecoparque El Bambú. Caminaron en medio de la naturaleza, entre montañas, lluvia y niebla. Ellos se casarán muy pronto y tendremos el gusto de acompañarlos en su matrimonio. Este ha sido el resultado de su sesión de preboda.</p> <p>El Ecoparque está ubicado en la Vda Samaria Km. 6 desde Buenavista, Villavicencio.</p>',
+	    		'date'	=> '2015-06-14',
+	    		'alt' => 'Preboda Daniel y Wendy Villavicencio 2015',
+	    		'url' => 'preboda-danie-y-wendy',
+	    		'folder'	=> '006 Preboda Daniel y Wendy',
+	    		'category_id'	=> 1,
+	    		'tag'		=> 'Preboda'
 	    	]);
 
 	    	/* Familias */
@@ -121,7 +163,7 @@
 	    		'date'	=> '2015-06-01',
 	    		'alt' => 'Fotografias de Ronal y Keily',
 	    		'url' => 'fotografias-esperando-a-victoria',
-	    		'folder'	=> '001-Esperando-a-victoria',
+	    		'folder'	=> '001 Esperando a victoria',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -131,7 +173,7 @@
 	    		'date'	=> '2015-05-18',
 	    		'alt' => 'Fotografias de Camilo y Fernanda a la espera de su hijo Alan',
 	    		'url' => 'fotografias-alan-esta-por-nacer',
-	    		'folder'	=> '002-Alan-esta-por-nacer',
+	    		'folder'	=> '002 Alan esta por nacer',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -141,7 +183,7 @@
 	    		'date'	=> '2015-05-08',
 	    		'alt' => 'Fotografias de Juan José es hijo de Felipe y Leidy en Villavicencio 2015',
 	    		'url' => 'fotografias-juan-jose-es-hijo-de-felipe-y-leidy',
-	    		'folder'	=> '003-Juan-Jose-es-hijo-de-Felipe-y-Leidy',
+	    		'folder'	=> '003 Juan Jose es hijo de Felipe y Leidy',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -151,7 +193,7 @@
 	    		'date'	=> '2015-04-19',
 	    		'alt' => 'Fotografias del Juan y Aurora, hijos de Mónica en Villavicencio 2015',
 	    		'url' => 'fotografias-juan-y-aurora-son-hijos-de-monica',
-	    		'folder'	=> '004-Juan-y-Aurora-son-hijos-de-Monica',
+	    		'folder'	=> '004 Juan y Aurora son hijos de Monica',
 	    		'category_id'	=> 2
 	    	]);
 	    	
@@ -161,7 +203,7 @@
 	    		'date'	=> '2015-03-14',
 	    		'alt' => 'Fotografias de Cabrera Espinoza en Villavicencio 2015',
 	    		'url' => 'fotografias-familia-cabrera-espinoza',
-	    		'folder'	=> '005-Familia-Cabrera-espinoza',
+	    		'folder'	=> '005 Familia Cabrera espinoza',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -171,7 +213,7 @@
 	    		'date'	=> '2015-01-09',
 	    		'alt' => 'Fotografias de Nicolas es hijo de Islanda y Fredy en Villavicencio 2015',
 	    		'url' => 'fotografias-nicolas-es-hijo-de-islanda-y-fredy',
-	    		'folder'	=> '006-Nicolas-es-hijo-de-Islanda-y-Fredy',
+	    		'folder'	=> '006 Nicolas es hijo de Islanda y Fredy',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -181,7 +223,7 @@
 	    		'date'	=> '2014-11-01',
 	    		'alt' => 'Fotografias de Salome es hija de Ana Sanchez en Villavicencio 2015',
 	    		'url' => 'fotografias-salome-es-hija-de-ana-sanchez',
-	    		'folder'	=> '007-Salome-es-hija-de-Ana-Sanchez',
+	    		'folder'	=> '007 Salome es hija de Ana Sanchez',
 	    		'category_id'	=> 2
 	    	]);
 
@@ -193,7 +235,7 @@
 	    		'date'	=> '2014-11-23',
 	    		'alt' => 'Fotografias de Mascotas de Alvaro y Lina en Villavicencio 2014',
 	    		'url' => 'fotografias-salome-es-hija-de-ana-sanchez',
-	    		'folder'	=> '001-Mascotas-de-Alvaro-y-Lina',
+	    		'folder'	=> '001 Mascotas de Alvaro y Lina',
 	    		'category_id'	=> 3
 	    	]);
 
@@ -203,7 +245,7 @@
 	    		'date'	=> '2014-12-06',
 	    		'alt' => 'Fotografias de Andrea y Bruno en Villavicencio 2014',
 	    		'url' => 'fotografias-andrea-y-bruno',
-	    		'folder'	=> '002-Andrea-y-Bruno',
+	    		'folder'	=> '002 Andrea y Bruno',
 	    		'category_id'	=> 3
 	    	]);
 
@@ -213,7 +255,7 @@
 	    		'date'	=> '2015-01-19',
 	    		'alt' => 'Fotografias de Andrea y Milo en Villavicencio 2015',
 	    		'url' => 'fotografias-andres-y-milo',
-	    		'folder'	=> '003-Andres-y-Milo',
+	    		'folder'	=> '003 Andres y Milo',
 	    		'category_id'	=> 3
 	    	]);
 	    	

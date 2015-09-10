@@ -15,7 +15,7 @@
 	@endsection
 
 	<section class="cover-gallery">
-		@foreach($category->galleries as $gallery)
+		@foreach($category->galleries->sortByDesc('date') as $gallery)
 			<a href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">
 					<img src="/{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}"></img>

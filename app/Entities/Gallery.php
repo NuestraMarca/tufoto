@@ -34,7 +34,14 @@ class Gallery extends Model {
 
 	public function getCoverImageAttribute()
 	{
-		return $this->path . '/cover.jpg';
+		if( ! is_null($this->cover) && ! empty($this->cover))
+		{
+			return $this->path . '/Miniaturas/'. $this->cover .'.jpg';
+		}
+
+		$smalls = glob($this->path . '/Miniaturas/*.*');
+
+		return reset($smalls);
 	}
 
 	public function getCompleteUrlAttribute()
@@ -44,7 +51,7 @@ class Gallery extends Model {
 
 	public function getPhotosAttribute()
 	{
-		return glob($this->path . '/*.*');
+		return glob($this->path . '/*.jpg');
 	}
 
 	public function getTitleOrTagAttribute()
