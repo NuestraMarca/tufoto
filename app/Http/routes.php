@@ -24,6 +24,8 @@ Route::get('buscar', 'WebSiteController@search');
 Route::resource('galerias', 'CategoriesController', ['only' => ['index', 'show']]);
 Route::get('galerias/{type}/{gallery}', 'CategoriesController@gallery');
 
+Route::resource('proveedores', 'ProvidersController', ['only' => ['index', 'show']]);
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

@@ -409,7 +409,7 @@ section#breadcrumbs
 	text-align: right;
 	font-size: 0.9em;
 	margin-top: -10px;
-  	margin-bottom: 20px;
+  	margin-bottom: 0px;
 }
 
 section#breadcrumbs .breadcrumbs
@@ -443,6 +443,7 @@ section#container
 section.cover-gallery
 {
 	width: 100%;
+	overflow: hidden;
 }
 
 section.cover-gallery figure.cover-photo
@@ -1071,7 +1072,7 @@ section.plan-options .webs-ext-btn span
 	div#main
 	{
 		width: 80%;
-		padding: 40px 10%;
+		padding: 0px 10%;
 	}
 
 	header ul.social-icons li
@@ -1148,7 +1149,7 @@ section.plan-options .webs-ext-btn span
 	}
 
 	nav ul#main-menu li {
-		padding: 8px 0;
+		padding: 6px 0;
 	}
 
 	nav ul#main-menu li a {

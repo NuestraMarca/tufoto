@@ -42,6 +42,7 @@
 						<li><a href="/tarifas">Tarifas y Preguntas</a></li>
 						<li><a href="/contacto">Contacto</a></li>
 						<li><a href="/nosotros">Quiénes somos</a></li>
+						<li><a href="/proveedores">Proveedores</a></li>
 						<li > <hr> </li>
 						<li> 
 							{!! Form::open(['url' => '/buscar', 'method' => 'GET']) !!}

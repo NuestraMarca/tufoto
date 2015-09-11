@@ -47,3 +47,17 @@ Breadcrumbs::register('we', function($breadcrumbs)
     $breadcrumbs->parent('home');
     $breadcrumbs->push('Quienes somos', url('/nosotros'));
 });
+
+// Proveedores
+Breadcrumbs::register('providerTypes', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('Proveedores', url('/proveedores'));
+});
+
+// Proveedor
+Breadcrumbs::register('provider', function($breadcrumbs, $provider)
+{
+    $breadcrumbs->parent('providerTypes');
+    $breadcrumbs->push($provider->name, url('/proveedores/' . $provider->url));
+});

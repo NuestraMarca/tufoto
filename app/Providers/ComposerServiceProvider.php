@@ -15,7 +15,8 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composers([
-            'App\Http\ViewComposers\ProductComposer' => ['website.product']
+            'App\Http\ViewComposers\ProductComposer' => ['website.product'],
+            'App\Http\ViewComposers\ProviderTypesComposer' => ['website.provider.lists']
         ]);
     }
 
