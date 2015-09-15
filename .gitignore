@@ -3,3 +3,5 @@
 .env
 /public/images/galleries/*/*/*.jpg
 /public/images/galleries/*/*/*/*.jpg
+/public/images/providers/*/*.jpg
+/public/images/providers/*/*/*.jpg
