@@ -5,10 +5,10 @@
 		<title>@yield('title', 'tuFoto.co')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="@yield('description', 'Fotografía para toda la vida')">
-		
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<link rel="stylesheet" type="text/css" href="/css/website/normalize.css">
-		<link rel="stylesheet" type="text/css" href="/css/website/style.css">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/website/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/website/style.min.css">
 		
 		@yield('extra-css')
 		
@@ -71,7 +71,7 @@
 		</div>
 
 		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  		<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  		<script src="/js/jquery-ui.min.js"></script>
 		<script>
 			var count = 0;
 			$( "#icon-menu-responsive" ).click(function() {
