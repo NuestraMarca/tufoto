@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/website/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/website/style.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/website/style.css">
 		
 		@yield('extra-css')
 		
@@ -42,6 +42,7 @@
 						<li><a href="/tarifas">Tarifas y Preguntas</a></li>
 						<li><a href="/contacto">Contacto</a></li>
 						<li><a href="/nosotros">Quiénes somos</a></li>
+						<li><a href="/proveedores">Proveedores</a></li>
 						<li > <hr> </li>
 						<li> 
 							{!! Form::open(['url' => '/buscar', 'method' => 'GET']) !!}

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Entities\Provider;
+
 
 class ProvidersController extends Controller
 {
@@ -26,9 +27,10 @@ class ProvidersController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show($url)
     {
-        //
+        $provider = Provider::findOrFailByUrl($url);
+        return view('website.provider.show', compact('provider'));
     }
 
 }

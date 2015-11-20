@@ -17,8 +17,7 @@ class Category extends Model {
 
 	public static function findOrFailByUrl($url)
 	{
-		$category = self::whereUrl($url)->firstOrFail();
-		return $category;
+		return self::whereUrl($url)->firstOrFail();
 	}
 
 	public function findOrFailGalleryByUrl($url)

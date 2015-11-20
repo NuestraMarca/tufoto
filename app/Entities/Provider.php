@@ -23,6 +23,11 @@ class Provider extends Model
 		return self::$pathProviders . $this->folder;
 	}
 
+	public function getPhotosAttribute()
+	{
+		return glob($this->path . '/*.jpg');
+	}
+
 	public function getCoverImageAttribute()
 	{
 		if( ! is_null($this->cover) && ! empty($this->cover))
@@ -34,4 +39,14 @@ class Provider extends Model
 
 		return reset($smalls);
 	}
+
+	public static function findOrFailByUrl($url)
+	{
+		return self::whereUrl($url)->firstOrFail();
+	}
+
+	public function type()
+    {
+        return $this->belongsTo(ProviderType::class, 'type_id', 'id');
+    }
 }

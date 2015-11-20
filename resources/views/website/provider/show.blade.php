@@ -1,7 +1,7 @@
 @extends('website.layout')
 
 @section('title')
-	Fotografías de {{ $provider->name }} - Proveedores | tuFoto.co
+	Fotografías de {{ $provider->type->name }} - {{ $provider->name }} - Proveedores | tuFoto.co
 @endsection
 
 @section('description')
@@ -31,10 +31,19 @@
 		<h2> {{ $provider->name }}</h2>
 		<div class="fb-like" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 		<article>
-			{!! $provider->description !!}
+			<p class="tel"> {{ $provider->tel }} </p>
+			<p class="address"> {!! $provider->address !!} </p>
+			{!! $provider->links !!}
 		</article>
 		<section class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-			
+			@foreach($provider->photos as $photo)
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
+						<img src="/{{ $photo }}" itemprop="thumbnail" alt="{{ $provider->date }} - {{ $provider->title }}"></img>
+					</a>
+					<figcaption itemprop="caption description">{{$provider->title_or_tag}} - {{ $provider->title }} </figcaption>
+				</figure>
+			@endforeach
 		</section>
 
 		<div class="fb-comments" data-width="1200" style="margin: 1em 2.5%;"></div>
