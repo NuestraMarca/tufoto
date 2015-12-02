@@ -30,3 +30,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/admin', ['middleware'=>'auth', function(){
+	return '<h1> Hola Mundo </h1>';
+}]);

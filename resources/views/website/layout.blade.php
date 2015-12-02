@@ -43,7 +43,7 @@
 						<li><a href="/contacto">Contacto</a></li>
 						<li><a href="/nosotros">Quiénes somos</a></li>
 						<li><a href="/proveedores">Proveedores</a></li>
-						<li><a href="/auth/login">Login</a></li>
+
 						<li > <hr> </li>
 						<li> 
 							{!! Form::open(['url' => '/buscar', 'method' => 'GET']) !!}
