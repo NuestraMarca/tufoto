@@ -199,6 +199,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 		'Form' 		=> 'Collective\Html\FormFacade',
 		'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
+		
+'Html'      => Collective\Html\HtmlFacade::class,
 
 	],
 

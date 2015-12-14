@@ -11,6 +11,11 @@
 |
 */
 
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
+
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/', ['uses' => 'WebSiteController@index', 'as' => 'website.index']);
@@ -26,11 +31,14 @@ Route::get('galerias/{type}/{gallery}', 'CategoriesController@gallery');
 
 Route::resource('proveedores', 'ProvidersController', ['only' => ['index', 'show']]);
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => 'auth'], function(){
 
-Route::get('/admin', ['middleware'=>'auth', function(){
-	return '<h1> Hola Mundo </h1>';
-}]);
+	Route::get('/', function(){
+			return view('dashboard/pages/home');
+	});
+
+	Route::resource('categories', 'CategoriesController');
+	Route::get('categories/{category_id}/galleries/{gallery_id}', 'CategoriesController@gallery');
+
+});
+
