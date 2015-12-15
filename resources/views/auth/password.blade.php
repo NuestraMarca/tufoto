@@ -1,7 +1,8 @@
-@extends('dashboard.layout')
-@section('content_body')
+@extends('app')
 
-<div class="container-fluid" style="margin: 100px;">
+@section('content')
+
+<div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
