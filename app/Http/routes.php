@@ -65,7 +65,7 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 		return ':)';
 	});
 
-	Route::resource('providertypes', 'ProvidertypesController');
+	Route::resource('providertypes', 'ProviderTypesController');
 	
 	Route::resource('providertypes.providers', 'ProviderTypesProvidersController');
 	Route::get('providertypes/{providertypes}/providers/{providers}/add-cover', [
