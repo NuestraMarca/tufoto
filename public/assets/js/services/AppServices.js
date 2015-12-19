@@ -10,23 +10,26 @@ var AppServices = function() {
 		var token = $(entityElement).data('token');
 		data = data || {'_token': token};
 		
-		$.ajax({
-	        url: url,
-	        data: data,
-	        dataType:'json',
-	        method:'DELETE',
-	        success:function(data){
-	            if(data['success']){
-	                deleteEntity(entityId);
-	            }
-	            else{
-	            	notification('danger', data['message']);
-	            }
-	        },
-	        error:function(){
-	            alert('fallo la conexion');
-	        }
-	    });
+		if (confirm('¿Está seguro de Borrar?')) {
+	    	$.ajax({
+		        url: url,
+		        data: data,
+		        dataType:'json',
+		        method:'DELETE',
+		        success:function(data){
+		            if(data['success']){
+		                deleteEntity(entityId);
+		            }
+		            else{
+		            	notification('danger', data['message']);
+		            }
+		        },
+		        error:function(){
+		            alert('fallo la conexion');
+		        }
+		    });  
+	    }
+		
 	};
 
 	var deleteEntity = function (entityId, entityName) {
