@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Empresa de Fotografía')</title>
+		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Fotografía Profesional')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="@yield('description', 'Fotografía para toda la vida')">
+		<meta name="description" content="@yield('description', 'Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo: Hacer que tus recuerdos queden para toda la Vida. Nos encanta hacer fotos de matrimonios')">
+		<meta name="keywords" content="@yield('keywords', 'fotografía, fotos, matrimonios, bodas, familia, mascotas, fotógrafos, fotografía profesional, fotógrafos profesionales, fotografías para matrimonios, fotografías para bodas, fotografías para familias, fotografías para mascotas, fotógrafo matrimonio, empresa fotografía, equipo de fotógrafos,fotos profesionales')">
+		<meta name="author" content="Andrés Mauricio Pinzón - Johannes Duque : Equipo de tufoto">
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/website/normalize.min.css">
@@ -22,16 +24,16 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><a href="/"><img src="/images/logo_tufoto_co.gif" alt="Logo TuFoto.co"></a></figure>
+				<figure id="header-logo"><a href="/"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
-					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" target="_blank"></a></li>
-					<li><a href="https://instagram.com/tufoto.co/" class="icon-instagram" target="_blank"></a></li>
+					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
+					<li><a href="https://instagram.com/tufoto.co/" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
 					<li><a href="#" class="icon-blogger2"></a></li>
 					<li><a href="#" class="icon-pinterest2"></a></li>
 				</ul>
 				<section id="number-whatsapp">
-					<img src="/images/whatsapp.png" id="image-whatsapp">
+					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
 					<a  href="tel:+573105518362" id="text-whatsapp">310 551 8362</a>
 				</section>
 				<nav>

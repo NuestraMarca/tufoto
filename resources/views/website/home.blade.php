@@ -8,13 +8,15 @@
 	<section id="main-slide">
 		@foreach($slides as $slide)
 			<figure class="main-image-slide">
-				<img src="/{{ $slide }}" alt="Foto de Portada TuFoto.co"></img>
+				<img src="/{{ $slide }}" alt="Fotografías Profesionales realziadas en tufoto - Fotografía para toda la Vida"></img>
 			</figure>
 		@endforeach
 	</section>
 
 	@section('extra-js')
 		<script type="text/javascript">
+		
+		$( document ).ready(function() {
 
 			$("#main-slide > figure:gt(0)").hide();
 
@@ -26,6 +28,7 @@
 				.end()
 				.appendTo('#main-slide');
 			},  3000);
+		});
 
 		</script>
 	@endsection
