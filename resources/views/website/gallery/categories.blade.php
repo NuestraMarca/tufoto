@@ -17,7 +17,7 @@
 		@foreach($categories as $category)
 			<a href=" {{ $category->complete_url }}">
 				<figure class="cover-photo">
-					<img src="/{{ $category->cover_image }}" alt="{{ $category->alt }}"></img>
+					<img src="{{ $category->cover }}" alt="{{ $category->alt }}"></img>
 					<h2 class="cover-text">{{ $category->title_plural }}</h2>
 				</figure>
 			</a>

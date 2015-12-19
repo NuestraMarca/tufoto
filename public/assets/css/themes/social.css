@@ -25,8 +25,7 @@ a.text-dark:focus,
 .nav-users a,
 li.dropdown-header,
 .chosen-container-single .chosen-single,
-.select2-container .select2-choice,
-.toggle-menu a {
+.select2-container .select2-choice {
     color: #333333;
 }
 
@@ -182,10 +181,7 @@ a.text-primary:focus,
 .pagination > li > span,
 .btn-link,
 .btn-link:hover,
-.btn-link:focus,
-.toggle-menu a:hover,
-.toggle-menu a:focus,
-.toggle-menu a.active {
+.btn-link:focus {
     color: #627aad;
 }
 

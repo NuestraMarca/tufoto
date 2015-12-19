@@ -3,9 +3,12 @@
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller {
+
+	private $username = 'username';
 
 	/*
 	|--------------------------------------------------------------------------
@@ -34,5 +37,27 @@ class AuthController extends Controller {
 
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
+
+	/**
+     * Get the needed authorization credentials from the request.
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return array
+     */
+    protected function getCredentials(Request $request)
+    {
+        return $request->only('username', 'password');
+    }
+
+	/**
+     * Get the failed login message.
+     *
+     * @return string
+     */
+    protected function getFailedLoginMessage()
+    {
+        return 'El usuario y la contraseña no coinciden.';
+    }
 
 }

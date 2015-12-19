@@ -11,23 +11,17 @@
 	    {
 	    	Category::create([
 	    		'title_plural' => 'Matrimonios',
-	    		'title_singular' => 'Matrimonio',
-	    		'alt' => 'Fotografias de Matrimonios realizadas por tufoto.co',
-	    		'url' => 'matrimonios'
+	    		'title_singular' => 'Matrimonio'
 	    	]);
 
 	    	Category::create([
 	    		'title_plural' => 'Familias',
-	    		'title_singular'	=> 'Familia',
-	    		'alt' => 'Fotografias de Familias realizadas por tufoto.co',
-	    		'url' => 'familias'
+	    		'title_singular'	=> 'Familia'
 	    	]);
 
 	    	Category::create([
 	    		'title_plural' => 'Mascotas',
-	    		'title_singular'	=> 'Mascota',
-	    		'alt' => 'Fotografias de Mascotas realizadas por tufoto.co',
-	    		'url' => 'mascotas'
+	    		'title_singular'	=> 'Mascota'
 	    	]);
 
 	    

@@ -6,18 +6,18 @@
 
 var AppServices = function() {
 
-	var postDelete = function (entityElement, entityId, url) {
+	var postDelete = function (entityElement, entityId, url, data) {
 		var token = $(entityElement).data('token');
-
+		data = data || {'_token': token};
+		
 		$.ajax({
 	        url: url,
-	        data: {'_token': token},
+	        data: data,
 	        dataType:'json',
 	        method:'DELETE',
 	        success:function(data){
 	            if(data['success']){
 	                deleteEntity(entityId);
-	                notification('info', data['message']);
 	            }
 	            else{
 	            	notification('danger', data['message']);
@@ -30,7 +30,7 @@ var AppServices = function() {
 	};
 
 	var deleteEntity = function (entityId, entityName) {
-		$("#" + entityId).fadeOut(700, function() {
+		$("#" + entityId).fadeOut(500, function() {
 	        $("#" + entityId).remove();
 	    });
 	};
@@ -46,36 +46,20 @@ var AppServices = function() {
 
     return {
 
-		postDeleteRole: function (entityElement) {
+		postDeleteEntity: function (entityElement, url) {
 			var entityId 	= $(entityElement).data('entity-id');
-			var url 		= '/roles/' +  entityId;
-
 			postDelete(entityElement, entityId, url);
 		},
-		postDeleteArea: function (entityElement) {
-			var entityId 	= $(entityElement).data('entity-id');
-			var url 		= '/areas/' +  entityId;
 
-			postDelete(entityElement, entityId, url);
-		},
-		postDeleteCategory: function (entityElement) {
+		postDeletePhoto: function (entityElement, url, photoName) {
+			var token 		= $(entityElement).data('token');
 			var entityId 	= $(entityElement).data('entity-id');
-			var url 		= '/categories/' +  entityId;
 
-			postDelete(entityElement, entityId, url);
-		},
-		postDeleteProtocol: function (entityElement) {
-			var entityId 	= $(entityElement).data('entity-id');
-			var url 		= '/protocols/' +  entityId;
-
-			postDelete(entityElement, entityId, url);
-		},
-		postDeleteUser: function (entityElement) {
-			var entityId 	= $(entityElement).data('entity-id');
-			var url 		= '/users/' +  entityId;
-
-			postDelete(entityElement, entityId, url);
+			data = {'_token': token, 'photo': photoName};
+			postDelete(entityElement, entityId, url, data);
 		}
+
+		
 
 	};
 }();

@@ -20,8 +20,8 @@ class CreateGaleriesTable extends Migration {
 			$table->date('date');
 			$table->string('alt');
 			$table->string('url');
-			$table->string('tag');
 			$table->string('folder');
+			$table->string('tag');
 
 			$table->timestamps();
 

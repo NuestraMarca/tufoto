@@ -1,50 +1,69 @@
 <?php namespace App\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+use File, Storage;
 
 class Category extends Model {
 
-	static public $path = 'images/galleries/';
+	static public $rootDirectory 	= 'images/galleries/';
+	static public $rootWebUrl 		= '/galerias/';
 	/**
 	 * The attributes that are mass assignable.
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['title', 'url'];
+	protected $fillable = ['title_singular', 'title_plural', 'description'];
+	protected $appends 	= ['title_url_format', 'title_directory_format'];
 
 	public $timestamps = true;
 	public $increments = true;
 
 	public static function findOrFailByUrl($url)
 	{
-		return self::whereUrl($url)->firstOrFail();
+		$category = self::all()->where('title_url_format', $url)->first();
+
+		if(is_null($category)) {
+			abort('404');
+		}
+
+		return $category;
 	}
 
 	public function findOrFailGalleryByUrl($url)
 	{
-		$gallery = $this->galleries()->whereUrl($url)->first();
+		$gallery = $this->galleries->where('title_url_format', $url)->first();
 
 		if(is_null($gallery))
 		{
-			\App::abort('404');
+			abort('404');
 		}
 
 		return $gallery;
 	}
 
-	public function getCoverImageAttribute()
+	public function getTitleUrlFormatAttribute()
 	{
-		return self::$path . $this->url . '/cover.jpg';
+		return strtolower(str_replace(' ', '-', $this->title_plural));
+	}
+
+	public function getTitleDirectoryFormatAttribute()
+	{
+		return strtolower(str_replace(' ', '_', $this->title_plural));
+	}
+
+	public function getDirectoryAttribute()
+	{
+		return self::$rootDirectory . $this->title_directory_format;
+	}
+
+	public function getCoverAttribute()
+	{
+		return  '/' . $this->directory . '/cover.jpg';
 	}
 
 	public function getCompleteUrlAttribute()
 	{
-		return '/galerias/' . $this->url;
-	}
-
-	public function getPhotosAttribute()
-	{
-		return glob(self::$path . $this->id . '/*.*');
+		return self::$rootWebUrl . $this->title_url_format;
 	}
 
 	public function galleries()
@@ -56,5 +75,15 @@ class Category extends Model {
     {
     	$categories = Category::lists('id', 'title_plural');
     	return implode(', ', $categories);
+    }
+
+    public function uploadImage($file)
+    {
+        if ($file) {
+            Storage::disk('local')->put($this->cover,  File::get($file));
+            return true;
+        }
+
+        return false;
     }
 }

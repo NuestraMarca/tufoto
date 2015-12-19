@@ -37,7 +37,7 @@
                     <!-- END Header -->
 
                     <!-- Page content -->
-                    <div id="page-content" style="position:relative;">
+                    <div id="page-content" style="position:relative;" class="@yield('page_content_class')">
                         @yield('content_page', 'Contenido del Dashboard')
                     </div>
                     <!-- END Page Content -->

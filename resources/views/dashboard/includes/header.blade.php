@@ -22,7 +22,7 @@
     <ul class="nav navbar-nav-custom pull-right">
         <!-- Search Form -->
         <li>
-            {!! Form::open(['route' => 'home', 'method' => 'get', 'class' => 'navbar-form-custom']) !!}
+            {!! Form::open(['url' => 'home', 'method' => 'get', 'class' => 'navbar-form-custom']) !!}
                 {!! Form::text('text', null, ['class' => 'form-control', 'placeholder' => 'Buscar..']) !!}
             {!! Form::close() !!}
         </li>

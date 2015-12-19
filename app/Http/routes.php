@@ -38,7 +38,14 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 	});
 
 	Route::resource('categories', 'CategoriesController');
-	Route::get('categories/{category_id}/galleries/{gallery_id}', 'CategoriesController@gallery');
-
+	Route::resource('categories.galleries', 'CategoriesGalleriesController');
+	Route::post('categories/{categories}/galleries/{galleries}/add-photo', [
+		'uses' 	=> 'CategoriesGalleriesController@addPhoto',
+		'as'	=> 'admin.categories.galleries.add-photo'
+	]);
+	Route::delete('categories/{categories}/galleries/{galleries}/delete-photo', [
+		'uses' 	=> 'CategoriesGalleriesController@destroyPhoto',
+		'as'	=> 'admin.categories.galleries.delete-photo'
+	]);
 });
 

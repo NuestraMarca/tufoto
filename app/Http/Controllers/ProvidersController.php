@@ -17,7 +17,7 @@ class ProvidersController extends Controller
      */
     public function index()
     {
-        return view('website.provider.lists');
+        return view('website.provider.list');
     }
 
 

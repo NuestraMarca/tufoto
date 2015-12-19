@@ -115,11 +115,19 @@ return array(
 */
 
 'attributes' => [
-	'name'		=> 'nombre',
-	'email'		=> 'correo electrónico',
-	'cel'		=> 'celular',
-	'comments'	=> 'comentarios',
-	'date'		=> 'fecha'
+	'name'				=> 'nombre',
+	'email'				=> 'correo electrónico',
+	'cel'				=> 'celular',
+	'comments'			=> 'comentarios',
+	'date'				=> 'fecha',
+	'username'			=> 'usuario',
+	'password'			=> 'contraseña',
+	'title_singular'	=> 'nombre en singular',
+	'title_plural'		=> 'nombre en plural',
+	'cover'				=> 'portada',
+	'description'		=> 'descripción',
+	'title'				=> 'nombre',
+	'tag'				=> 'etiqueta'
 
 ]
 

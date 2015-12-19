@@ -14,10 +14,11 @@ class UserSeeder extends Seeder
         //
         \DB::table('users')->insert(array (
 
-        	'name'=>'yei',
-        	'email'=>'j@hotmail.com',
-        	'password'=>\Hash::make('secret')
+        	'name'=>'Administrador tufoto.co',
+            'username' => 'tufoto',
+        	'email'=>'tufoto.co@gmail.com',
+        	'password'=>\Hash::make('tufoto')
 
-        	));
+        ));
     }
 }
