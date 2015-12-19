@@ -50,6 +50,10 @@ class Gallery extends Model {
 
 	public function getDirectoryAttribute()
 	{
+		if($this->tag){
+			return $this->category->directory . '/' . $this->tag . '_' . $this->title_directory_format . '/'; 
+		}
+
 		return $this->category->directory . '/' . $this->title_directory_format . '/';
 	}
 
