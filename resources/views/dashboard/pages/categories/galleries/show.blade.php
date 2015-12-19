@@ -1,7 +1,6 @@
 @extends('dashboard.layout')
 @section('page_content_class') inner-sidebar-left @endsection
 @section('content_page')
-
 	<!-- Inner Sidebar -->
 	<div id="page-content-sidebar">
 	    <!-- Collapsible Options -->

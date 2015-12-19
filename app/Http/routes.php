@@ -11,6 +11,9 @@
 |
 */
 
+use App\Entities\Category;
+use App\Entities\Gallery;
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
@@ -47,5 +50,15 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 		'uses' 	=> 'CategoriesGalleriesController@destroyPhoto',
 		'as'	=> 'admin.categories.galleries.delete-photo'
 	]);
+
+	Route::get('generate', function(){
+		foreach(Category::all() as $category ){
+			foreach ($category->galleries as $gallery) {
+				$gallery->generateSmalls();
+			}
+		}
+
+		return ':)';
+	});
 });
 

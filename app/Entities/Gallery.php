@@ -120,15 +120,39 @@ class Gallery extends Model {
     {
     	$photoName 		= strtolower(str_replace(' ', '_', $file->getClientOriginalName())); 
     	$photoUrl  		= $this->directory . $photoName; 
-    	$photoSmallUrl  = $this->small_directory . $photoName; 
     	
     	Storage::disk('local')->put($photoUrl,  File::get($file));
-    	if(empty(Storage::files($this->small_directory))) {
-    		$this->makeSmallDirectory();
-    	}
-    	Image::make($photoUrl)->resize(600, 400)->save($photoSmallUrl, 80);
+    	$this->findOrCreateSmallDirectory();
+    	$this->resizePhoto($photoName);
 
-    	return $this->directory . $photoName;
+    	return $this->photoUrl;
+    }
+
+    public function findOrCreateSmallDirectory()
+    {
+    	if(empty(Storage::files($this->small_directory))) {
+			$this->makeSmallDirectory();
+		}
+
+		return $this->small_directory;
+    }
+    
+
+    public function resizePhoto($photoName)
+    {
+    	$photoUrl  		= $this->directory . $photoName; 
+    	$photoSmallUrl  = $this->small_directory . $photoName; 
+
+    	Image::make($photoUrl)->resize(600, 400)->save($photoSmallUrl, 80);
+    }
+
+    public function generateSmalls()
+    {
+    	$this->findOrCreateSmallDirectory();
+    	foreach ($this->photos as $photo) {
+    		$photoName 	=  explode('/', $photo)[4]; 
+    		$this->resizePhoto($photoName);
+    	}
     }
 
     public function makeDirectory()
