@@ -1,5 +1,5 @@
-<meta charset="UTF-8">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Fotografía Profesional')</title>
@@ -19,7 +19,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="main">
+		<div id="main" lang="es">
 			<section id="breadcrumbs">
 				@yield('breadcrumbs')
 			</section>
