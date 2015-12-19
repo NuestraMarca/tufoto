@@ -12,7 +12,7 @@
 */
 
 use App\Entities\Category;
-use App\Entities\Gallery;
+use App\Entities\ProviderType;
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -55,10 +55,36 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 		'as'	=> 'admin.categories.galleries.delete-photo'
 	]);
 
-	Route::get('generate', function(){
+	Route::get('generate-galleries', function(){
 		foreach(Category::all() as $category ){
 			foreach ($category->galleries as $gallery) {
 				$gallery->generateSmalls();
+			}
+		}
+
+		return ':)';
+	});
+
+	Route::resource('providertypes', 'ProvidertypesController');
+	
+	Route::resource('providertypes.providers', 'ProviderTypesProvidersController');
+	Route::get('providertypes/{providertypes}/providers/{providers}/add-cover', [
+		'uses' 	=> 'ProviderTypesProvidersController@addCover',
+		'as'	=> 'admin.providertypes.providers.add-cover'
+	]);
+	Route::post('providertypes/{providertypes}/providers/{providers}/add-photo', [
+		'uses' 	=> 'ProviderTypesProvidersController@addPhoto',
+		'as'	=> 'admin.providertypes.providers.add-photo'
+	]);
+	Route::delete('providertypes/{providertypes}/providers/{providers}/delete-photo', [
+		'uses' 	=> 'ProviderTypesProvidersController@destroyPhoto',
+		'as'	=> 'admin.providertypes.providers.delete-photo'
+	]);
+
+	Route::get('generate-providers', function(){
+		foreach(ProviderType::all() as $type ){
+			foreach ($type->providers as $provider) {
+				$provider->generateSmalls();
 			}
 		}
 

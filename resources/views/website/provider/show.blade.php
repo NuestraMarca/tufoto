@@ -39,9 +39,9 @@
 			@foreach($provider->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
-						<img src="/{{ $photo }}" itemprop="thumbnail" alt="{{ $provider->date }} - {{ $provider->title }}"></img>
+						<img src="/{{ $photo }}" itemprop="thumbnail" alt="Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}"></img>
 					</a>
-					<figcaption itemprop="caption description">{{$provider->title_or_tag}} - {{ $provider->title }} </figcaption>
+					<figcaption itemprop="caption description">Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }} </figcaption>
 				</figure>
 			@endforeach
 		</section>

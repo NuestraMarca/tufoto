@@ -127,7 +127,9 @@ return array(
 	'cover'				=> 'portada',
 	'description'		=> 'descripción',
 	'title'				=> 'nombre',
-	'tag'				=> 'etiqueta'
+	'tag'				=> 'etiqueta',
+	'tel'				=> 'teléfono',
+	'address'			=> 'dirección'
 
 ]
 

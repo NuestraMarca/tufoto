@@ -75,7 +75,7 @@ Breadcrumbs::register('admin.categories', function($breadcrumbs)
     $breadcrumbs->push('Categorías', route('admin.categories.index'));
 });
 
-// Categories
+// Categories > Category
 Breadcrumbs::register('admin.categories.category', function($breadcrumbs, $category)
 {
     $breadcrumbs->parent('admin.categories');
@@ -103,3 +103,25 @@ Breadcrumbs::register('admin.categories.galleries.gallery', function($breadcrumb
 
     $breadcrumbs->push($gallery->title, route('admin.categories.galleries.show', [$category->id, $gallery->id]));
 });
+
+// ProviderTypes
+Breadcrumbs::register('admin.providertypes', function($breadcrumbs)
+{
+    $breadcrumbs->parent('admin');
+    $breadcrumbs->push('Proveedores', route('admin.providertypes.index'));
+});
+
+// ProviderTypes > Type
+Breadcrumbs::register('admin.providertypes.type', function($breadcrumbs, $providerType)
+{
+    $breadcrumbs->parent('admin.providertypes');
+    $breadcrumbs->push($providerType->name, route('admin.providertypes.show', $providerType));
+});
+
+// ProviderTypes > Type
+Breadcrumbs::register('admin.providertypes.type.provider', function($breadcrumbs, $providerType, $provider)
+{
+    $breadcrumbs->parent('admin.providertypes.type', $providerType);
+    $breadcrumbs->push($provider->name, route('admin.providertypes.providers.show', [$providerType, $provider]));
+});
+

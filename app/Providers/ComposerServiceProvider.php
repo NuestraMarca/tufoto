@@ -17,7 +17,8 @@ class ComposerServiceProvider extends ServiceProvider
         View::composers([
             'App\Http\ViewComposers\ProductComposer' => ['website.product'],
             'App\Http\ViewComposers\ProviderTypesComposer' => ['website.provider.list'],
-            'App\Http\ViewComposers\Dashboard\Categories\ListComposer' => ['dashboard.pages.categories.list']
+            'App\Http\ViewComposers\Dashboard\Categories\ListComposer' => ['dashboard.pages.categories.list'],
+            'App\Http\ViewComposers\Dashboard\ProviderTypes\ListComposer' => ['dashboard.pages.providertypes.list']
         ]);
     }
 

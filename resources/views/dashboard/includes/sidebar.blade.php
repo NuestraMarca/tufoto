@@ -16,14 +16,20 @@
             <ul class="sidebar-nav">                
                 <li>
                     <a href="/admin">
-                        <i class="fa fa-bar-chart-o sidebar-nav-icon"></i>
+                        <i class="gi gi-compass sidebar-nav-icon"></i>
                         <span class="sidebar-nav-mini-hide">Inicio</span>
                     </a>
                 </li>    
                 <li>
                     <a href="/admin/categories">
-                        <i class="fa fa-bar-chart-o sidebar-nav-icon"></i>
+                        <i class="fa fa-picture-o sidebar-nav-icon"></i>
                         <span class="sidebar-nav-mini-hide">Categorias</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="/admin/providertypes">
+                        <i class="gi gi-wallet sidebar-nav-icon"></i>
+                        <span class="sidebar-nav-mini-hide">Proveedores</span>
                     </a>
                 </li>             
             </ul>

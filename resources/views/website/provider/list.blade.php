@@ -27,8 +27,8 @@
 
 					@foreach($type->providers as $provider)
 						<figure class="cover-photo">
-							<a href="/proveedores/{{ $provider->url }}">
-								<img src="/{{ $provider->cover_image }}"></img>
+							<a href="{{ $provider->complete_url }}">
+								<img src="{{ $provider->cover_image }}"></img>
 								<h2 class="cover-text">{{ $provider->name }}</h2>
 							</a>
 						</figure>

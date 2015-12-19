@@ -17,7 +17,7 @@
 				</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="/admin/providers" class="widget">
+				<a href="/admin/providertypes" class="widget">
 					<div class="widget-content themed-background text-light-op">
 						<i class="fa fa-fw fa-pencil"></i> <strong>Administrar Proveedores</strong>
 					</div>
