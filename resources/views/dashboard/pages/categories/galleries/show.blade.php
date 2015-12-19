@@ -14,6 +14,8 @@
 	            	</a> 
 	            	{{ $gallery->title }}
 	            </h4>
+
+	            <img src="/{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" style="width:100%; margin-bottom:10px;">
 	            
 	            {!! Form::open(['route' => ['admin.categories.galleries.add-photo', $category->id, $gallery->id], 'method' => 'POST', 'class' => 'dropzone']) !!}
 	        </div>
@@ -36,6 +38,7 @@
 		    <div class="col-sm-4 col-lg-3" id="{{ $count }}">
 		        <div class="media-items animation-fadeInQuick2" data-category="image">
 		            <div class="media-items-options text-right">
+		                <a href="{{ route('admin.categories.galleries.add-cover', [$category->id, $gallery->id]) }}/?cover={{ $photoName }}" class="btn btn-sm btn-warning"><i class="gi gi-star"></i></a>
 		                <a href="/{{ $photoGrand }}" class="btn btn-sm btn-info" data-toggle="lightbox-image">Ver Foto</a>
 		                <a href="javascript:void(0)" 
 		                	onclick="AppServices.postDeletePhoto(this, '{{ $route }}', '{{ $photoName }}' )" 

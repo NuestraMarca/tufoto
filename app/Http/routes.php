@@ -42,6 +42,10 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 
 	Route::resource('categories', 'CategoriesController');
 	Route::resource('categories.galleries', 'CategoriesGalleriesController');
+	Route::get('categories/{categories}/galleries/{galleries}/add-cover', [
+		'uses' 	=> 'CategoriesGalleriesController@addCover',
+		'as'	=> 'admin.categories.galleries.add-cover'
+	]);
 	Route::post('categories/{categories}/galleries/{galleries}/add-photo', [
 		'uses' 	=> 'CategoriesGalleriesController@addPhoto',
 		'as'	=> 'admin.categories.galleries.add-photo'

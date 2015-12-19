@@ -26,7 +26,7 @@ class CategoriesGalleriesController extends Controller
     {
         $this->beforeFilter('@newGallery', ['only' => ['create', 'store']]);
         $this->beforeFilter('@findCategory');
-        $this->beforeFilter('@findGallery', ['only' => ['show', 'edit', 'update', 'destroy', 'destroyPhoto', 'addPhoto']]);
+        $this->beforeFilter('@findGallery', ['only' => ['show', 'edit', 'update', 'destroy', 'destroyPhoto', 'addPhoto', 'addCover']]);
     }
 
     /**
@@ -208,5 +208,19 @@ class CategoriesGalleriesController extends Controller
         ];  
 
         return response()->json($data);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function addCover(Request $request, $category_id, $id)
+    {        
+        $this->gallery->cover = $request->get('cover'); 
+        $this->gallery->save();
+
+        return redirect()->route(self::$prefixRoute.'show', [$this->category->id, $this->gallery->id]);
     }
 }
