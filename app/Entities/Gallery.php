@@ -70,7 +70,7 @@ class Gallery extends Model {
 	public function getCoverImageAttribute()
 	{
 		if( ! is_null($this->cover) && ! empty($this->cover)) {
-			return $this->small_directory . $this->cover;
+			return '/' . $this->small_directory . $this->cover;
 		}
 		else if(! empty($this->smalls)){
 			return '/' . $this->smalls[0];

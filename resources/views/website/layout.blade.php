@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>@yield('title', 'tuFoto.co')</title>
+		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Empresa de Fotografía')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="@yield('description', 'Fotografía para toda la vida')">
 

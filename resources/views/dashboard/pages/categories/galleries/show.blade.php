@@ -15,7 +15,7 @@
 	            	{{ $gallery->title }}
 	            </h4>
 
-	            <img src="/{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" style="width:100%; margin-bottom:10px;">
+	            <img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" style="width:100%; margin-bottom:10px;">
 	            
 	            {!! Form::open(['route' => ['admin.categories.galleries.add-photo', $category->id, $gallery->id], 'method' => 'POST', 'class' => 'dropzone']) !!}
 	        </div>
