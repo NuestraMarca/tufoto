@@ -21,7 +21,7 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><a href="/" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
+				<figure id="header-logo"><a href="/" hreflang="es" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
 					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
@@ -35,13 +35,13 @@
 				</section>
 				<nav>
 					<ul id="main-menu">
-						<li><a class="current-menu" href="/">Inicio</a></li>
-						<li><a href="/galerias">Galerias</a></li>
-						<li><a href="/producto">Producto</a></li>
-						<li><a href="/tarifas">Tarifas y Preguntas</a></li>
-						<li><a href="/contacto">Contacto</a></li>
-						<li><a href="/nosotros">Quiénes somos</a></li>
-						<li><a href="/proveedores">Proveedores</a></li>
+						<li><a class="current-menu" href="/" hreflang="es">Inicio</a></li>
+						<li><a href="/galerias" hreflang="es">Galerias</a></li>
+						<li><a href="/producto" hreflang="es">Producto</a></li>
+						<li><a href="/tarifas" hreflang="es">Tarifas y Preguntas</a></li>
+						<li><a href="/contacto" hreflang="es">Contacto</a></li>
+						<li><a href="/nosotros" hreflang="es">Quiénes somos</a></li>
+						<li><a href="/proveedores" hreflang="es">Proveedores</a></li>
 
 						<li > <hr> </li>
 						<li itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"> 
