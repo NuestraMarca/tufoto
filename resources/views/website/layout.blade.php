@@ -10,15 +10,11 @@
 		<meta name="twitter:site" content="@tufotoco"/>
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
 		
 		@yield('extra-css')
 		
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600' rel='stylesheet' type='text/css'>
-	</head>
+			</head>
 	<body>
 		<div id="main" lang="es">
 			<section id="breadcrumbs">
