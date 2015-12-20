@@ -4,6 +4,8 @@
 	Fotografía para toda la vida | Quienes somos - tuFoto.co
 @endsection
 
+@section('webPageScope') itemscope itemtype="http://schema.org/AboutPage" @endsection
+
 @section('description')
 	En tuFoto.co tomamos las mejores fotografías para matrimonios, familias, bebes y mascotas
 @endsection

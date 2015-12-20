@@ -1,11 +1,19 @@
 @if ($breadcrumbs)
-    <ul class="breadcrumb breadcrumb-top">
+    <ul class="breadcrumb breadcrumb-top" itemscope itemtype="http://schema.org/BreadcrumbList">
         Estás en:
-        @foreach ($breadcrumbs as $breadcrumb)
+        @foreach ($breadcrumbs as $count => $breadcrumb)
             @if (!$breadcrumb->last)
-                <li><a href="{{{ $breadcrumb->url }}}">{{ $breadcrumb->title }}</a></li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="{{{ $breadcrumb->url }}}" itemprop="item"> 
+                        <span itemprop="name">{{ $breadcrumb->title }} </span>
+                    </a>
+                    <meta itemprop="position" content="{{ $count + 1 }}" />
+                </li>
             @else
-                <li class="active">{{{ $breadcrumb->title }}}</li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active">
+                    <span itemprop="name">{{ $breadcrumb->title }} </span>
+                    <meta itemprop="position" content="{{ $count + 1 }}" />
+                </li>
             @endif
         @endforeach
     </ul>

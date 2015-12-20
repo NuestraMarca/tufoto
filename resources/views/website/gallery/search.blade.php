@@ -1,7 +1,9 @@
 @extends('website.layout')
 
+@section('webPageScope') itemscope itemtype="http://schema.org/SearchResultsPage" @endsection
+
 @section('content')
-	<section class="cover-gallery">
+	<section class="cover-gallery" >
 		@foreach($galleries as $gallery)
 			<a href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">

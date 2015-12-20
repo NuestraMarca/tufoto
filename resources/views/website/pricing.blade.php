@@ -1,8 +1,10 @@
 @extends('website.layout')
 
 @section('title')
-	Precios de fotografías para Matrimonio | tuFoto.co
+	Paquetes y Descuentos de fotografías para Matrimonio o Bodas | tuFoto.co
 @endsection
+
+@section('webPageScope') itemscope itemtype="http://schema.org/QAPage" @endsection
 
 @section('description')
 	Conoce los precios de nuestras fotografías para tu matrimonio | tuFoto.co
@@ -140,44 +142,65 @@
 	<article class="frequently-asked-questions">
 		<h1 class="section-title">Preguntas frecuentes:</h1>
 
-		<h2>¿Cómo reservo?</h2>
-		<p>En efectivo, 50% al firmar contrato
-		50% quince días antes del matrimonio</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿Cómo reservo?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			En efectivo, 50% al firmar contrato
+			50% quince días antes del matrimonio</p>
+		</div>
 
-		<h2>¿En qué momento reservamos?</h2>
-		<p>Nosotros aconsejamos reservar
-		mínimo con 3 meses de anterioridad.
-		Así podremos acompañarlos en su día.</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿En qué momento reservamos?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			Nosotros aconsejamos reservar
+			mínimo con 3 meses de anterioridad.
+			Así podremos acompañarlos en su día.</p>
+		</div>
 
-		<h2>¿Desde y hasta qué hora nos acompañas?</h2>
-		<p>Acompañamiento desde el maquillaje,
-		hasta final de la hora loca</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿Desde y hasta qué hora nos acompañas?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			Acompañamiento desde el maquillaje,
+			hasta final de la hora loca</p>
+		</div>
 
-		<h2>¿Cuándo nos entregas las fotos?</h2>
-		<p>De 3 a 4 días después del matrimonio, 
-		entregamos una USB con todas las fotos
-		en alta y baja resolución + una carpeta
-		llamada "favoritas tufoto" como sugerencia
-		para las fotografías del libro.</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿Cuándo nos entregas las fotos?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			De 3 a 4 días después del matrimonio, 
+			entregamos una USB con todas las fotos
+			en alta y baja resolución + una carpeta
+			llamada "favoritas tufoto" como sugerencia
+			para las fotografías del libro.</p>
+		</div>
 
-		<h2>¿En cuanto tiempo nos entregas el libro?</h2>
-		<p>Nuestra meta es entregar el libro en 1 mes,
-		y para eso contamos con el apoyo de la pareja.
-		Después de entregado la USB, cuentan con 10 días
-		para hacernos saber su selección y luego
-		nosotros contamos con 15 días para la entrega.</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿En cuanto tiempo nos entregas el libro?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			Nuestra meta es entregar el libro en 1 mes,
+			y para eso contamos con el apoyo de la pareja.
+			Después de entregado la USB, cuentan con 10 días
+			para hacernos saber su selección y luego
+			nosotros contamos con 15 días para la entrega.</p>
+		</div>
 
-		<h2>¿En el libro pueden ir más de 80 fotos?</h2>
-		<p>Si, pero eso reduciría en general el tamaño
-		de las fotos impresas en el mismo, por eso
-		aconsejamos de 60 a 80.</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿En el libro pueden ir más de 80 fotos?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			Si, pero eso reduciría en general el tamaño
+			de las fotos impresas en el mismo, por eso
+			aconsejamos de 60 a 80.</p>
+		</div>
 
-		<h2>¿y los retoques?</h2>
-		<p>Son retocadas únicamente las fotografías
-		que van en el libro, y cada una de las fotografías
-		cuenta con un tratamiento especial.
-		Nuestro retoque es mínimo, pero tenemos en 
-		cuenta uno que otro detalle.</p>
+		<div itemscope itemtype="http://schema.org/Question">
+			<h2 itemprop="name">¿y los retoques?</h2>
+			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+			Son retocadas únicamente las fotografías
+			que van en el libro, y cada una de las fotografías
+			cuenta con un tratamiento especial.
+			Nuestro retoque es mínimo, pero tenemos en 
+			cuenta uno que otro detalle.</p>
+		</div>
 
 		<h3 style="text-align:center;">Si tienes alguna otra pregunta, escríbenos a
 		<span class="text-email">contacto@tufoto.co</span> <br> o diligencia el formulario

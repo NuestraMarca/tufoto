@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" @yield('webPageScope', 'itemscope itemtype="http://schema.org/WebSite"')>
 	<head>
 		<meta charset="UTF-8">
 		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Fotografía Profesional')</title>
@@ -23,7 +23,7 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><a href="/"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
+				<figure id="header-logo"><a href="/" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
 					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
@@ -46,12 +46,13 @@
 						<li><a href="/proveedores">Proveedores</a></li>
 
 						<li > <hr> </li>
-						<li> 
+						<li itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"> 
 							{!! Form::open(['url' => '/buscar', 'method' => 'GET']) !!}
+								<meta itemprop="target" content="http://tufoto.co/buscar?search={query}"/>
 								@if(isset($search))
-									{!! Form::text('search', $search, ['placeholder' => 'Buscar', 'id' => 'search-menu']) !!}
+									{!! Form::text('search', $search, ['placeholder' => 'Buscar', 'id' => 'search-menu', 'itemprop' => 'query-input']) !!}
 								@else
-									{!! Form::text('search', null, ['placeholder' => 'Buscar', 'id' => 'search-menu']) !!}
+									{!! Form::text('search', null, ['placeholder' => 'Buscar', 'id' => 'search-menu', 'itemprop' => 'query-input']) !!}
 								@endif
 							{!! Form::close() !!}
 						</li>
@@ -62,7 +63,7 @@
 				</nav>
 			</header>
 
-			<section id="container">
+			<section id="container" itemprop="mainContentOfPage">
 				@yield('content')
 			</section>
 			<footer>
