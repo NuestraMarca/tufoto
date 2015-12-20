@@ -5,7 +5,7 @@
 		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Fotografía Profesional')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="@yield('description', 'Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo: Hacer de tus recuerdos para toda la Vida. Nos encanta hacer fotos de matrimonios')">
-		<meta name="keywords" content="@yield('keywords', 'fotografía, fotos, matrimonios, bodas, familia, mascotas, fotógrafos, fotografía profesional, fotógrafos profesionales, fotografías para matrimonios, fotografías para bodas, fotografías para familias, fotografías para mascotas, fotógrafo matrimonio, empresa fotografía, equipo de fotógrafos,fotos profesionales')">
+		<meta name="keywords" content="@yield('keywords', 'fotografia, matrimonios, bodas, profesional, fotografos, fotos')">
 		<meta name="author" content="Andrés Mauricio Pinzón - Johannes Duque : Equipo de tufoto">
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
@@ -37,7 +37,7 @@
 				</section>
 				<nav>
 					<ul id="main-menu">
-						<li><a class="current-menu"href="/">Inicio</a></li>
+						<li><a class="current-menu" href="/">Inicio</a></li>
 						<li><a href="/galerias">Galerias</a></li>
 						<li><a href="/producto">Producto</a></li>
 						<li><a href="/tarifas">Tarifas y Preguntas</a></li>

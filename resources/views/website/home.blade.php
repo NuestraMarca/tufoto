@@ -9,7 +9,7 @@
 @section('content')
 	<section id="main-slide">
 		@foreach($slides as $slide)
-			<figure class="main-image-slide" itemtype="http://schema.org/ImageObject">
+			<figure class="main-image-slide" itemscope itemtype="http://schema.org/ImageObject">
 				<img src="/{{ $slide }}" itemprop="contentUrl" title="Experiencias Fotográficas de tufoto en Matrimonios, Bodas y los hogares de nuestros Clientes" alt="Fotografías Profesionales realziadas en tufoto - Fotografía para toda la Vida"></img>
 				<span itemprop="author" style="font-size:10px;">Johannes Duque - tufoto.co</span>
 			</figure>
