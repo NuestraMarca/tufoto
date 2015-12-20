@@ -3,12 +3,10 @@
 @section('content')
 
 	@section('title')
-		Fotografías de {{ $category->title_plural }} | tuFoto.co
+		Nuestra experiencia Fotográfica - Fotografías de {{ $category->title_plural }} | tuFoto.co
 	@endsection
 
-	@section('description')
-		{{ $category->description }}
-	@endsection
+	@section('description') @if(empty($category->description)) Conoce nuestro trabajo y experiencia de nuestros clientes. Nos encantan hacer fotografías Profesionales de {{ $category->title_plural }} @else {{ $category->description }} @endif @endsection
 
 	@section('breadcrumbs')
 		{!! Breadcrumbs::render('category', $category) !!}

@@ -1,12 +1,10 @@
 @extends('website.layout')
 
 @section('title')
-	Galerías de Fotografías | tuFoto.co
+	Galerías Fotografícas de tuFoto.co - Fotografía para toda la Vida
 @endsection
 
-@section('description')
-	Galerias de Fotografías realizadas por tuFoto.co - 
-@endsection
+@section('description') Guardamos los mejores recuerdos Para toda la Vida. Fotografías de @foreach($categories as $category) {{ $category->title_plural }}, @endforeach y mucho más :) @endsection
 
 @section('breadcrumbs')
 	{!! Breadcrumbs::render('categories') !!}

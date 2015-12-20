@@ -1,11 +1,11 @@
 @extends('website.layout')
 
 @section('title')
-	Fotografías de {{ $gallery->category->title_singular }} - {{ $gallery->title }} | tuFoto.co
+	@if($gallery->tag) {{ $gallery->tag }} de @endif {{ $gallery->title }} | Fotografías de {{ $gallery->category->title_singular }} tufoto.co
 @endsection
 
 @section('description')
-	{{ $gallery->date }} - {{ $gallery->description }}
+	En tufoto el {{ $gallery->date }} tomamos estas hermosas Fotografías de {{ $gallery->category->title_singular }} - @if($gallery->tag) {{ $gallery->tag }} de @endif {{ $gallery->title }}
 @endsection
 
 @section('breadcrumbs')
