@@ -7,6 +7,8 @@
 		<meta name="description" content="@yield('description', 'Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo: Hacer de tus recuerdos para toda la Vida. Nos encanta hacer fotos de matrimonios')">
 		<meta name="keywords" content="@yield('keywords', 'fotografia, matrimonios, bodas, profesional, fotografos, fotos')">
 		<meta name="author" content="Andrés Mauricio Pinzón - Johannes Duque : Equipo de tufoto">
+		<meta name="twitter:site" content="@tufotoco"/>
+ 		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
