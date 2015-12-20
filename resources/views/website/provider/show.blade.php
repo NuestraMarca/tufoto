@@ -39,7 +39,7 @@
 			@foreach($provider->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
-						<img src="/{{ $photo }}" itemprop="thumbnail" title="Proveedor en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}" alt="Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}"></img>
+						<img src="/{{ $photo }}" itemprop="thumbnail" title="Proveedor en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}" alt="Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}">
 					</a>
 					<figcaption itemprop="caption description">Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }} </figcaption>
 				</figure>

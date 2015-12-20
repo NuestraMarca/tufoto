@@ -28,7 +28,7 @@
 					@foreach($type->providers as $provider)
 						<figure class="cover-photo" itemscope itemtype="http://schema.org/Organization">
 							<a href="{{ $provider->complete_url }}" itemprop="url">
-								<img src="{{ $provider->cover_image }}" itemprop="image"></img>
+								<img src="{{ $provider->cover_image }}" itemprop="image">
 								<h2 class="cover-text" itemprop="name">{{ $provider->name }}</h2>
 							</a>
 						</figure>

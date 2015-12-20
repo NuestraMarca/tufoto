@@ -24,35 +24,35 @@
 			
 			<figure class="we-picture" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/images/we-galleries/Johannes-y-Andrea-1.jpg" itemprop="contentUrl" data-size="1200x800">
-					<img src="/images/we-galleries/Johannes-y-Andrea-1.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co"></img>
+					<img src="/images/we-galleries/Johannes-y-Andrea-1.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Image caption</figcaption>
 			</figure>
 
 			<figure class="we-picture" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/images/we-galleries/Johannes-y-Andrea-2.jpg" itemprop="contentUrl" data-size="1200x800">
-					<img src="/images/we-galleries/Johannes-y-Andrea-2.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co"></img>
+					<img src="/images/we-galleries/Johannes-y-Andrea-2.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Image caption</figcaption>
 			</figure>
 
 			<figure class="we-picture" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/images/we-galleries/Johannes-y-Andrea-3.jpg" itemprop="contentUrl" data-size="1200x800">
-					<img src="/images/we-galleries/Johannes-y-Andrea-3.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co"></img>
+					<img src="/images/we-galleries/Johannes-y-Andrea-3.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Image caption</figcaption>
 			</figure>
 
 			<figure class="we-picture" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/images/we-galleries/Johannes-y-Andrea-4.jpg" itemprop="contentUrl" data-size="1200x800">
-					<img src="/images/we-galleries/Johannes-y-Andrea-4.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co"></img>
+					<img src="/images/we-galleries/Johannes-y-Andrea-4.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Image caption</figcaption>
 			</figure>
 
 			<figure class="we-picture" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/images/we-galleries/Johannes-y-Andrea-4.jpg" itemprop="contentUrl" data-size="1200x800">
-					<img src="/images/we-galleries/Johannes-y-Andrea-5.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co"></img>
+					<img src="/images/we-galleries/Johannes-y-Andrea-5.jpg" itemprop="thumbnail" alt="Quienes somos - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Image caption</figcaption>
 			</figure>

@@ -37,7 +37,7 @@
 			@foreach($gallery->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
-						<img src="/{{ $photo }}" itemprop="thumbnail" alt="{{ $gallery->date }} - {{ $gallery->title }}"></img>
+						<img src="/{{ $photo }}" itemprop="thumbnail" alt="{{ $gallery->date }} - {{ $gallery->title }}">
 					</a>
 					<figcaption itemprop="caption description">{{ $gallery->date }} - {{$gallery->title_or_tag}} - {{ $gallery->title }} </figcaption>
 				</figure>

@@ -26,7 +26,7 @@
 
 			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				<a href="/{{ $image }}" itemprop="contentUrl" data-size="1200x800">
-					<img src="/{{ $image }}" itemprop="thumbnail" alt="Productos de fotografía para Matrimonios - TuFoto.co"></img>
+					<img src="/{{ $image }}" itemprop="thumbnail" alt="Productos de fotografía para Matrimonios - TuFoto.co">
 				</a>
 				<figcaption itemprop="caption description">Productos de fotografía para Matrimonios - TuFoto.co</figcaption>
 			</figure>

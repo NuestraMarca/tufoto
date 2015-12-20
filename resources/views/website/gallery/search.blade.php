@@ -7,7 +7,7 @@
 		@foreach($galleries as $gallery)
 			<a href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">
-					<img src="/{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}"></img>
+					<img src="/{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}">
 					<h2 class="cover-text">{{ $gallery->title }}</h2>
 				</figure>
 			</a>
