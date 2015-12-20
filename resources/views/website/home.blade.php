@@ -1,7 +1,9 @@
 @extends('website.layout')
 
 @section('breadcrumbs')
-	{!! Breadcrumbs::render('home') !!}
+	<h1 style="font-size: 1em; font-style: normal; font-weight: 100; margin-top: 20px;">
+		tufoto - Fotografía Profesional especializada en Matrimonios, Bodas y Familias
+	</h1>
 @endsection
 
 @section('content')
