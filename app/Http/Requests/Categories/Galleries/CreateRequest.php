@@ -25,7 +25,7 @@ class CreateRequest extends Request
         return [
             'title'         => 'required|max:250|unique:galleries',
             'date'          => 'required|date',
-            'description'   => 'required|max:250'
+            'description'   => 'required'
         ];
     }
 }
