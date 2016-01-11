@@ -17,6 +17,7 @@
 				<figure class="cover-photo">
 					<img src="{{ $category->cover }}" alt="{{ $category->alt }}">
 					<h2 class="cover-text">{{ $category->title_plural }}</h2>
+					<p class="cover-description"> {!! $category->description !!} </p>
 				</figure>
 			</a>
 		@endforeach
