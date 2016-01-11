@@ -11,6 +11,9 @@
 @endsection
 
 @section('content')
+	<h1 class="section-title title-md">Te presentamos nuestras galerías</h1>
+	<p class="section-description">Acá encontrarás lo mejor de nuestro trabajo fotográfico, tus recuerdos!</p>
+	
 	<section class="cover-gallery">
 		@foreach($categories as $category)
 			<a href=" {{ $category->complete_url }}">
