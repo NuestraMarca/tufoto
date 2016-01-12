@@ -21,7 +21,7 @@
 
 		<section class="cover-gallery" style="margin 10px;">
 			@foreach($providerTypes as $type)
-				@if($type->providers->count() >= 0)
+				@if($type->providers->count() > 0)
 					<div itemscope itemtype="http://schema.org/Organization">
 						<a href="{{ $type->complete_url }}" itemprop="url">
 							<figure class="cover-photo">
