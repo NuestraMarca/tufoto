@@ -501,14 +501,15 @@ section.cover-gallery figure.cover-photo img
 	transition: opacity 0.7s ease-out;
 }
 
-section.cover-gallery figure.cover-photo img:hover + h2.cover-text
+section.cover-gallery figure.cover-photo:hover h2.cover-text
 {
 	display: none;
 }
 
-section.cover-gallery figure.cover-photo img:hover
+section.cover-gallery figure.cover-photo:hover .content-cover img
 {
 	opacity: 1;
+	background: black;
 }
 
 section.cover-gallery figure.cover-photo p.cover-description
