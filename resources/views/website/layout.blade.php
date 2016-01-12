@@ -81,8 +81,10 @@
 			</section>
 			<footer>
 				<p>Johannes Duque</p>
+				<p>•</p>
 				<p>Cel: 310 551 8362 - 313 308 4219</p>
-				<p>contacto@tufoto.co</p>
+				<p>•</p>
+				<p>Developer: @andrestntx</p>
 			</footer>
 		</div>
 
