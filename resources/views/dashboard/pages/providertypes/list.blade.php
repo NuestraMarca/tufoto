@@ -9,19 +9,32 @@
 @section('content_body_page')
 	<div class="row gallery">
 		@foreach($providerTypes as $type)
-		    <div class="col-sm-6 col-lg-4">
-                <a href="{{ route('admin.providertypes.show', $type->id) }}" class="widget">
-                <div class="widget-content widget-content-mini text-right clearfix">
-                    <div class="widget-icon pull-left themed-background">
-                        <i class="gi gi-wallet text-light-op"></i>
+		    <!-- Carousel Widget -->
+            <div class="col-sm-3" id="{{ $type->id }}">
+                <div class="widget">
+                    <div class="widget-content widget-content-mini themed-background text-light-op">
+                        <i class="fa fa-fw fa-picture-o"></i> {{ $type->name }}
                     </div>
-                    <h2 class="widget-heading h3">
-                        <strong><span data-toggle="counter" data-to="{{ $type->providers()->count() }}">{{ $type->providers()->count() }}</span></strong>
-                    </h2>
-                    <h4 class="text-muted">{{ $type->name }}</h4>
+                    <div class="widget-content widget-content-full">
+                        <div class="gallery-image-container animation-fadeInQuick">
+                            <img src="{{ $type->cover }}" alt="{{ $type->alt }}">
+                            <div class="gallery-image-options">
+                                <h4 class="text-light"><strong>{{ $type->description }}</strong></h4>
+                                <a href="{{ route('admin.providertypes.providers.index', $type->id) }}" class="btn btn-effect-ripple btn-primary btn-lg" data-toggle="tooltip" title="Ver Galerías">
+                                    <i class="fa fa-picture-o"></i>
+                                </a>
+                                <a href="{{ $type->cover }}" class="gallery-link btn btn-success btn-lg" data-toggle="lightbox-image" title="{{ $type->alt }}">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="javascript:void(0)" onclick="AppServices.postDeleteEntity(this, '/admin/categories/{{ $type->id }}' )" data-token="{{ csrf_token() }}" data-entity-id="{{ $type->id }}" class="btn btn-effect-ripple btn-danger btn-lg" data-toggle="tooltip" title="Borrar">
+                                    <i class="gi gi-skull"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </a>
             </div>
+            <!-- END Carousel Widget -->
 	    @endforeach
     </div>
 

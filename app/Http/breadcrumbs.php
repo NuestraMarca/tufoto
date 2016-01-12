@@ -58,8 +58,15 @@ Breadcrumbs::register('providerTypes', function($breadcrumbs)
 // Proveedor
 Breadcrumbs::register('provider', function($breadcrumbs, $provider)
 {
-    $breadcrumbs->parent('providerTypes');
+    $breadcrumbs->parent('type', $provider->type);
     $breadcrumbs->push($provider->name, url('/proveedores/' . $provider->url));
+});
+
+// Tipo Proveedor
+Breadcrumbs::register('type', function($breadcrumbs, $type)
+{
+    $breadcrumbs->parent('providerTypes');
+    $breadcrumbs->push($type->name, url($type->complete_url));
 });
 
 // Admin

@@ -32,7 +32,9 @@ Route::get('buscar', 'WebSiteController@search');
 Route::resource('galerias', 'CategoriesController', ['only' => ['index', 'show']]);
 Route::get('galerias/{type}/{gallery}', 'CategoriesController@gallery');
 
+
 Route::resource('proveedores', 'ProvidersController', ['only' => ['index', 'show']]);
+Route::get('proveedores/tufoto/{type}', 'ProvidersController@type');
 
 Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => 'auth'], function(){
 

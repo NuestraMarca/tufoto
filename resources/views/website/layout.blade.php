@@ -17,6 +17,20 @@
 		
 			</head>
 	<body>
+		<script type="application/ld+json">
+			{
+			  "@context" : "http://schema.org",
+			  "@type" : "Organization",
+			  "name" : "TuFoto",
+			  "url" : "https://www.tufoto.co",
+			  "sameAs" : [
+			    "https://twitter.com/tufotoco",
+			    "https://instagram.com/tufoto.co/",
+			    "https://www.facebook.com/tufoto.co",
+			 ]
+			}
+		</script> 
+		
 		<div id="main" lang="es">
 			<section id="breadcrumbs">
 				@yield('breadcrumbs')
@@ -26,7 +40,7 @@
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
 					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
-					<li><a href="https://instagram.com/tufoto.co/" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
+					<li><a href="https://instagram.com/tufoto.co" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
 					<li><a href="#" class="icon-blogger2"></a></li>
 					<li><a href="#" class="icon-pinterest2"></a></li>
 				</ul>

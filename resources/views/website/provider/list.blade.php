@@ -19,24 +19,23 @@
 			un gran equipo de profesionales especializados en bodas, que desean trabajar contigo.
 		</p>
 
-		@foreach($providerTypes as $type)
-			
-			@if($type->providers->count() > 0)
-				<section class="cover-gallery" style="margin 10px;">
-					<h2>{{ $type->name }}</h2>
-
-					@foreach($type->providers as $provider)
-						<figure class="cover-photo" itemscope itemtype="http://schema.org/Organization">
-							<a href="{{ $provider->complete_url }}" itemprop="url">
-								<img src="{{ $provider->cover_image }}" itemprop="image">
-								<h2 class="cover-text" itemprop="name">{{ $provider->name }}</h2>
-							</a>
-						</figure>
-					@endforeach
-				</section>
-			@endif
-
-		@endforeach
+		<section class="cover-gallery" style="margin 10px;">
+			@foreach($providerTypes as $type)
+				@if($type->providers->count() >= 0)
+					<div itemscope itemtype="http://schema.org/Organization">
+						<a href="{{ $type->complete_url }}" itemprop="url">
+							<figure class="cover-photo">
+								<div class="content-cover">
+									<img src="{{ $type->cover }}" alt="{{ $type->alt }}" itemprop="image">
+									<h2 class="cover-text" itemprop="name">{{ $type->name }}</h2>
+								</div>
+								<p class="cover-description"> {!! $type->description !!} </p>
+							</figure>
+						</a>
+					</div>
+				@endif
+			@endforeach
+		</section>
 	</section>
 	
 @endsection

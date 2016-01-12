@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Entities\Provider;
+use App\Entities\ProviderType;
 
 
 class ProvidersController extends Controller
@@ -31,6 +32,17 @@ class ProvidersController extends Controller
     {
         $provider = Provider::findOrFailByUrl($url);
         return view('website.provider.show', compact('provider'));
+    }
+
+    /**
+     * Show the application welcome screen to the user.
+     *
+     * @return Response
+     */
+    public function type($url)
+    {
+        $type = ProviderType::findOrFailByUrl($url);
+        return view('website.provider.type', compact('type'));
     }
 
 }
