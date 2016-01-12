@@ -13,7 +13,7 @@ class ProviderType extends Model
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['title_singular', 'name', 'name', 'description'];
+	protected $fillable = ['name', 'description'];
 	protected $appends 	= ['title_url_format', 'title_directory_format'];
 	
 	public static function findOrFailByUrl($url)

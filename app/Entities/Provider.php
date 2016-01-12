@@ -14,7 +14,7 @@ class Provider extends Model
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'type_id'];
+	protected $fillable = ['name', 'type_id', 'url', 'tel', 'address', 'links'];
 
 	public $timestamps = true;
 	public $increments = true;
