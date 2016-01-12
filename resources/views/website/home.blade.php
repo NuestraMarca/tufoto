@@ -11,10 +11,16 @@
 		@foreach($slides as $slide)
 			<figure class="main-image-slide" itemscope itemtype="http://schema.org/ImageObject">
 				<img src="/{{ $slide }}" itemprop="contentUrl" title="Experiencias Fotográficas de tufoto en Matrimonios, Bodas y los hogares de nuestros Clientes" alt="Fotografías Profesionales realziadas en tufoto - Fotografía para toda la Vida">
-				<span itemprop="author" style="font-size:10px;">Johannes Duque - tufoto.co</span>
 			</figure>
 		@endforeach
 	</section>
+
+	<h1 class="section-title home-title">Amor por la fotografía y por lo que hacemos</h1>
+	<p class="section-description home-description">Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
+		damos mucho más que nuestro 100% en cada boda. Tenemos la oportunidad de hacer grandes amigos, y aprender 
+		lo mejor de cada relación. Además, cada que estamos en las ceremonias de los diferentes matrimonios a 
+		los cuales nos invitan, mentalmente refrescamos nuestros votos matrimoniales y es una 
+		linda manera de revivir nuestros recuerdos y aumentar el gran amor que nos une.</p>
 
 	@section('extra-js')
 		<script type="text/javascript">
