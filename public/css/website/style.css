@@ -519,6 +519,10 @@ section.cover-gallery figure.cover-photo p.cover-description
     line-height: 20px;	
 }
 
+article#categories .content-cover{
+
+}
+
 section.form-booking
 {
 	width: 60%;
@@ -1030,6 +1034,22 @@ section.plan-options .webs-ext-btn span
 		width: 76%;
 		margin-left: 24%;
 	}
+
+	#categories .content-cover
+	{	
+	    min-height: 260px;
+	    overflow: hidden;
+	    position: relative;
+	}
+
+	#categories .content-cover img
+	{	
+	    position: relative;
+	    left: -18%;
+	    width: 135%;
+	}
+
+
 
 	section.cover-gallery figure.cover-photo
 	{
