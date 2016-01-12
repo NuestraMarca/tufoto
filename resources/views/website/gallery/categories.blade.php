@@ -13,7 +13,7 @@
 @section('content')
 	<article id="categories">
 		<h1 class="section-title title-md">Te presentamos nuestras galerías</h1>
-		<p class="section-description">Acá encontrarás lo mejor de nuestro trabajo fotográfico, lo que queremos conservar para toda la vida, tus recuerdos</p>
+		<p class="section-description">Acá encontrarás lo mejor de nuestro trabajo fotográfico, tus mejores recuerdos</p>
 		
 		<section class="cover-gallery">
 			@foreach($categories as $category)

@@ -11,7 +11,7 @@
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
  		<link rel="alternate" hreflang="es-co" href="/tufoto.co"> 
-		<link rel="stylesheet" type="text/css" href="/css/website/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
 		
 		@yield('extra-css')
 		
