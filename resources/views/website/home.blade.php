@@ -15,7 +15,7 @@
 		@endforeach
 	</section>
 
-	<h1 class="section-title home-title">Amor por la fotografía y por lo que hacemos</h1>
+	<h2 class="section-title home-title">Amor por la fotografía y por lo que hacemos</h2>
 	<p class="section-description home-description">Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
 		damos mucho más que nuestro 100% en cada boda. Tenemos la oportunidad de hacer grandes amigos, y aprender 
 		lo mejor de cada relación. Además, cada que estamos en las ceremonias de los diferentes matrimonios a 

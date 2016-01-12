@@ -74,7 +74,7 @@ span.text-email
 	font-weight: bold;
 }
 
-h1.section-title
+h1.section-title, h2.section-title
 {
 	font-family: Raleway;
 	margin-top: 1em;
@@ -90,7 +90,7 @@ h1.title-md
 	margin-bottom: 15px;
 }
 
-h1.home-title {
+h2.home-title {
 	font-size: 2em;
 	margin-top: 0.3em;
 	margin-bottom: 0.4em;
