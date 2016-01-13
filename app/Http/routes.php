@@ -13,6 +13,7 @@
 
 use App\Entities\Category;
 use App\Entities\ProviderType;
+use App\Entities\Message;
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -40,6 +41,11 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 
 	Route::get('/', function(){
 			return view('dashboard/pages/home');
+	});
+
+	Route::get('messages', function(){
+		$messages = Message::orderBy('date', 'desc')->get();
+		return view('dashboard/pages/messages', compact('messages'));
 	});
 
 	Route::resource('categories', 'CategoriesController');

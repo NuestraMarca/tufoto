@@ -45,6 +45,7 @@
 @section('extra-js')
 	<script>
 		$( "#date" ).datepicker({
+		  dateFormat: "yy-mm-dd",
 		  dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
 		  monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayi", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Deciembre" ],
 		  monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ],

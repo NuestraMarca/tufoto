@@ -22,14 +22,20 @@ class Message extends Model {
 	public $timestamps = true;
 	public $increments = true;
 
-	public function sendEmail()
+    public function setDateAttribute($value)
+    {
+        $this->attributes['date'] = '2016/01/09';
+    }
+
+	/*public function sendEmail()
     {
         $message = $this;
+        
         Mail::send('emails.contact', ['contact' => $message], function ($mail) use ($message) {
             $mail->from($message->email, $message->name);
             $mail->to('tufoto.co@gmail.com', 'Johannes Duque')
                 ->cc('andresmaopinzon@gmail.com', 'Andrés Pinzón')
                 ->subject('Mensaje de contacto en tufoto.co');
         });
-    }
+    }*/
 }

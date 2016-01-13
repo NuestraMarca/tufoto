@@ -75,6 +75,13 @@ Breadcrumbs::register('admin', function($breadcrumbs)
     $breadcrumbs->push('Admin', url('admin'));
 });
 
+// Admin > Messages
+Breadcrumbs::register('admin.messages', function($breadcrumbs)
+{
+    $breadcrumbs->parent('admin');
+    $breadcrumbs->push('Mensajes', url('admin/messages'));
+});
+
 // Categories
 Breadcrumbs::register('admin.categories', function($breadcrumbs)
 {

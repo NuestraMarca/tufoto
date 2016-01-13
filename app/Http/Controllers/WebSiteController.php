@@ -88,8 +88,7 @@ class WebSiteController extends Controller {
 	public function postContact(ContactRequest $request)
 	{		
 		$message = Message::create($request->all());
-		$message->sendEmail();
-
+		
 		return redirect()->route('website.index');
 	}
 
