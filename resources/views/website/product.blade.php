@@ -19,7 +19,7 @@
 
 @section('content')
 
-	<iframe width="100%" height="80%" src="https://www.youtube.com/embed/9120G_stCTM" frameborder="0" allowfullscreen></iframe>
+	<iframe width="100%" height="480" src="https://www.youtube.com/embed/9120G_stCTM" frameborder="0" allowfullscreen></iframe>
 	
 	<section style="margin-top:15px;" id="gallery-detail" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 		@foreach($images as $image)

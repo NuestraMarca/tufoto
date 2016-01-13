@@ -35,7 +35,7 @@
 								<span class="fraction">.000</span>
 							</div>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/reservas">
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto">
 							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">RESERVAR</span>
 						</a>
 
@@ -117,25 +117,6 @@
 						</tr>
 
 						</tbody>
-				<tbody>
-				<tr id="botons-bottom">
-					<th>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/reservas">
-							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">RESERVAR</span>
-						</a>
-					</th>
-					<th>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/reservas">
-							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">RESERVAR</span>
-						</a>
-					</th>
-					<th>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/reservas">
-							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">RESERVAR</span>
-						</a>
-					</th>
-				</tr>
-				</tbody>
 				</table>
 	</section>
 

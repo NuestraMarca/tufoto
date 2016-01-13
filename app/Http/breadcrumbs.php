@@ -7,6 +7,13 @@ Breadcrumbs::register('home', function($breadcrumbs)
 });
 
 // Categorias
+Breadcrumbs::register('contact', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('Contacto', url('/contacto'));
+});
+
+// Categorias
 Breadcrumbs::register('categories', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');

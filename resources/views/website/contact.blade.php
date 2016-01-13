@@ -2,6 +2,10 @@
 
 @section('webPageScope') itemscope itemtype="http://schema.org/ContactPage" @endsection
 
+@section('breadcrumbs')
+	{!! Breadcrumbs::render('contact') !!}
+@endsection
+
 @section('content')
 	<div class="section-bordered booking">
 		<section class="form-booking">
