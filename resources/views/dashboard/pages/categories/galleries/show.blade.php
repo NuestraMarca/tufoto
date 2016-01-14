@@ -75,9 +75,7 @@
 		});
 
 		myDropzone.on("queuecomplete", function(file) {
-			setTimeout(function(){
-			  location.reload();
-			}, 1000);
+			console.log('se supone que ya subio todo');
 		});
 		
 	</script>
