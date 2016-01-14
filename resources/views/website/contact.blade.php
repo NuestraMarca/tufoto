@@ -17,7 +17,7 @@
 			</p>
 
 
-			{!! Form::open(['url' => 'contacto/contactar', 'method' => 'POST']) !!}
+			{!! Form::open(['url' => 'contacto', 'method' => 'POST']) !!}
 
 				{!! Form::text('name', null, ['placeholder' => 'Nombre y Apellido', 'required']) !!} 
 				@include('_partials.error', ['name' => 'name'])

@@ -90,7 +90,7 @@ h1.title-md
 	margin-bottom: 15px;
 }
 
-h2.home-title {
+.home-title {
 	font-size: 2em;
 	margin-top: 0.3em;
 	margin-bottom: 0.4em;
@@ -323,7 +323,7 @@ header section#number-whatsapp a#text-whatsapp
 {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 2.4em;
+	font-size: 2.2em;
 	text-align: center;
 	font-family: Hind;
 	font-weight: 300;
@@ -888,11 +888,42 @@ section.plan-options .webs-ext-btn span
   line-height: 37px;
 }
 
+.thanks
+{
+	padding: 100px 0;
+}
+
+.thanks img
+{
+	width: 26%;
+	margin: auto 37%;
+}
+
+.thanks h1, .thanks p
+{
+	text-align: center;
+}
+
+.thanks h1
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.thanks p
+{
+	margin-top: 0;
+	font-size: 1.15em;
+}
 
 /* End Pricing and Plans */
 
 @media (min-width: 1px) and (max-width: 700px){
 
+	.hidden-mobile {
+		display: none;
+	}
+	
 	section#main-slide { 
 	    width: 100%;
 	    height: 300px;
@@ -918,6 +949,17 @@ section.plan-options .webs-ext-btn span
 
 	section.plan-options table td, tr#botons-bottom {
 	  	display: none;
+	}
+
+	.thanks
+	{
+		padding: 30px 0;
+	}
+
+	.thanks img
+	{
+		width: 50%;
+		margin: auto 25%;
 	}
 }
 
@@ -1068,8 +1110,6 @@ section.plan-options .webs-ext-btn span
 	    left: -18%;
 	    width: 135%;
 	}
-
-
 
 	section.cover-gallery figure.cover-photo
 	{

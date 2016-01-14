@@ -27,7 +27,7 @@ Route::get('producto', 'WebSiteController@product');
 Route::get('tarifas', 'WebSiteController@pricing');
 Route::get('nosotros', 'WebSiteController@we');
 Route::get('contacto', 'WebSiteController@contact');
-Route::post('contacto/contactar', 'WebSiteController@postContact');
+Route::post('contacto', 'WebSiteController@postContact');
 Route::get('buscar', 'WebSiteController@search');
 
 Route::resource('galerias', 'CategoriesController', ['only' => ['index', 'show']]);

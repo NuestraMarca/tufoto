@@ -89,7 +89,7 @@ class WebSiteController extends Controller {
 	{		
 		$message = Message::create($request->all());
 		
-		return redirect()->route('website.index');
+		return view('website.thanks');
 	}
 
 	/**
