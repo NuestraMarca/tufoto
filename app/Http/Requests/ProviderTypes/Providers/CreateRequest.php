@@ -26,7 +26,6 @@ class CreateRequest extends Request
             'name'         => 'required|max:250|unique:providers',
             'tel'          => 'max:250',
             'address'      => 'max:250',
-            'links'        => 'max:250',
 
         ];
     }
