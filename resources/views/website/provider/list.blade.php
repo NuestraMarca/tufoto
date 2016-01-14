@@ -5,7 +5,7 @@
 @endsection
 
 @section('description')
-	Proveedores de Bodas en alianza con tuFoto.co
+	Proveedores de Bodas en alianza con tuFoto.co - No permitas que falte algo en la organización de tu Matrimonio.
 @endsection
 
 @section('breadcrumbs')
@@ -14,6 +14,7 @@
 
 @section('content')
 	<section class="providers">
+		<h1 class="section-title title-md">Proveedores de Bodas</h1>
 		<p class="section-description">
 			No permitas que falte algo en tu matrimonio, en tufoto.co te recomendamos <br>
 			un gran equipo de profesionales especializados en bodas, que desean trabajar contigo.
