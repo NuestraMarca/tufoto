@@ -13,7 +13,7 @@
 	@endsection
 
 	<section class="cover-gallery">
-		<h1 class="section-title title-md">{{ $type->name }} que recomendamos en tufoto</h1>
+		<h1 class="section-title title-md">{{ $type->name }} que recomendamos</h1>
 		<p class="section-description">{!! $type->description !!}</p>
 		@foreach($type->providers->sortByDesc('date') as $provider)
 			<a href=" {{ $provider->complete_url }}">
