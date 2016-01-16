@@ -2,10 +2,10 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml" @yield('webPageScope', 'itemscope itemtype="http://schema.org/WebSite"')>
 	<head>
 		<meta charset="UTF-8">
-		<title>@yield('title', 'tufoto - Fotografía para toda la Vida - Fotografía Profesional')</title>
+		<title>@yield('title', 'tufoto - Fotografía Profesional - Especialistas en Fotografías de Matrimonios')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="@yield('description', 'Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo: Hacer de tus recuerdos para toda la Vida. Nos encanta hacer fotos de matrimonios')">
-		<meta name="keywords" content="@yield('keywords', 'fotografia, matrimonios, bodas, profesional, fotografos, fotos')">
+		<meta name="description" content="@yield('description', 'tufoto - Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo. Nos encanta hacer fotografías de matrimonios')">
+		<meta name="keywords" content="@yield('keywords', 'fotografía de matrimonios, fotografía de bodas, fotografía profesional, fotografos, fotos')">
 		<meta name="author" content="Equipo de tufoto">
 		<meta name="twitter:site" content="@tufotoco"/>
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
