@@ -387,12 +387,12 @@ nav ul#main-menu {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.96);
 	border: 2px solid;
 	border-color: #ededed;
 	
 	color: grey;
-	width: 35%;
+	width: 55%;
 	margin-top: 0;
 
 	opacity:0;

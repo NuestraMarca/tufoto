@@ -13,9 +13,9 @@
  		<link rel="alternate" hreflang="es-co" href="/tufoto.co"> 
 		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
 		
-		@yield('extra-css')
-		
-			</head>
+		@yield('extra-css')	
+	</head>
+	
 	<body>
 		<script type="application/ld+json">
 			{
@@ -50,13 +50,13 @@
 				</section>
 				<nav>
 					<ul id="main-menu">
-						<li><a class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
-						<li><a href="/galerias" hreflang="es-co">Galerias</a></li>
-						<li><a href="/producto" hreflang="es-co">Producto</a></li>
-						<li><a href="/tarifas" hreflang="es-co">Tarifas y Preguntas</a></li>
-						<li><a href="/contacto" hreflang="es-co">Contacto</a></li>
-						<li><a href="/nosotros" hreflang="es-co">Quiénes somos</a></li>
-						<li><a href="/proveedores" hreflang="es-co">Proveedores</a></li>
+						<li id="li-menu"><a class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
+						<li id="li-menu"><a href="/galerias" hreflang="es-co">Galerias</a></li>
+						<li id="li-menu"><a href="/producto" hreflang="es-co">Producto</a></li>
+						<li id="li-menu"><a href="/tarifas" hreflang="es-co">Tarifas y Preguntas</a></li>
+						<li id="li-menu"><a href="/contacto" hreflang="es-co">Contacto</a></li>
+						<li id="li-menu"><a href="/nosotros" hreflang="es-co">Quiénes somos</a></li>
+						<li id="li-menu"><a href="/proveedores" hreflang="es-co">Proveedores</a></li>
 
 						<li > <hr> </li>
 						<li itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"> 
@@ -91,20 +91,38 @@
 		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   		<script src="/js/jquery-ui.min.js"></script>
 		<script>
-			var count = 0;
-			$( "#icon-menu-responsive" ).click(function() {
-			  if(count % 2 == 0)
-			  {
-			  	$( "#main-menu" ).removeClass( "close-menu" );
-			  	$( "#main-menu" ).addClass( "open-menu" );
-			  }
-			  else
-			  {
-			  	$( "#main-menu" ).removeClass( "open-menu" );
-			  	$( "#main-menu" ).addClass( "close-menu" );
-			  }
-			  count ++;
+			$(document).ready(function(){
+ 				var count = 0;
+
+			    $(document).click(function(e){
+
+			    	if(e.target.id == 'icon-menu' || e.target.id == 'icon-menu-responsive')
+			    	{
+			    		if(count % 2 == 0)
+						{
+							$( "#main-menu" ).removeClass( "close-menu" );
+							$( "#main-menu" ).addClass( "open-menu" );
+						}
+						else
+						{
+							$( "#main-menu" ).removeClass( "open-menu" );
+							$( "#main-menu" ).addClass( "close-menu" );
+						}
+						count ++;
+			    	}
+			    	else if(e.target.id != 'main-menu' && e.target.id != 'li-menu')
+			    	{
+			    		$( "#main-menu" ).removeClass( "open-menu" );
+						$( "#main-menu" ).addClass( "close-menu" );	
+
+						count = 0;
+			    	}
+
+			    	console.log(e.target);
+			   	});
+			 
 			});
+
 		</script>
 
 		<script>
