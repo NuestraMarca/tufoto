@@ -28,7 +28,11 @@ class Gallery extends Model {
 
 	public static function getSearch($search)
 	{
-		return self::where('title', 'like', '%'. $search . '%')->get();
+		return self::where('title', 'like', '%'. $search . '%')
+			->orWhere('description', 'like', '%'. $search . '%')
+			->orWhere('tag', 'like', '%'. $search . '%')
+			->orWhere('date', 'like', '%'. $search . '%')
+			->get();
 	}
 
 	public static function cleanText($text)

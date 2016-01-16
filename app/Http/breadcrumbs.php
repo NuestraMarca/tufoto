@@ -6,6 +6,13 @@ Breadcrumbs::register('home', function($breadcrumbs)
     $breadcrumbs->push('Inicio', url('/'));
 });
 
+// Inicio
+Breadcrumbs::register('search', function($breadcrumbs, $search)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('Busqueda: ' . $search, url('/buscar?search=' . $search));
+});
+
 // Categorias
 Breadcrumbs::register('contact', function($breadcrumbs)
 {

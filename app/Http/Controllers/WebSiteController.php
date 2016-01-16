@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 
 use App\Entities\Gallery;
+use App\Entities\Provider;
 use App\Entities\Message;
 
 class WebSiteController extends Controller {
@@ -100,7 +101,10 @@ class WebSiteController extends Controller {
 	public function search(Request $request)
 	{
 		$search = $request->input('search');
+
 		$galleries = Gallery::getSearch($search);
-		return view('website.gallery.search', compact('galleries', 'search'));
+		$providers = Provider::getSearch($search);
+
+		return view('website.gallery.search', compact('galleries', 'providers',  'search'));
 	}
 }

@@ -30,6 +30,15 @@ class Provider extends Model
 		return $find;
 	}
 
+	public static function getSearch($search)
+	{
+		return self::where('name', 'like', '%'. $search . '%')
+			->orWhere('url', 'like', '%'. $search . '%')
+			->orWhere('address', 'like', '%'. $search . '%')
+			->orWhere('links', 'like', '%'. $search . '%')
+			->get();
+	}
+
 	public function getTitleDirectoryFormatAttribute()
 	{
 		return strtolower(Gallery::cleanText(str_replace(' ', '_', $this->name)));
