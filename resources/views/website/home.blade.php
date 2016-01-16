@@ -15,12 +15,17 @@
 		@endforeach
 	</section>
 
-	<h2 class="section-title home-title">Amor por la fotografía y por lo que hacemos</h2>
-	<p class="section-description home-description">Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
+	<h2 class="section-title home-title" style="margin-top:0.4em;">Amor por la fotografía y por lo que hacemos</h2>
+	<p class="section-description home-description">
+		Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
 		damos mucho más que nuestro 100% en cada boda. Tenemos la oportunidad de hacer grandes amigos, y aprender 
-		lo mejor de cada relación. Además, cada que estamos en las ceremonias de los diferentes matrimonios a 
+		lo mejor de cada relación. 
+	</p><br>
+	<p class="section-description home-description">
+		Además, cada que estamos en las ceremonias de los diferentes matrimonios a 
 		los cuales nos invitan, mentalmente refrescamos nuestros votos matrimoniales y es una 
-		linda manera de revivir nuestros recuerdos y aumentar el gran amor que nos une.</p>
+		linda manera de revivir nuestros recuerdos y aumentar el gran amor que nos une.
+	</p>
 
 	@section('extra-js')
 		<script type="text/javascript">
