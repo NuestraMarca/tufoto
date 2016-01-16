@@ -628,6 +628,13 @@ section#gallery-detail figure
 	width: 95%;
 }
 
+section#gallery-detail figure.product-gallery
+{
+	margin: 0.3em 0.5%;
+    width: 32%;
+    display: inline-block;	
+}
+
 section#gallery-detail figure img
 {
 	margin: 0;
@@ -1113,7 +1120,7 @@ section.plan-options .webs-ext-btn span
 
 	section.cover-gallery figure.cover-photo
 	{
-		margin: 0 1% 5px 0;
+		margin: 0 1% 1em 0;
 		width: 48%;
 	}
 
