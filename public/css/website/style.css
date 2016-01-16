@@ -630,7 +630,7 @@ section#gallery-detail figure
 
 section#gallery-detail figure.product-gallery
 {
-	margin: 0.3em 0.5%;
+	margin: 0.3em 0.3%;
     width: 32%;
     display: inline-block;	
 }
@@ -936,6 +936,12 @@ section.cover-gallery .tag-image
 /* End Pricing and Plans */
 
 @media (min-width: 1px) and (max-width: 700px){
+
+	section#gallery-detail figure.product-gallery
+	{
+		margin: 0.3em 0.3%;
+	    width: 48.8%;
+	}
 
 	.hidden-mobile {
 		display: none;
