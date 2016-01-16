@@ -923,6 +923,16 @@ section.plan-options .webs-ext-btn span
 	font-size: 1.15em;
 }
 
+section.cover-gallery .tag-image
+{
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	background-color: #00ADF4;
+	padding: 0.2em;
+	color: white;
+}
+
 /* End Pricing and Plans */
 
 @media (min-width: 1px) and (max-width: 700px){
@@ -1122,16 +1132,6 @@ section.plan-options .webs-ext-btn span
 	{
 		margin: 0 1% 1em 0;
 		width: 48%;
-	}
-
-	section.cover-gallery .tag-image
-	{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		background-color: #00ADF4;
-		padding: 0.2em;
-		color: white;
 	}
 
 	section.plan-options h1

@@ -13,6 +13,9 @@
 	@endsection
 
 	<section class="cover-gallery">
+		<h1 class="section-title title-md">Nuestras fotografías de {{ $category->title_plural }} </h1>
+		<p class="section-description">{!! $category->description !!}</p>
+
 		@foreach($category->galleries->sortByDesc('date') as $gallery)
 			<a href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">
