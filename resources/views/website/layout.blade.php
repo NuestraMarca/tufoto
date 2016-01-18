@@ -9,6 +9,7 @@
 		<meta name="keywords" content="@yield('keywords', 'fotografía de matrimonios, fotografía de bodas, fotografía profesional, fotografos, fotos')">
 		<meta name="author" content="Equipo de tufoto">
 		<meta name="twitter:site" content="@tufotoco"/>
+		<meta name="facebook:site" content="@tufoto.co"/>
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
  		<link rel="alternate" hreflang="es-co" href="/tufoto.co"> 
@@ -22,12 +23,12 @@
 			{
 			  "@context" : "http://schema.org",
 			  "@type" : "Organization",
-			  "name" : "TuFoto",
+			  "name" : "tuFoto",
 			  "url" : "https://www.tufoto.co",
 			  "sameAs" : [
 			    "https://twitter.com/tufotoco",
 			    "https://instagram.com/tufoto.co/",
-			    "https://www.facebook.com/tufoto.co",
+			    "https://www.facebook.com/tufoto.co"
 			 ]
 			}
 		</script> 
@@ -40,7 +41,7 @@
 				<figure id="header-logo"><a href="/" hreflang="es-co" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
-					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
+					<li><a href="https://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
 					<li><a href="https://instagram.com/tufoto.co" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
 					<!-- <li><a href="#" class="icon-blogger2"></a></li>
 					<li><a href="#" class="icon-pinterest2"></a></li> !-->
@@ -62,7 +63,7 @@
 						<li > <hr> </li>
 						<li itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"> 
 							{!! Form::open(['url' => '/buscar', 'method' => 'GET']) !!}
-								<meta itemprop="target" content="http://tufoto.co/buscar?search={query}"/>
+								<meta itemprop="target" content="https://tufoto.co/buscar?search={query}"/>
 								@if(isset($search))
 									{!! Form::text('search', $search, ['placeholder' => 'Buscar', 'id' => 'search-menu', 'itemprop' => 'query-input']) !!}
 								@else
