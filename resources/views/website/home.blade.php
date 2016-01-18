@@ -15,7 +15,7 @@
 		@endforeach
 	</section>
 
-	<h2 class="section-title home-title" style="margin-top:0.4em;">Amor por la fotografía y por lo que hacemos</h2>
+	<h2 class="section-title home-title" style="margin-top:0.4em; font-size:2.3em;">Amor por la fotografía y por lo que hacemos</h2>
 	<p class="section-description home-description">
 		Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
 		damos mucho más que nuestro 100% en cada boda. Tenemos la oportunidad de hacer grandes amigos, y aprender 
