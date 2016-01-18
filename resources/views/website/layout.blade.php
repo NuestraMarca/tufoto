@@ -42,8 +42,8 @@
 				<ul class="social-icons">
 					<li><a href="http://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
 					<li><a href="https://instagram.com/tufoto.co" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
-					<li><a href="#" class="icon-blogger2"></a></li>
-					<li><a href="#" class="icon-pinterest2"></a></li>
+					<!-- <li><a href="#" class="icon-blogger2"></a></li>
+					<li><a href="#" class="icon-pinterest2"></a></li> !-->
 				</ul>
 				<section id="number-whatsapp">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
