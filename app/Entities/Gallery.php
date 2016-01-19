@@ -168,6 +168,8 @@ class Gallery extends Model {
     {
     	Storage::makeDirectory($this->small_directory);
     }
+
+
     
         
 }
