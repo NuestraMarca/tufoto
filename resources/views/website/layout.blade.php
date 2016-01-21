@@ -12,7 +12,7 @@
 		<meta name="facebook:site" content="@tufoto.co"/>
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
- 		<link rel="alternate" hreflang="es-co" href="/tufoto.co"> 
+ 		<link rel="alternate" hreflang="es-co" href="/"> 
 		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
 		
 		@yield('extra-css')	
