@@ -29,7 +29,6 @@
 			    "https://twitter.com/tufotoco",
 			    "https://instagram.com/tufoto.co/",
 			    "https://www.facebook.com/tufoto.co",
-			    "https://plus.google.com/+woorank",
 			    "https://plus.google.com/+TufotoC"
 			 ]
 			}
