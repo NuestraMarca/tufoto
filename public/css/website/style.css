@@ -280,7 +280,7 @@ header
 header h2#title-menu
 {
 	font-family: Raleway;
-	font-size: 1.2em;
+	font-size: 1.05em;
 	text-align: center;
 	margin-top: 25px;
 	font-weight: 300;
@@ -481,6 +481,12 @@ section.cover-gallery
 	overflow: hidden;
 }
 
+section.cover-gallery.simple-gallery
+{
+	margin: 1em 0;
+}
+
+
 section.cover-gallery figure.cover-photo
 {
 	position: relative;
@@ -513,6 +519,11 @@ section.cover-gallery figure.cover-photo img
 	padding: 0;
 	opacity: 0.2;
 	transition: opacity 0.7s ease-out;
+}
+
+section.cover-gallery.simple-gallery figure.cover-photo img
+{
+	opacity: 1;
 }
 
 section.cover-gallery figure.cover-photo:hover h2.cover-text

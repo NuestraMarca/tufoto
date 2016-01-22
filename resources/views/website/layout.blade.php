@@ -54,7 +54,7 @@
 				<nav>
 					<ul id="main-menu">
 						<li id="li-menu"><a class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
-						<li id="li-menu"><a href="/galerias" hreflang="es-co">Galerias</a></li>
+						<li id="li-menu"><a href="/galerias" hreflang="es-co">Galerías</a></li>
 						<li id="li-menu"><a href="/producto" hreflang="es-co">Producto</a></li>
 						<li id="li-menu"><a href="/tarifas" hreflang="es-co">Tarifas y Preguntas</a></li>
 						<li id="li-menu"><a href="/contacto" hreflang="es-co">Contacto</a></li>
