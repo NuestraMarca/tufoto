@@ -17,10 +17,10 @@
 		@endforeach
 	</section>
 
-	<h2 class="section-title home-title" style="margin-top:0.4em; font-size:2.2em;">Amor por la fotografía y por lo que hacemos</h2>
+	<h2 class="section-title home-title" style="margin-top:0.4em; font-size:2.2em;">Amor por la fotografía y por las Bodas</h2>
 	<p class="section-description home-description">
-		Nos encanta hacer fotografías para matrimonios y al disfrutar lo que hacemos, 
-		damos mucho más que nuestro 100% en cada boda. Tenemos la oportunidad de hacer grandes amigos, y aprender 
+		Nos encanta hacer fotografías para Bodas y al disfrutar lo que hacemos, 
+		damos mucho más que nuestro 100% en cada Matrimonio. Tenemos la oportunidad de hacer grandes amigos, y aprender 
 		lo mejor de cada relación. 
 	</p><br>
 	<p class="section-description home-description">
@@ -30,7 +30,8 @@
 	</p><br>
 	<h3 style="color:#00ADF4; font-size:1.6em; margin: 0.5em 3%;">* Te acompañamos desde el maquillaje hasta el final</h3>
 	<p class="section-description home-description">
-		Cada detalle de esta fecha es muy especial, por esto te acompañamos desde el momento del maquillaje de tu boda,
+		Cada detalle de esta fecha es muy especial, por esto te acompañamos desde el momento del maquillaje de tu boda, 
+		hasta el final de la hora loca;
 		logrando capturar todos los recuerdos, para que luego los puedas revivir en cualquier momento.
 	</p>
 
@@ -38,7 +39,7 @@
 		<figure class="cover-photo">
 			<img src="/images/maquillaje-novia-matrimonios-bodas.jpg"
 			alt="Fotografía del maquillaje de la novia de matrimonios y bodas en Villavicencio">
-			<span class="tag-image">Preparacion</span>
+			<span class="tag-image">Maquillaje</span>
 		</figure>
 		<figure class="cover-photo">
 			<img src="/images/foto-ceremonia-boda-matrimonio.jpg"
@@ -68,7 +69,7 @@
 
 	<h3 style="color:#00ADF4; font-size:1.6em; margin: 0.5em 3%;">* Siempre entregamos todo el archivo</h3>
 	<p class="section-description home-description">
-		Las fotografías son tuyas, por eso te entregamos todo el archivo en forma digital 
+		Las fotografías de tu Boda son tuyas, por eso te entregamos todo el archivo en forma digital 
 		para que no pierdas ningún detalle de tu Boda. Son en promedio 800 a 1000 fotografías, además te 
 		entregamos las fotografías impresas que elijas según el Plan que escojas con nosotros. 
 		<a href="/tarifas">Puedes conocer nuestras tarifas y resolver todas tus dudas aquí.</a>
