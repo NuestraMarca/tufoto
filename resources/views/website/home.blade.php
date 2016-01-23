@@ -2,7 +2,7 @@
 
 @section('breadcrumbs')
 	<h1 style="font-size: 1em; font-style: normal; font-weight: 100; margin-top: 20px;">
-		tufoto - Fotografía Profesional especializada en Matrimonios, Bodas y Familias
+		Tufoto - Fotografía Profesional para Bodas y Matrimonios
 	</h1>
 @endsection
 

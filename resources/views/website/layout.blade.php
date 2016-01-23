@@ -2,10 +2,10 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml" @yield('webPageScope', 'itemscope itemtype="http://schema.org/WebSite"')>
 	<head>
 		<meta charset="UTF-8">
-		<title>@yield('title', 'tufoto - Fotografía Profesional especializada en Bodas y Matrimonios')</title>
+		<title>@yield('title', 'tufoto - Fotografía Profesional para Bodas y Matrimonios')</title>
 				
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="@yield('description', 'tufoto - Somos un equipo de Fotógrafos Profesionales que amamos nuestro trabajo. Nos encanta hacer fotografías de matrimonios')">
+		<meta name="description" content="@yield('description', 'tufoto - Somos un equipo de Fotografía Profesional que amamos nuestro trabajo. Nos encanta hacer fotografías para Bodas')">
 		<meta name="keywords" content="@yield('keywords', 'fotografía de matrimonios, fotografía de bodas, fotografía profesional, fotografos, fotos')">
 		<meta name="author" content="Equipo de tufoto">
 		<meta name="twitter:site" content="@tufotoco"/>
@@ -39,7 +39,7 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><a href="/" hreflang="es-co" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional - Recuerdos para toda la Vida"></a></figure>
+				<figure id="header-logo"><a href="/" hreflang="es-co" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional para Bodas y Matrimonios"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
 					<li><a href="https://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
