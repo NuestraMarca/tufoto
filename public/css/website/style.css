@@ -599,6 +599,11 @@ section.form-booking .button
 	color: gray;
 }
 
+section.providers h2.section-description
+{
+	font-weight: 100;
+}
+
 section.providers h2
 {
 	font-weight: 500;

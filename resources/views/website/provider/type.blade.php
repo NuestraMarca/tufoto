@@ -3,10 +3,13 @@
 @section('content')
 
 	@section('title')
-		Nuestra experiencia Fotográfica - Fotografías de {{ $type->name }} | tuFoto.co
+		{{ $type->name }} en Villavicencio para tu Matrimonio
 	@endsection
 
-	@section('description') @if(empty($type->description)) Conoce nuestro trabajo y experiencia de nuestros clientes. Nos encantan hacer fotografías Profesionales de {{ $type->name }} @else {{ $type->description }} @endif @endsection
+	@section('description') 
+		{{ $type->name }} en Villavicencio que recomendamos para tu Matrimonio
+		(Boda y Preboda) | Directorio de Proveedores de Bodas Tufoto
+	@endsection
 
 	@section('breadcrumbs')
 		{!! Breadcrumbs::render('type', $type) !!}
