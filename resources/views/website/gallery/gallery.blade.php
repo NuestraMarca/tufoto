@@ -5,7 +5,7 @@
 @endsection
 
 @section('description')
-	En tufoto el {{ $gallery->date }} tomamos estas hermosas Fotografías de {{ $gallery->category->title_singular }} - @if($gallery->tag) {{ $gallery->tag }} de @endif {{ $gallery->title }}
+	{{ $gallery->title_img }}
 @endsection
 
 @section('breadcrumbs')

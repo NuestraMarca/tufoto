@@ -1,7 +1,7 @@
 @extends('website.layout')
 
 @section('title')
-	Fotografía Profesional de Bodas, Familias y Mascotas | Galerías
+	Fotografía Profesional de Matrimonios, Bodas, Familias y Mascotas
 @endsection
 
 @section('description') Conoce nuestras Galerías. Las mejores fotografías de Bodas, @foreach($categories as $category) {{ $category->title_plural }}, @endforeach y mucho más :) @endsection
