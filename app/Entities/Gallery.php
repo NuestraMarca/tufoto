@@ -61,7 +61,7 @@ class Gallery extends Model {
 			$alt = $this->tag . ' - ';
 		}
 
-		return $alt . $this->title . ' - Fotografías de ' . $this->category->seo_title;
+		return $alt . $this->title . ' - ' . $this->category->seo_title;
 	}
 
 	public function getTitleDirectoryFormatAttribute()
