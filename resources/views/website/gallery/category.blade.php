@@ -3,10 +3,14 @@
 @section('content')
 
 	@section('title')
-		Nuestra experiencia Fotográfica - Fotografías de {{ $category->title_plural }} | tuFoto.co
+		@if(empty($category->seo_title)) Las Mejores Fotografías de {{ $category->title_plural }} realizadas por tufoto
+		@else {{ $category->seo_title }} @endif 
 	@endsection
 
-	@section('description') @if(empty($category->description)) Conoce nuestro trabajo y experiencia de nuestros clientes. Nos encantan hacer fotografías Profesionales de {{ $category->title_plural }} @else {{ $category->description }} @endif @endsection
+	@section('description') 
+		@if(empty($category->seo_description)) Conoce nuestro trabajo fotográfico y experiencia de nuestros clientes. Nos apasiona la fotografía Profesional de {{ $category->title_plural }} 
+		@else {{ $category->seo_description }} @endif 
+	@endsection
 
 	@section('breadcrumbs')
 		{!! Breadcrumbs::render('category', $category) !!}

@@ -38,7 +38,7 @@ Breadcrumbs::register('category', function($breadcrumbs, $category)
 Breadcrumbs::register('gallery', function($breadcrumbs, $gallery)
 {
     $breadcrumbs->parent('category', $gallery->category);
-    $breadcrumbs->push($gallery->title, url('/galerias/' . $gallery->category->url . '/' . $gallery->url));
+    $breadcrumbs->push($gallery->title, url($gallery->complete_url));
 });
 
 // Producto

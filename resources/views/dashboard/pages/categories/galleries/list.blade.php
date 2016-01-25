@@ -18,6 +18,8 @@
 				    {!! Field::text('title_plural', ['ph' => 'Nombre en plural', 'tpl' => 'themes.bootstrap.fields.simple'])!!}
 				    {!! Field::file('cover', ['ph' => 'Cover de la Categoría', 'tpl' => 'themes.bootstrap.fields.simple'])!!}
 				    {!! Field::textarea('description', ['ph' => 'Descripción de la categoría', 'rows' => '4', 'tpl' => 'themes.bootstrap.fields.simple'])!!} 
+					{!! Field::textarea('seo_title', ['ph' => 'Titulo SEO de la categoría', 'rows' => '4', 'tpl' => 'themes.bootstrap.fields.simple'])!!}
+    				{!! Field::textarea('seo_description', ['ph' => 'Descripción SEO de la categoría', 'rows' => '4', 'tpl' => 'themes.bootstrap.fields.simple'])!!}
 					<div class="form-group form-actions">
 						<button type="submit" class="btn btn-effect-ripple btn-primary">Actualizar</button>
 					</div>

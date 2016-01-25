@@ -1,10 +1,10 @@
 @extends('website.layout')
 
 @section('title')
-	Fotografía Profesional de Bodas, Familias y Mascotas de Tufoto
+	Fotografía Profesional de Bodas, Familias y Mascotas | Galerías
 @endsection
 
-@section('description') Guardamos los mejores recuerdos Para toda la Vida. Fotografías de Bodas, @foreach($categories as $category) {{ $category->title_plural }}, @endforeach y mucho más :) @endsection
+@section('description') Conoce nuestras Galerías. Las mejores fotografías de Bodas, @foreach($categories as $category) {{ $category->title_plural }}, @endforeach y mucho más :) @endsection
 
 @section('breadcrumbs')
 	{!! Breadcrumbs::render('categories') !!}
@@ -17,10 +17,12 @@
 		
 		<section class="cover-gallery">
 			@foreach($categories as $category)
-				<a href=" {{ $category->complete_url }}">
+				<a href=" {{ $category->complete_url }}" title="Galería Fotográfica de {{ $category->title_plural }} realizadas por tufoto">
 					<figure class="cover-photo">
 						<div class="content-cover">
-							<img src="{{ $category->cover }}" alt="Fotografía Profesional para {{ $category->title_plural }}" >
+							<img src="{{ $category->cover }}" 
+								title="Galerías Fotográficas de {{ $category->title_plural }} | Fotografía Profesional"
+								alt="Fotografía Profesional para {{ $category->title_plural }}" >
 							<h2 class="cover-text">{{ $category->title_plural }}</h2>
 						</div>
 						<p class="cover-description"> {!! $category->description !!} </p>

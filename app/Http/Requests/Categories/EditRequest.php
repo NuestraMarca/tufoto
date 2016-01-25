@@ -39,6 +39,8 @@ class EditRequest extends Request
         $rules = $this->createRequest->rules();
         $rules['title_singular'] .= ',title_singular,'.$this->route->getParameter('categories').',id';
         $rules['title_plural'] .= ',title_singular,'.$this->route->getParameter('categories').',id';
+        $rules['seo_title'] .= ',seo_title,'.$this->route->getParameter('categories').',id';
+        $rules['seo_description'] .= ',seo_description,'.$this->route->getParameter('categories').',id';
         $rules['cover'] = 'image';
         
         return $rules;

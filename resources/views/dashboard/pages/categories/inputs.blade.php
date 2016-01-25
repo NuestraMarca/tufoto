@@ -4,6 +4,8 @@
     {!! Field::text('title_plural', ['ph' => 'Nombre en plural'])!!}
     {!! Field::file('cover', ['ph' => 'Cover de la Categoría'])!!}
     {!! Field::textarea('description', ['ph' => 'Descripción de la categoría'])!!}
+    {!! Field::textarea('seo_title', ['ph' => 'Titulo SEO de la categoría'])!!}
+    {!! Field::textarea('seo_description', ['ph' => 'Descripción SEO de la categoría'])!!}
     
     <div class="form-group form-actions">
         <div class="col-md-8 col-md-offset-4">

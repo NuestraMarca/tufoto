@@ -25,6 +25,8 @@ class CreateRequest extends Request
         return [
             'title_plural'      => 'required|max:250|unique:categories',
             'title_singular'    => 'required|max:250|unique:categories',
+            'seo_title'         => 'max:70|unique:categories',
+            'seo_description'   => 'max:160|unique:categories',
             'cover'             => 'required|image'
         ];
     }

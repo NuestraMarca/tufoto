@@ -12,7 +12,7 @@ class Category extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['title_singular', 'title_plural', 'description'];
+	protected $fillable = ['title_singular', 'title_plural', 'description', 'seo_title', 'seo_description'];
 	protected $appends 	= ['title_url_format', 'title_directory_format'];
 
 	public $timestamps = true;
