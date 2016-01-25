@@ -31,12 +31,13 @@ Breadcrumbs::register('categories', function($breadcrumbs)
 Breadcrumbs::register('category', function($breadcrumbs, $category)
 {
     $breadcrumbs->parent('categories');
-    $breadcrumbs->push($category->title_plural, url('/galerias/' . $category->url));
+    $breadcrumbs->push($category->title_plural, url($category->complete_url));
 });
 
 // Galerias
 Breadcrumbs::register('gallery', function($breadcrumbs, $gallery)
 {
+
     $breadcrumbs->parent('category', $gallery->category);
     $breadcrumbs->push($gallery->title, url($gallery->complete_url));
 });
