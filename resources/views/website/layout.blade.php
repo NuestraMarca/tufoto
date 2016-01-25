@@ -92,7 +92,7 @@
 		</div>
 
 		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  		<script src="/js/jquery-ui.min.js"></script>
+  		<script src="/js/website.min.js"></script>
 		<script>
 			$(document).ready(function(){
  				var count = 0;

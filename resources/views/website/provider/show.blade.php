@@ -12,10 +12,6 @@
 	{!! Breadcrumbs::render('provider', $provider) !!}
 @endsection
 
-@section('extra-css')
-	@include('_partials.photoswipe-css')
-@endsection
-
 @section('content')
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -50,10 +46,4 @@
 
 		@include('_partials.photoswipe')
 	</section>
-@endsection
-
-@section('extra-js')
-	@include('_partials.photoswipe-js')
-
-
 @endsection

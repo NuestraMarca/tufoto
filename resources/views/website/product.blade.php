@@ -37,7 +37,3 @@
 	@include('_partials.photoswipe')
 
 @endsection
-
-@section('extra-js')
-	@include('_partials.photoswipe-js')
-@endsection

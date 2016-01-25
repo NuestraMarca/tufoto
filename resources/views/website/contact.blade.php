@@ -1,5 +1,14 @@
 @extends('website.layout')
 
+@section('title')
+	Reserva el fotografo para tu Boda a tiempo. Contacto tufoto
+@endsection
+
+@section('description')
+	Reserva a tiempo el fotografo ideal para tu Boda, no esperes hasta los 
+	últimos días y haz tu rervación ahora. Fotografía Profesional para toda la Vida
+@endsection
+
 @section('webPageScope') itemscope itemtype="http://schema.org/ContactPage" @endsection
 
 @section('breadcrumbs')
@@ -12,7 +21,7 @@
 			<h1>¿Te gustó nuestro trabajo?</h1>
 			
 			<p>
-				Rellena este formulario y nos pondremos en contacto contigo en breve.
+				Diligencia este formulario y nos pondremos en contacto contigo en breve.
 				Todos los datos que envíes serán tratados de forma confidencial.
 			</p>
 
