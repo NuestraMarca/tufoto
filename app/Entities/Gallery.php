@@ -43,8 +43,25 @@ class Gallery extends Model {
 	}
 
 	public function getAltAttribute()
+	{	
+		$alt = '';
+
+		if(!empty($this->tag)) {
+			$alt = $this->tag . ' - ';
+		}
+
+		return $alt . $this->title . ' - Fotografías de ' . $this->category->title_plural;
+	}
+
+	public function getTitleImgAttribute()
 	{
-		return $this->tag . ' - ' . $this->title . ' - Fotografías de ' . $this->category->title_plural;
+		$alt = '';
+		
+		if(!empty($this->tag)) {
+			$alt = $this->tag . ' - ';
+		}
+
+		return $alt . $this->title . ' - Fotografías de ' . $this->category->seo_title;
 	}
 
 	public function getTitleDirectoryFormatAttribute()

@@ -23,7 +23,7 @@
 		@foreach($category->galleries->sortByDesc('date') as $gallery)
 			<a href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">
-					<img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}">
+					<img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" title="{{ $gallery->title_img }}">
 					<h2 class="cover-text">{{ $gallery->title }}</h2>
 					@if($gallery->tag)
 						<span class="tag-image"> {{ $gallery->tag }} </span>
