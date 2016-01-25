@@ -57,6 +57,16 @@ class ProviderType extends Model
 		return Provider::first()->cover_image;
 	}
 
+	public function getAltAttribute()
+	{
+		return $this->name . ' en Villavicencio para tu Matrimonio (Bodas y Prebodas)';
+	}
+
+	public function getTitleImgAttribute()
+	{
+		return $this->name . ' en Villavicencio para tu Matrimonio (Bodas y Prebodas) que recomendamos en tufoto';
+	}
+
 	public function getCompleteUrlAttribute()
 	{
 		return self::$rootWebUrl . $this->title_url_format;

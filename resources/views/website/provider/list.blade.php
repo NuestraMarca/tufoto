@@ -29,7 +29,7 @@
 						<a href="{{ $type->complete_url }}" itemprop="url">
 							<figure class="cover-photo">
 								<div class="content-cover">
-									<img src="{{ $type->cover }}" alt="{{ $type->alt }}" itemprop="image">
+									<img src="{{ $type->cover }}" alt="{{ $type->alt }}" title="{{ $type->title_img }}" itemprop="image">
 									<h2 class="cover-text" itemprop="name">{{ $type->name }}</h2>
 								</div>
 								<p class="cover-description"> {!! $type->description !!} </p>
