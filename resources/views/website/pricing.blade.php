@@ -1,13 +1,14 @@
 @extends('website.layout')
 
 @section('title')
-	Paquetes y Descuentos de fotografías para Matrimonio o Bodas | tuFoto.co
+	Precios y Descuentos de fotografías para Matrimonio o Bodas
 @endsection
 
 @section('webPageScope') itemscope itemtype="http://schema.org/QAPage" @endsection
 
 @section('description')
-	Conoce los precios de nuestras fotografías para tu matrimonio | tuFoto.co
+	Conoce los precios de nuestras fotografías para tu matrimonio o Boda - Pregunta
+	por nuestra Promoción de Preboda. 
 @endsection
 
 @section('breadcrumbs')
@@ -17,7 +18,7 @@
 @section('content')
 	
 	<section class="plan-options">
-		<h1 class="section-title">Precios de Fotografías para Matrimonios</h1>
+		<h1 class="section-title">Precios de Fotografías para Bodas - Matrimonios</h1>
 		<table>
 				<colgroup><col>
 				<col>
@@ -121,17 +122,17 @@
 	</section>
 
 	<article class="frequently-asked-questions">
-		<h1 class="section-title">Preguntas frecuentes:</h1>
+		<h2 class="section-title" style="font-size:2em;">Preguntas frecuentes sobre las fotografías para tu Boda</h2>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿Cómo reservo?</h2>
+			<h3 itemprop="name">¿Cómo reservo?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			En efectivo, 50% al firmar contrato
 			50% quince días antes del matrimonio</p>
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿En qué momento reservamos?</h2>
+			<h3 itemprop="name">¿En qué momento reservamos?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			Nosotros aconsejamos reservar
 			mínimo con 3 meses de anterioridad.
@@ -139,14 +140,14 @@
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿Desde y hasta qué hora nos acompañas?</h2>
+			<h3 itemprop="name">¿Desde y hasta qué hora nos acompañas?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			Acompañamiento desde el maquillaje,
 			hasta final de la hora loca</p>
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿Cuándo nos entregas las fotos?</h2>
+			<h3 itemprop="name">¿Cuándo nos entregas las fotos?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			De 3 a 4 días después del matrimonio, 
 			entregamos una USB con todas las fotos
@@ -156,7 +157,7 @@
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿En cuanto tiempo nos entregas el libro?</h2>
+			<h3 itemprop="name">¿En cuanto tiempo nos entregas el libro?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			Nuestra meta es entregar el libro en 1 mes,
 			y para eso contamos con el apoyo de la pareja.
@@ -166,7 +167,7 @@
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿En el libro pueden ir más de 80 fotos?</h2>
+			<h3 itemprop="name">¿En el libro pueden ir más de 80 fotos?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			Si, pero eso reduciría en general el tamaño
 			de las fotos impresas en el mismo, por eso
@@ -174,7 +175,7 @@
 		</div>
 
 		<div itemscope itemtype="http://schema.org/Question">
-			<h2 itemprop="name">¿y los retoques?</h2>
+			<h3 itemprop="name">¿y los retoques?</h3>
 			<p itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
 			Son retocadas únicamente las fotografías
 			que van en el libro, y cada una de las fotografías
@@ -184,8 +185,8 @@
 		</div>
 
 		<h3 style="text-align:center;">Si tienes alguna otra pregunta, escríbenos a
-		<span class="text-email">contacto@tufoto.co</span> <br> o diligencia el formulario
-		de contacto y responderemos a tus inquietudes.</h3>
+		<span class="text-email">tufoto.co@gmail.com</span> <br> o diligencia el <a href="/contacto">formulario
+		de contacto</a> y responderemos a tus inquietudes.</h3>
 
 	</article>
 @endsection

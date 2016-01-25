@@ -110,9 +110,9 @@ article.frequently-asked-questions
 	font-family: Raleway;
 }
 
-article.frequently-asked-questions h2
+article.frequently-asked-questions h3
 {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	margin-bottom: 0;
 	margin-top: 1em;
 }
@@ -948,6 +948,11 @@ section.cover-gallery .tag-image
 
 @media (min-width: 1px) and (max-width: 700px){
 
+	article.frequently-asked-questions
+	{
+		margin: 2%;
+	}
+
 	section#gallery-detail figure.product-gallery
 	{
 		margin: 0.3em 0.3%;
@@ -979,6 +984,10 @@ section.cover-gallery .tag-image
   		width: 70%;
   		padding-left: 10%;
   		padding-right: 10%;
+	}
+
+	section.plan-options table thead {
+	  	display: block;
 	}
 
 	section.plan-options table td, tr#botons-bottom {
