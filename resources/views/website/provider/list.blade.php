@@ -1,11 +1,12 @@
 @extends('website.layout')
 
 @section('title')
-	Proveedores de Bodas | tuFoto.co
+	Directorio de Proveedores de Bodas en Villavicencio | tufoto
 @endsection
 
 @section('description')
-	Proveedores de Bodas en alianza con tuFoto.co - No permitas que falte algo en la organización de tu Matrimonio.
+	No permitas que falte algo en la organización de tu Boda o Matrimonio. 
+	Proveedores de Bodas que recomendamos en tufoto - Organizadores, Vestidos, Fincas y más
 @endsection
 
 @section('breadcrumbs')
@@ -14,9 +15,10 @@
 
 @section('content')
 	<section class="providers">
-		<h1 class="section-title title-md">Proveedores de Bodas</h1>
+		<h1 class="section-title title-md" style="margin-bottom:0;">Proveedores de Bodas</h1>
+		<h2 style="text-align: center; margin-top: 0; color: black; font-size: 1.24em;">Desde Organizadores y Fincas hasta Shows en la Hora Loca</h2>
 		<p class="section-description">
-			No permitas que falte algo en tu matrimonio, en tufoto.co te recomendamos <br>
+			No permitas que falte algo en tu Matrimonio o Boda, en tufoto te recomendamos <br>
 			un gran equipo de profesionales especializados en bodas, que desean trabajar contigo.
 		</p>
 
