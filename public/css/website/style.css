@@ -597,11 +597,12 @@ section.form-booking .button
 	font-size: 1.1em; 
 	text-align:center;
 	color: gray;
+	font-weight: 400;
 }
 
 section.providers h2.section-description
 {
-	font-weight: 100;
+	font-weight: 400;
 }
 
 section.providers h2

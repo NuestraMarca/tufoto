@@ -17,7 +17,7 @@
 
 	<section class="cover-gallery">
 		<h1 class="section-title title-md">{{ $type->name }} que recomendamos</h1>
-		<p class="section-description">{!! $type->description !!}</p>
+		<h2 class="section-description">{!! $type->description !!}</h2>
 		@foreach($type->providers->sortByDesc('date') as $provider)
 			<a href=" {{ $provider->complete_url }}">
 				<figure class="cover-photo">
