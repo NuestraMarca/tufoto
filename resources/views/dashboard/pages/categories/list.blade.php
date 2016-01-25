@@ -19,7 +19,7 @@
                     	<div class="gallery-image-container animation-fadeInQuick">
                             <img src="{{ $category->cover }}" alt="{{ $category->alt }}">
                             <div class="gallery-image-options">
-                                <h4 class="text-light"><strong>{{ $category->description }}</strong></h4>
+                                <h4 class="text-light"><strong>{{ $category->seo_description }}</strong></h4>
                                 <a href="{{ route('admin.categories.galleries.index', $category->id) }}" class="btn btn-effect-ripple btn-primary btn-lg" data-toggle="tooltip" title="Ver Galerías">
                                 	<i class="fa fa-picture-o"></i>
                                 </a>

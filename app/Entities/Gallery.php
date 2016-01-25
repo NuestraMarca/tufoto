@@ -42,6 +42,11 @@ class Gallery extends Model {
 		return str_replace($no_permitidas, $permitidas ,$text);
 	}
 
+	public function getAltAttribute()
+	{
+		return $this->tag . ' - ' . $this->title . ' - Fotografías de ' . $this->category->title_plural;
+	}
+
 	public function getTitleDirectoryFormatAttribute()
 	{
 		return strtolower(self::cleanText(str_replace(' ', '_', $this->title)));
