@@ -1,11 +1,12 @@
 @extends('website.layout')
 
 @section('title')
-	Fotografías de {{ $provider->type->name }} - {{ $provider->name }} - Proveedores | tuFoto.co
+	{{ $provider->name }} | {{ $provider->type->name }} para tu Matrimonio
 @endsection
 
 @section('description')
-	{{ $provider->name }} - Proveedor de tuFoto.co
+	{{ $provider->name }} | {{ $provider->type->name }} en Villavicencio que 
+	recomendamos para tu Matrimonio - Directorio de Proveedores tufoto
 @endsection
 
 @section('breadcrumbs')
@@ -35,9 +36,9 @@
 			@foreach($provider->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
-						<img src="/{{ $photo }}" itemprop="thumbnail" title="Proveedor en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}" alt="Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }}">
+						<img src="/{{ $photo }}" itemprop="thumbnail" title="{{ $provider->title_img }}" alt="{{ $provider->alt }}">
 					</a>
-					<figcaption itemprop="caption description">Proveedores en tufoto.co - {{ $provider->type->name }} - {{ $provider->name }} </figcaption>
+					<figcaption itemprop="caption description">Proveedores tufoto para tu Matrimonio - {{ $provider->type->name }} - {{ $provider->name }} - (Bodas y Prebodas) </figcaption>
 				</figure>
 			@endforeach
 		</section>

@@ -105,7 +105,7 @@ class Provider extends Model
 
 	public function getTitleImgAttribute()
 	{
-		return $this->name . ' - ' . $this->type->alt;
+		return $this->name . ' - ' . $this->type->title_img;
 	}
 
 	public function deletePhoto($photoName)
