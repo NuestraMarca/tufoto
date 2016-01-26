@@ -14,7 +14,8 @@
                         <th>Email</th>
                         <th>Teléfono</th>
                         <th>Texto</th>
-                        <th>Fecha</th>
+                        <th>Fecha de la Boda</th>
+                        <th>Fecha de envío</th>
                     </tr>
                 </thead>
                 <tbody> 
@@ -25,6 +26,7 @@
 			                <td>{{ $message->cel }}</td>
 			                <td>{{ $message->comments }}</td>
 			                <td>{{ $message->date }}</td>
+                            <td>{{ $message->created_at }}</td>
 			            </tr>
 		            @endforeach
                 </tbody>

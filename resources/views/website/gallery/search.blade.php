@@ -1,5 +1,13 @@
 @extends('website.layout')
 
+@section('title')
+	Resultado de Busqueda: Fotografías y Proveedores de Bodas
+@endsection
+
+@section('description')
+	Resultado de Busqueda: Fotografías y Proveedores de Bodas
+@endsection
+
 @section('webPageScope') itemscope itemtype="http://schema.org/SearchResultsPage" @endsection
 
 @section('breadcrumbs')
