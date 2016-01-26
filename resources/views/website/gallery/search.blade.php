@@ -15,11 +15,9 @@
 			@foreach($galleries as $gallery)
 				<a href=" {{ $gallery->complete_url }}">
 					<figure class="cover-photo">
-						<img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}">
+						<img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" title="{{ $gallery->title_img }}">
 						<h2 class="cover-text">{{ $gallery->title }}</h2>
-						@if($gallery->tag)
-							<span class="tag-image"> {{ $gallery->tag }} </span>
-						@endif
+						<span class="tag-image"> {{ $gallery->title_or_tag }} </span>
 					</figure>
 				</a>
 			@endforeach
@@ -33,7 +31,7 @@
 			@foreach($providers as $provider)
 				<a href=" {{ $provider->complete_url }}">
 					<figure class="cover-photo">
-						<img src="{{ $provider->cover_image }}" alt="{{ $provider->alt }}">
+						<img src="{{ $provider->cover_image }}" alt="{{ $provider->alt }}" title="{{ $provider->title_img }}">
 						<h2 class="cover-text">{{ $provider->name }}</h2>
 						<span class="tag-image"> {{ $provider->type->name }} </span>
 					</figure>

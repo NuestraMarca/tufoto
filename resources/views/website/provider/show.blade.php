@@ -6,7 +6,7 @@
 
 @section('description')
 	{{ $provider->name }} | {{ $provider->type->name }} en Villavicencio que 
-	recomendamos para tu Matrimonio - Directorio de Proveedores tufoto
+	recomendamos para tu Matrimonio (Boda y Preboda) - Directorio de Proveedores tufoto
 @endsection
 
 @section('breadcrumbs')
