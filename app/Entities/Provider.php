@@ -98,6 +98,16 @@ class Provider extends Model
 		return $this->category->title_singular;
 	}
 
+	public function getAltAttribute()
+	{
+		return $this->name . ' - ' . $this->type->alt;
+	}
+
+	public function getTitleImgAttribute()
+	{
+		return $this->name . ' - ' . $this->type->alt;
+	}
+
 	public function deletePhoto($photoName)
     {
     	return Storage::delete($this->directory . $photoName);

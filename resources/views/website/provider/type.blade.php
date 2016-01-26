@@ -21,7 +21,7 @@
 		@foreach($type->providers->sortByDesc('date') as $provider)
 			<a href=" {{ $provider->complete_url }}">
 				<figure class="cover-photo">
-					<img src="{{ $provider->cover_image }}" alt="{{ $provider->alt }}">
+					<img src="{{ $provider->cover_image }}" alt="{{ $provider->alt }}" title="{{ $provider->title_img }}">
 					<h2 class="cover-text">{{ $provider->name }}</h2>
 					@if($provider->tag)
 						<span class="tag-image"> {{ $provider->tag }} </span>
