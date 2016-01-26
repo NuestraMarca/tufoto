@@ -36,7 +36,7 @@
 								<span class="fraction">.000</span>
 							</div>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto">
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">RESERVAR</span>
 						</a>
 
@@ -51,7 +51,7 @@
 								<span class="fraction">.000</span>
 							</div>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto">
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">RESERVAR</span>
 						</a>
 					</th>
@@ -65,7 +65,7 @@
 								<span class="fraction">.000</span>
 							</div>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto">
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">RESERVAR</span>
 						</a>
 					</th>

@@ -15,3 +15,9 @@
 	</div>
 
 @endsection
+
+@section('extra-js')
+	<script type="text/javascript">
+		fbq('track', 'CompleteRegistration');
+	</script>
+@endsection

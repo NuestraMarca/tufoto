@@ -54,3 +54,9 @@
 	@endif
 	
 @endsection
+
+@section('extra-js')
+	<script type="text/javascript">
+		fbq('track', 'Search');
+	</script>
+@endsection
