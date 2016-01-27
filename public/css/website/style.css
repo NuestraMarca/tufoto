@@ -202,6 +202,11 @@ div.section-container
   padding-right: 20px;
 }
 
+#galleria
+{
+	height:500px
+}
+
 section#we-pictures
 {
 	margin: 0 0 15px 0;
@@ -959,6 +964,11 @@ section.cover-gallery .tag-image
 		margin: 2%;
 	}
 
+	#galleria
+	{
+		height:400px
+	}
+
 	section#gallery-detail figure.product-gallery
 	{
 		margin: 0.3em 0.3%;
@@ -1009,6 +1019,37 @@ section.cover-gallery .tag-image
 	{
 		width: 50%;
 		margin: auto 25%;
+	}
+
+	header 
+	{
+	    padding: 0.2em 20%;
+	}
+
+	header figure#header-logo img 
+	{
+		width: 50%;
+		margin: auto 25%;
+	}
+
+	header h2#title-menu 
+	{
+	    margin-top: 0.3em;
+	}
+
+	header ul.social-icons 
+	{
+	    margin-top: 0.3em;
+	    margin-bottom: 0.4em;
+	}
+
+	header ul.social-icons li a 
+	{
+	    font-size: 2em;
+	}
+
+	header section#number-whatsapp a#text-whatsapp {
+	    font-size: 2em;
 	}
 }
 
