@@ -35,10 +35,10 @@
 	</p><br>
 	<p class="section-description home-description">
 		Somos muy felices compartiendo nuestro trabajo, por esto cada sesión que realizamos la 
-		compartimos en nuestra <a href="/galerias/matrimonios" title="Bodas y Prebodas realizadas por tufoto" target="_blank"> Sección de Galerías </a> y 
-		<a href="https://facebook.com/tufoto.co" title="Facebook Oficial de tufoto - Fotografía para Bodas y Prebodas" target="_blank"> Redes Sociales </a>
+		compartimos en nuestra <a href="/galerias/matrimonios" class="color-theme" title="Bodas y Prebodas realizadas por tufoto" target="_blank"> Sección de Galerías </a> y 
+		<a href="https://facebook.com/tufoto.co" class="color-theme" title="Facebook Oficial de tufoto - Fotografía para Bodas y Prebodas" target="_blank"> Redes Sociales </a>
 		:).
-		Te invitamos a que entres a <a href="/galerias/matrimonios" title="Bodas y Prebodas realizadas por tufoto" target="_blank">
+		Te invitamos a que entres a <a href="/galerias/matrimonios" class="color-theme" title="Bodas y Prebodas realizadas por tufoto" target="_blank">
 		nuestras galerías</a> y conozcas nuestra experiencia fotográfica de Bodas y Prebodas por todo Colombia. 
 	</p><br>
 	<h3 style="color:#00ADF4; font-size:1.6em; margin: 0.5em 3%;">* Te acompañamos desde el maquillaje hasta el final</h3>
@@ -86,7 +86,7 @@
 		para que no pierdas ningún detalle de tu Boda. Son en promedio 800 a 1000 fotografías o más 
 		dependiendo como se comporte el evento, además te 
 		entregamos las fotografías impresas que elijas según el Plan que escojas con nosotros. 
-		<a href="/tarifas">Puedes conocer nuestras tarifas y resolver todas tus dudas aquí.</a>
+		<a href="/tarifas" class="color-theme" title="Precios y tarifas de Fotografias para Matrimonios (Bodas y Prebodas)">Puedes conocer nuestras tarifas y resolver todas tus dudas aquí.</a>
 	</p>
 	<img src="/images/archivo-fotos-matrimonios-bodas-tufotoco.png" 
 		style="width: 94%; margin: 0.8em 3%;"
