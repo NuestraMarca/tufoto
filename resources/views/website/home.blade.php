@@ -104,7 +104,9 @@
 	    Galleria.configure({
 		    autoplay: 2000,
 		    transition: 'fade',
-		    transitionSpeed: 2000
+		    transitionSpeed: 2000,
+		    fullscreenTransition: 'fade',
+		    touchTransition: 'fade'
 
 		});
 
