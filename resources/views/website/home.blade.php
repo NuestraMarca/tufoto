@@ -96,9 +96,6 @@
 
 	@section('extra-js')
 
-		<!-- load Galleria -->
-    	<script src="/js/gallery/galleria-1.4.2.min.js"></script>
-
 		<script>
 
 	    // Load the twelve theme
