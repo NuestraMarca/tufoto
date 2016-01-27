@@ -102,7 +102,7 @@
 	    Galleria.loadTheme('/js/gallery/twelve/galleria.twelve.min.js');
 
 	    Galleria.configure({
-		    autoplay: 1000,
+		    autoplay: 2000,
 		    transition: 'fade',
 		    transitionSpeed: 2000
 

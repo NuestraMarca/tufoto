@@ -37,7 +37,7 @@ class WebSiteController extends Controller {
 	 */
 	public function index()
 	{
-		$slides = collect(glob('images/gallery_home' . '/*.*'))->random(10);
+		$slides = collect(glob('images/gallery-home' . '/*.*'))->random(10);
 
 		return view('website.home', compact('slides'));
 	}
