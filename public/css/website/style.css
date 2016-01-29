@@ -321,7 +321,7 @@ header section#number-whatsapp
 	margin-top:	0px; 
 }
 
-header section#number-whatsapp img#image-whatsapp
+section#number-whatsapp img#image-whatsapp
 {
 	width: 30px;
  	display: inline-block;
@@ -329,7 +329,7 @@ header section#number-whatsapp img#image-whatsapp
   	margin: 0;
 }
 
-header section#number-whatsapp a#text-whatsapp
+section#number-whatsapp a#text-whatsapp
 {
 	display: inline-block;
 	vertical-align: middle;
@@ -983,6 +983,14 @@ section.cover-gallery .tag-image
 	.hidden-mobile {
 		display: none;
 	}
+
+	.price-graphic ul {
+		padding-left: 0;
+	}
+
+	.price-graphic ul li{
+		list-style: none;
+	}
 	
 	section#main-slide { 
 	    width: 100%;
@@ -1053,8 +1061,8 @@ section.cover-gallery .tag-image
 	    font-size: 2em;
 	}
 
-	header section#number-whatsapp a#text-whatsapp {
-	    font-size: 2em;
+	section#number-whatsapp a#text-whatsapp {
+	    font-size: 1.7em;
 	}
 }
 
@@ -1062,6 +1070,10 @@ section.cover-gallery .tag-image
 	section.plan-options table
 	{
 		table-layout: fixed;
+	}
+
+	.visible-mobile {
+		display: none;
 	}
 }
 
@@ -1145,12 +1157,12 @@ section.cover-gallery .tag-image
 		text-align: right;
 	}
 
-	header section#number-whatsapp img#image-whatsapp
+	section#number-whatsapp img#image-whatsapp
 	{
 		width: 20px;
 	}
 
-	header section#number-whatsapp a#text-whatsapp
+	section#number-whatsapp a#text-whatsapp
 	{
 		font-size: 1.1em;
 	}
@@ -1262,12 +1274,12 @@ section.cover-gallery .tag-image
 		font-size: 1em;
 	}
 
-	header section#number-whatsapp img#image-whatsapp
+	section#number-whatsapp img#image-whatsapp
 	{
 		width: 18px;
 	}
 
-	header section#number-whatsapp a#text-whatsapp
+	section#number-whatsapp a#text-whatsapp
 	{
 		font-size: 1.3em;
 	}
@@ -1309,7 +1321,7 @@ section.cover-gallery .tag-image
 		width: 32.6%;
 	}
 
-	header section#number-whatsapp a#text-whatsapp
+	section#number-whatsapp a#text-whatsapp
 	{
 		font-size: 1.6em;
 	}
@@ -1339,7 +1351,7 @@ section.cover-gallery .tag-image
 		width: 32.6%;
 	}
 
-	header section#number-whatsapp a#text-whatsapp
+	section#number-whatsapp a#text-whatsapp
 	{
 		font-size: 2em;
 	}

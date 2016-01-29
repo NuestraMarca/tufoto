@@ -62,7 +62,7 @@
 					<!-- <li><a href="#" class="icon-blogger2"></a></li>
 					<li><a href="#" class="icon-pinterest2"></a></li> !-->
 				</ul>
-				<section id="number-whatsapp">
+				<section id="number-whatsapp" class="hidden-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
 					<a  href="tel:+573105518362" id="text-whatsapp">310 551 8362</a>
 				</section>
@@ -98,11 +98,18 @@
 				@yield('content')
 			</section>
 			<footer>
-				<p>Johannes Duque</p>
-				<p class="hidden-mobile">•</p>
-				<p>Cel: 310 551 8362 - 313 308 4219</p>
-				<p class="hidden-mobile">•</p>
-				<p>Developer: @andrestntx</p>
+				<div class="hidden-mobile">
+					<p>Johannes Duque</p>
+					<p>•</p>
+					<p>Cel: 310 551 8362 - 313 308 4219</p>
+					<p>•</p>
+					<p>Developer: @andrestntx</p>
+				</div>
+				
+				<section id="number-whatsapp" class="visible-mobile">
+					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
+					<a  href="tel:+573105518362" id="text-whatsapp">310 551 8362</a>
+				</section>
 			</footer>
 		</div>
 

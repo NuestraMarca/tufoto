@@ -1,13 +1,13 @@
 @extends('website.layout')
 
 @section('title')
-	Precios y Descuentos de fotografías para Matrimonio o Bodas
+	Paquetes de fotografías para Matrimonio (Bodas y Prebodas)
 @endsection
 
 @section('webPageScope') itemscope itemtype="http://schema.org/QAPage" @endsection
 
 @section('description')
-	Conoce los precios de nuestras fotografías para tu matrimonio o Boda - Pregunta
+	Conoce los Paquetes de nuestras fotografías para tu matrimonio o Boda - Pregunta
 	por nuestra Promoción de Preboda. 
 @endsection
 
@@ -18,7 +18,7 @@
 @section('content')
 	
 	<section class="plan-options">
-		<h1 class="section-title">Precios de Fotografías para Bodas - Matrimonios</h1>
+		<h1 class="section-title">Paquetes de Fotografías para Bodas - Matrimonios</h1>
 		<table>
 				<colgroup><col>
 				<col>
@@ -30,11 +30,10 @@
 						<div class="plan-title">Plata</div>
 						<hr>
 						<div class="price-graphic">
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="unit">1'800</span>
-								<span class="fraction">.000</span>
-							</div>
+							<ul class="visible-mobile">
+								<li>* USB con todas las fotografías</li>
+								<li>* 50 fotos impresas 15x20 cm</li>
+							</ul>
 						</div>
 						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">RESERVAR</span>
@@ -45,11 +44,11 @@
 						<div class="plan-title">Oro</div>
 						<hr>
 						<div class="price-graphic">
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="unit">2'200</span>
-								<span class="fraction">.000</span>
-							</div>
+							<ul class="visible-mobile">
+								<li>* USB con todas las fotografías</li>
+								<li>* Fotolibro 30x30 cm (60 a 80 fotos)</li>
+								<li>* Estuche de cuero</li>
+							</ul>
 						</div>
 						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">RESERVAR</span>
@@ -59,11 +58,15 @@
 						<div class="plan-title">Diamante</div>
 						<hr>
 						<div class="price-graphic">
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="unit">2'700</span>
-								<span class="fraction">.000</span>
-							</div>
+							<ul class="visible-mobile">
+								<li>* USB con todas las fotografías</li>
+								<li>* Fotolibro 30x30 cm (60 a 80 fotos)</li>
+								<li>* Estuche de madera</li>
+								<li>* Video clips</li>
+								<li>* 2 porta retratos 20x25</li>
+								<li>* Fotografía 80x50 cm (Retablo)</li>
+								<li>* Obsequios especiales</li>
+							</ul>
 						</div>
 						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">RESERVAR</span>
@@ -71,7 +74,7 @@
 					</th>
 				</tr>
 				</thead>
-						<tbody class="entitlements" data-tooltipstyle="external" data-tooltipoffsettop="20" data-tooltipoffsetleft="20">
+					<tbody class="entitlements" data-tooltipstyle="external" data-tooltipoffsettop="20" data-tooltipoffsetleft="20">
 						<tr class="custom-domain-name highlight" data-tooltip-title="Custom Domain Name" data-tooltip="Get a memorable, professional custom domain name for your site, like www.mybizname.com (or with another extension, like www.mybizname.co.uk).">
 							<td data-label="Free">
 								USB con todas las fotografías
@@ -117,7 +120,7 @@
 									Obsequios especiales</td>
 						</tr>
 
-						</tbody>
+					</tbody>
 				</table>
 	</section>
 
