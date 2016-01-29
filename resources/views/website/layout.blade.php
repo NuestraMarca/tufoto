@@ -71,7 +71,7 @@
 						<li class="li-menu"><a class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
 						<li class="li-menu"><a href="/galerias" hreflang="es-co">Galerías</a></li>
 						<li class="li-menu"><a href="/producto" hreflang="es-co">Producto</a></li>
-						<li class="li-menu"><a href="/tarifas" hreflang="es-co">Tarifas y Preguntas</a></li>
+						<li class="li-menu"><a href="/tarifas" hreflang="es-co">Paquetes y Preguntas</a></li>
 						<li class="li-menu"><a href="/contacto" hreflang="es-co">Contacto</a></li>
 						<li class="li-menu"><a href="/nosotros" hreflang="es-co">Quiénes somos</a></li>
 						<li class="li-menu"><a href="/proveedores" hreflang="es-co">Proveedores</a></li>
