@@ -19,9 +19,12 @@
 	<div class="section-bordered booking">
 		<section class="form-booking">
 			<h1>¿Te gustó nuestro trabajo?</h1>
+			<h2>
+				Reserva aquí las Fotografías para tu Boda
+			</h2>
 			
 			<p>
-				Diligencia este formulario y nos pondremos en contacto contigo en breve.
+				Escríbenos tus comentarios y nos pondremos en contacto contigo en breve.
 				Todos los datos que envíes serán tratados de forma confidencial.
 			</p>
 
@@ -40,7 +43,7 @@
 				{!! Form::text('date', null, ['placeholder' => '¿Cuando te quieres casar?', 'id' => 'date', 'required']) !!}
 				@include('_partials.error', ['name' => 'date'])
 
-				{!! Form::textarea('comments', null, ['placeholder' => 'Comentarios', 'required']) !!}
+				{!! Form::textarea('comments', null, ['placeholder' => 'Comentarios', 'required', 'rows' => '4']) !!}
 				@include('_partials.error', ['name' => 'comments'])
 
 				{!! Form::submit('Enviar solicitud', ['class' => 'button']) !!}
@@ -48,7 +51,7 @@
 			{!! Form::close() !!}
 			
 		</section>	
-		<figure id="image-booking">
+		<figure id="image-booking" class="hidden-mobile">
 			<img src="/images/nosotros_tufoto_co.jpg"> 
 		</figure>
 	</div>

@@ -100,9 +100,9 @@
 			<footer>
 				<div class="hidden-mobile">
 					<p>Johannes Duque</p>
-					<p>•</p>
+					<p class="hidden-tablet">•</p>
 					<p>Cel: 310 551 8362 - 313 308 4219</p>
-					<p>•</p>
+					<p class="hidden-tablet">•</p>
 					<p>Developer: @andrestntx</p>
 				</div>
 				
