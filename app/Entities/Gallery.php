@@ -71,6 +71,10 @@ class Gallery extends Model {
 
 	public function getTitleUrlFormatAttribute()
 	{
+		if($this->tag){
+			return strtolower($this->tag) . '-' . strtolower(self::cleanText(str_replace(' ', '-', $this->title))); 
+		}
+
 		return strtolower(self::cleanText(str_replace(' ', '-', $this->title)));
 	}
 

@@ -37,7 +37,7 @@ class EditRequest extends Request
     public function rules()
     {
         $rules = $this->createRequest->rules();
-        $rules['title'] .= ',title,'.$this->route->getParameter('galleries').',id';
+        $rules['title'] .= ','.$this->route->getParameter('galleries').' = id';
 
         return $rules;
     }

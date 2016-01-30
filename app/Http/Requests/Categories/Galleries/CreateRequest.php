@@ -23,7 +23,7 @@ class CreateRequest extends Request
     public function rules()
     {
         return [
-            'title'         => 'required|max:250|unique:galleries',
+            'title'         => 'required|max:250|unique_with:galleries,tag',
             'date'          => 'required|date',
             'description'   => 'required'
         ];

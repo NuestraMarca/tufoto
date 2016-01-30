@@ -150,7 +150,8 @@ return [
 		App\Providers\ComposerServiceProvider::class,
 		Styde\Html\HtmlServiceProvider::class,
 		Laracasts\Flash\FlashServiceProvider::class,
-		Intervention\Image\ImageServiceProvider::class
+		Intervention\Image\ImageServiceProvider::class,
+		Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider::class,
 		
 
 	],
