@@ -35,8 +35,8 @@
 								<li>* 50 fotos impresas 15x20 cm</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
-							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">RESERVAR</span>
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 
 					</th>
@@ -50,8 +50,8 @@
 								<li>* Estuche de cuero</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
-							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">RESERVAR</span>
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 					</th>
 					<th class="highlight">
@@ -68,8 +68,8 @@
 								<li>* Obsequios especiales</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="RESERVAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
-							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">RESERVAR</span>
+						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 					</th>
 				</tr>
