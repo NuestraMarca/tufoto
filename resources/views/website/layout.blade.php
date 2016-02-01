@@ -64,7 +64,7 @@
 				</ul>
 				<section id="number-whatsapp" class="hidden-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="tel:+573105518362" id="text-whatsapp">310 551 8362</a>
+					<a  href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 				<nav>
 					<ul id="main-menu">
@@ -101,14 +101,14 @@
 				<div class="hidden-mobile">
 					<p>Johannes Duque</p>
 					<p class="hidden-tablet">•</p>
-					<p>Cel: 310 551 8362 - 313 308 4219</p>
+					<p>Cel: <a href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')">310 551 8362</a> - <a href="tel:+573133084219" onclick="goog_report_conversion('tel:+573133084219')">313 308 4219</p>
 					<p class="hidden-tablet">•</p>
 					<p>Developer: @andrestntx</p>
 				</div>
 				
 				<section id="number-whatsapp" class="visible-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="tel:+573105518362" id="text-whatsapp">310 551 8362</a>
+					<a  href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 			</footer>
 		</div>
@@ -160,6 +160,41 @@
 		  ga('send', 'pageview');
 
 		</script>
+
+		<!-- Google Code for Click en el n&uacute;mero de Johannes dentro del sitio Conversion Page
+		In your html page, add the snippet and call
+		goog_report_conversion when someone clicks on the
+		phone number link or button. -->
+		<script type="text/javascript">
+		  /* <![CDATA[ */
+		  goog_snippet_vars = function() {
+		    var w = window;
+		    w.google_conversion_id = 1009818695;
+		    w.google_conversion_label = "FpjQCMb4yWMQx7jC4QM";
+		    w.google_remarketing_only = false;
+		  }
+		  // DO NOT CHANGE THE CODE BELOW.
+		  goog_report_conversion = function(url) {
+		    goog_snippet_vars();
+		    window.google_conversion_format = "3";
+		    var opt = new Object();
+		    opt.onload_callback = function() {
+		    if (typeof(url) != 'undefined') {
+		      window.location = url;
+		    }
+		  }
+		  var conv_handler = window['google_trackConversion'];
+		  if (typeof(conv_handler) == 'function') {
+		    conv_handler(opt);
+		  }
+		}
+		/* ]]> */
+		</script>
+
+		<script type="text/javascript"
+		  src="//www.googleadservices.com/pagead/conversion_async.js">
+		</script>
+
 
 		@yield('extra-js')
 	</body>
