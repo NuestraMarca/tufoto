@@ -64,7 +64,7 @@
 				</ul>
 				<section id="number-whatsapp" class="hidden-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
+					<a  href="#" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 				<nav>
 					<ul id="main-menu">
@@ -101,14 +101,14 @@
 				<div class="hidden-mobile">
 					<p>Johannes Duque</p>
 					<p class="hidden-tablet">•</p>
-					<p>Cel: <a href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')">310 551 8362</a> - <a href="tel:+573133084219" onclick="goog_report_conversion('tel:+573133084219')">313 308 4219</p>
+					<p>Cel: <a href="#" onclick="goog_report_conversion('tel:+573105518362')">310 551 8362</a> - <a href="#" onclick="goog_report_conversion('tel:+573133084219')">313 308 4219</a></p>
 					<p class="hidden-tablet">•</p>
 					<p>Developer: @andrestntx</p>
 				</div>
 				
 				<section id="number-whatsapp" class="visible-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="tel:+573105518362" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
+					<a  href="#" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 			</footer>
 		</div>
