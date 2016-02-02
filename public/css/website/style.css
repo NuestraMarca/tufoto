@@ -263,6 +263,51 @@ section#gallery-detail a
 	color: #00ADF4;
 }
 
+section.home-landing
+{
+	margin: 2em 3%;
+}
+
+section.home-landing .video-youtube
+{
+	width: 55%; 
+	display:inline-block;
+}
+
+section.home-landing .text-landing
+{
+	width: 41%; 
+	display:inline-block; 
+	vertical-align:top; 
+	padding: 0 0 0 3%;
+}
+
+section.home-landing .text-landing h1
+{
+	margin: 0 0 0.5em 0; 
+	font-size:1.8em; 
+	color:#00ADF4;
+}
+
+section.home-landing .text-landing p
+{
+	margin: 0; 
+}
+
+.action-buttom
+{
+	color: #fff; 
+	background-color: #00ADF4; 
+	padding: .7em 0; 
+	border: 0;
+	margin: 1em 0 0.4em 0; 
+	display:block; 
+	text-align:center; 
+	font-size:1.1em; 
+	text-decoration:none;
+}
+
+
 footer
 {
 	position: fixed;
@@ -1105,6 +1150,15 @@ section.cover-gallery .tag-image
 	    width: 100%;
 	    padding: .7em 1.7em;
 	    font-size: 1.3em;
+	}
+
+	section.home-landing .video-youtube {
+	    width: 100%;
+	}
+
+	section.home-landing .text-landing {
+	    width: 96%;
+	    padding: 1em 3% 0 3%;
 	}
 }
 

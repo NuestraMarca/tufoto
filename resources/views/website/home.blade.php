@@ -40,7 +40,30 @@
 		:).
 		Te invitamos a que entres a <a href="/galerias/matrimonios" class="color-theme" title="Bodas y Prebodas realizadas por tufoto" target="_blank">
 		nuestras galerías</a> y conozcas nuestra experiencia fotográfica de Bodas y Prebodas por todo Colombia. 
-	</p><br>
+	</p>
+
+	<section class="home-landing">
+		<div class="video-youtube">
+			<iframe width="100%" height="250" src="https://www.youtube.com/embed/9120G_stCTM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="text-landing">
+			<h1>Un momento único</h1>
+			<p class="section-description home-description">
+				Te mereces un <b>detalle especial</b> para un momento único e inigualable.
+				Los recuerdos más hermosos de nuestras vidas deben quedar en manos de
+				profesionales.
+			</p>
+			<a href="/tarifas" class="action-buttom">
+				Cotiza la Fotografía de tu Boda
+			</a>
+			<section id="number-whatsapp" class="hidden-mobile" style="text-align:center;">
+				<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto" style="width:1.6em;">
+				<a  href="#" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp" style="font-size:1.85em;">310 551 8362</a>
+			</section>
+		</div>
+	</section>
+	
+	
 	<h3 style="color:#00ADF4; font-size:1.6em; margin: 0.5em 3%;">* Te acompañamos desde el maquillaje hasta el final</h3>
 	<p class="section-description home-description">
 		Cada detalle de esta fecha es muy especial, por esto te acompañamos desde el momento del maquillaje de tu boda, 
@@ -62,7 +85,7 @@
 		<figure class="cover-photo">
 			<img src="/images/hora-loca-fiesta-matrimonio-boda.jpg"
 			alt="Fotografía de la fiesta y la hora loca de matrimonios y bodas en Villavicencio">
-			<span class="tag-image">Recepción</span>
+			<span class="tag-image">Fiesta - Hora Loca</span>
 		</figure>
 	</section>
 
