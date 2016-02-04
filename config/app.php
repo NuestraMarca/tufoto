@@ -152,6 +152,7 @@ return [
 		Laracasts\Flash\FlashServiceProvider::class,
 		Intervention\Image\ImageServiceProvider::class,
 		Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider::class,
+		Lanz\Commentable\CommentableServiceProvider::class,
 		
 
 	],

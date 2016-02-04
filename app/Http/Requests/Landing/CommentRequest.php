@@ -1,8 +1,8 @@
-<?php namespace App\Http\Requests;
+<?php namespace App\Http\Requests\Landing;
 
 use App\Http\Requests\Request;
 
-class ContactRequest extends Request {
+class CommentRequest extends Request {
 	/**
 	 * Determine if the user is authorized to make this request.
 	 *
@@ -21,11 +21,9 @@ class ContactRequest extends Request {
 	public function rules()
 	{	
 		return [
-			'name'      => 'required|min:5',
-            'email'     => 'required|email|min:5',
-            'date'      => 'date',
-            'cel'		=> 'required|numeric',
-            'comments'  => 'required|min:5'
+			'comment-name'      => 'required|min:5',
+            'comment-email'     => 'required|email|min:5',
+            'comment-body'  	=> 'required|min:5'
 		];
 	}
 }

@@ -2,10 +2,14 @@
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
+use App\Http\Requests\Landing\CommentRequest;  
 
 use App\Entities\Gallery;
 use App\Entities\Provider;
 use App\Entities\Message;
+use App\Entities\Post;
+use App\Entities\Client;
+use App\Entities\Comment;
 
 class WebSiteController extends Controller {
 
@@ -107,5 +111,34 @@ class WebSiteController extends Controller {
 		$providers = Provider::getSearch($search);
 
 		return view('website.gallery.search', compact('galleries', 'providers',  'search'));
+	}
+
+	public function landingBodas()
+	{
+		$comments = Comment::roots()
+			->with(['children.client', 'client'])
+			->whereCommentableId(1)
+			->get();
+
+		return view('website.landing.bodas',compact('comments'));
+	}
+
+	public function postComment(CommentRequest $request)
+	{
+		$client = Client::firstOrNew(['email' => $request->input('comment-email')]);
+
+		if(! $client->exists) {
+			$client->name = $request->input('comment-name');
+			$client->save();
+		}
+
+		$post = Post::findOrFail($request->input('post'));
+
+		$comment = new \Lanz\Commentable\Comment;
+		$comment->body = $request->input('comment-body');
+		$comment->client_id = $client->id;
+		$post->comments()->save($comment);
+
+		return back();
 	}
 }

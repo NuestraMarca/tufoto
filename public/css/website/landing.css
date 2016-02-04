@@ -1,0 +1,689 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,300,400);
+@import url(https://fonts.googleapis.com/css?family=Hind:400,600,700,500,300);
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('/fonts/icomoon.eot');
+    src:    url('/fonts/icomoon.eot') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf') format('truetype'),
+        url('/fonts/icomoon.woff') format('woff'),
+        url('/fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-double-down:before {
+    content: "\e600";
+}
+.icon-image:before {
+    content: "\e90d";
+}
+.icon-pacman:before {
+    content: "\e916";
+}
+.icon-location:before {
+    content: "\e947";
+}
+.icon-location2:before {
+    content: "\e948";
+}
+.icon-compass:before {
+    content: "\e949";
+}
+.icon-bubbles:before {
+    content: "\e96c";
+}
+.icon-bubbles2:before {
+    content: "\e96d";
+}
+.icon-heart:before {
+    content: "\e9da";
+}
+.icon-man-woman:before {
+    content: "\e9de";
+}
+.icon-happy:before {
+    content: "\e9df";
+}
+.icon-cool:before {
+    content: "\e9eb";
+}
+.icon-point-right:before {
+    content: "\ea04";
+}
+.icon-checkmark:before {
+    content: "\ea10";
+}
+.icon-checkmark2:before {
+    content: "\ea11";
+}
+.icon-google-plus2:before {
+    content: "\ea89";
+}
+.icon-facebook2:before {
+    content: "\ea8d";
+}
+.icon-instagram:before {
+    content: "\ea90";
+}
+.icon-twitter2:before {
+    content: "\ea92";
+}
+.icon-youtube3:before {
+    content: "\ea99";
+}
+.icon-blogger2:before {
+    content: "\eaba";
+}
+.icon-pinterest2:before {
+    content: "\ead1";
+}
+.icon-html5:before {
+    content: "\eadf";
+}
+.icon-camera:before {
+    content: "\e900";
+}
+.icon-mail:before {
+    content: "\e901";
+}
+.icon-like:before {
+    content: "\e902";
+}
+.icon-paperplane:before {
+    content: "\e903";
+}
+.icon-shop:before {
+    content: "\e904";
+}
+
+
+h1,h2,h3,h4 {
+	font-family: 'Raleway', sans-serif;
+}
+
+input, textarea {
+    display: block;
+    padding: .7em;
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+.button {
+    width: auto;
+    color: #fff;
+    background-color: #00ADF4;
+    padding: .6em 0em;
+    border: 0;
+    font-size: 1.3em;
+    border-radius: 7px;
+}
+
+body {
+	background-color: #E8E8E8;
+}
+
+#main {
+    width: 80%;
+    margin: 0 10%;
+    background-color: white;
+}
+
+header {
+	padding: 1em 5%;
+	border-bottom: solid 1px;
+}
+
+header figure#header-logo {
+	width: 9em;
+    margin-left: 0;
+    margin-right: 0.5em;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header figure#header-logo img {
+	width: 100%;
+}
+
+header p#slogan {
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 1.3em;
+}
+
+header .number-whatsapp {
+	float: right;
+	margin-top: 1.9em;
+}
+
+.number-whatsapp img {
+	display: inline-block;
+    vertical-align: middle;
+    margin: 0;	
+    width: 1.5em;
+}
+
+a.number-telephone {
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+section#container {
+	padding: 0 3%;
+}
+
+section#container h1 {
+	text-align: center;
+	color: #00ADF4;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+section#container h2 {
+	text-align: center;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0; 
+	font-weight: 300;
+}
+
+section#container h3 {
+	text-align: center;
+    font-size: 1.34em;
+	font-weight: 400;
+	color: #00ADF4;
+	margin-top: 0.3em;
+}
+
+#first-action {
+	margin-bottom: 1.1em;
+}
+
+#first-action .video-youtube {
+	display: inline-block;
+    width: 50%;
+}
+
+#first-action .form-action {
+	display: inline-block;
+	vertical-align: top;
+    width: 47%;
+    margin-left: 2%;
+}
+
+#first-action .form-action input{
+	width: 75%;
+	margin: 0.8em auto;
+}
+
+#first-action .form-action input.button {
+	width: 55%;
+}
+
+.separator {
+	width: 106.5%;
+    margin-left: -3.2%;
+    background: rgba(109, 109, 109, 0.84);
+    text-align: center;
+    padding: 0.7em 0;
+}
+
+.separator p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.35em;
+	display: inline-block;
+	margin: 0 0.6em 0 0;
+}
+
+.separator a {
+	text-decoration: none;
+	color: white;
+}
+    
+.separator .number-whatsapp {
+	display: inline-block;	
+}
+
+.separator .number-whatsapp a {
+	color: white;	
+	font-size: 1.5em;
+}
+
+.separator.separator-blue {
+	background-color: #00ADF4;
+}
+
+.separator.separator-blue a {
+	font-size: 1.2em;
+	margin-left: 0.5em;
+}
+
+section#container section.gallery {
+	overflow: auto;
+}
+
+section#container section.gallery h1 {
+	text-align: left;
+    color: black;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+section#container section.gallery h2 {
+	text-align: left;
+    margin-top: 0.4em;
+    font-size: 1.22em;
+    margin-bottom: 0.8em;
+}
+
+.my-gallery {
+  width: 100%;
+  height: auto;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 25%;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+.my-gallery.gallery-features {
+	overflow: auto;
+	width: 90%;
+	margin: 0 5% 1em 5%;
+}
+
+.my-gallery.gallery-features figure {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 30%;
+  margin-left: 3.33333333333%;
+}
+
+.my-gallery.gallery-features figcaption {
+	display: block;
+    text-align: center;
+    color: #00ADF4;
+    font-size: 1.2em;
+    margin-top: 0.3em;
+}
+
+
+section#container section.plus {
+	margin: 0 7% 0 2%;
+}
+
+section#container section.plus h1 {
+	font-size: 2.3em;
+	margin-bottom: 0.5em;
+}
+
+section#container section.plus h2 {
+	text-align: left;
+	font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+section#container section.plus span {
+	font-size: 1.3em;
+	color: #00ADF4;
+	margin-right: 0.2em;
+}
+
+section#container section.plus p {
+	margin-top: 0.6em;
+    margin-bottom: 1.4em;
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 2.3em;
+    font-weight: 100;
+}
+
+section#container section.comments h1 {
+    color: black;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-top: 1.3em;
+    margin-bottom: 0;
+}
+
+section#container section.comments h2 {
+	color: black;
+    margin-top: 0.4em;
+    font-size: 1.22em;
+    margin-bottom: 0.8em;
+}
+
+section#container section.comments form {
+	width: 80%;
+	margin: 0 10%;
+}
+
+section#container section.comments input {
+	width: 44%; 
+	margin: 0.5em 0;
+	display: inline-block;
+}
+
+section#container section.comments input#name {
+	margin-right: 2%;
+}
+
+section#container section.comments textarea {
+	width: 94%;
+	margin: 0;
+}
+
+section#container section.comments .button {
+	width: 30%;
+    margin: 1em 33.5%;
+}
+
+section#container section.comments .list-comments {
+	margin: 1em 5%;	
+}
+
+section#container section.comments .list-comments h1 {
+	text-align: left;
+	font-size: 1.4em;
+    margin-bottom: 1em;
+    margin-top: 0;	
+}
+
+section.comments {
+	overflow: auto;
+}
+
+article.comment {
+    margin-left: 1%;
+    margin-bottom: 1.4em;
+}
+
+article.comment.answer {
+    margin-left: 8%;
+    margin-top: 0.5em;
+}
+
+.comment span.letter-comment {
+	font-size: 2.5em;
+    border: solid 1px grey;
+    border-radius: 50%;
+    padding: 0.5em 0.7em;
+    background: #7CD9F9;
+    color: white;
+    font-family: 'Raleway';
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+}
+
+.comment .text-comment {
+    display: inline-block;
+    vertical-align: top;
+    width: 85%;	
+    border-bottom: dashed 1px #C5C5C5;
+    min-height: 82px;
+}
+
+section#container article.comment .text-comment h2.name-comment, article.comment .text-comment p.body-comment {
+	text-align: left;	
+}
+   
+section#container article.comment .text-comment h2.name-comment {
+	margin-bottom: 0;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+article.comment .text-comment p.body-comment {
+	margin-top: 0.3em;
+	font-weight: 100;
+}
+
+span.date {
+	color: #00ADF4;
+    font-size: 0.8em;
+}
+
+.error-form {
+	margin: 0.2em 0 1em 0.2em;
+    color: #D64E4E;
+    font-weight: 600;
+}
+
+.form-action .error-form {
+    margin: 0.2em 0 1em 3em;
+}
+
+@media (max-width: 850px) {
+
+	#main {
+    	width: 100%;
+    	margin: 0;
+	}
+
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+
+	header {
+	    padding: 1em 5% 0 5%;
+	    border-bottom: dashed 1px #00ADF4;
+	}
+
+	header figure#header-logo {
+        width: 30%;
+    	margin: auto 35%;
+	}
+
+	header p#slogan {
+	    text-align: center;
+	    display: block;
+	    font-size: 1em;
+	    margin: 0;
+	}
+
+	header .number-whatsapp {
+	    float: none;
+	    margin-top: 0.2em;
+	    display: block;
+	    text-align: center;
+	}
+
+	section#container {
+	    padding: 0;
+	}
+
+	section#container h1 {
+	    font-size: 2em;
+	    margin-top: 0.2em;
+	    margin-bottom: 0.5em;
+	}
+
+	#first-action .video-youtube {
+	    display: block;
+	    width: 100%;
+	}
+
+	#first-action .form-action {
+	    display: block;
+	    vertical-align: top;
+	    width: 100%;
+	    margin: 1em 0;
+	}
+
+	.separator {
+	    width: 90%;
+	    padding: 0.7em 5%;
+	    margin: 0;
+	}
+
+	.separator p {
+	    font-size: 1.2em;
+	    margin: 0;
+	}
+
+	section#container section.gallery h1 {
+	    text-align: center;
+	    font-size: 1.3em;
+	}
+
+	section#container section.gallery h2 {
+	    text-align: center;
+	    font-size: 1.3em;
+	}
+
+	.my-gallery figure {
+	    width: 50%;
+	}
+
+	section#container section.plus {
+	    padding: 0 5%;
+	    margin: 0;
+	}
+
+	section#container section.plus h1 {
+	    font-size: 1.7em;
+	    margin-top: 0.6em;
+	    margin-bottom: 0.7em;
+	}
+
+	section#container section.plus span {
+	    font-size: 1em;
+	    margin-right: 0.1em;
+	}
+
+	section#container section.plus h2 {
+	    font-size: 1.2em;
+	    font-weight: 600;
+	}
+
+	section#container section.plus p {
+	    text-align: left;
+	    font-size: 1.05em;
+	    margin-left: 0em;
+	}
+
+	.my-gallery.gallery-features {
+	    width: 100%;
+	    margin: 0 0 1em 0;
+	}
+
+	.my-gallery.gallery-features figure {
+	    width: 100%;
+	    margin-bottom: 1em;
+	    margin-left: 0;
+	}
+
+	.my-gallery.gallery-features figure:last-child {
+	    margin-bottom: 0;
+	}
+
+	.my-gallery.gallery-features figcaption {
+	    font-weight: 600;
+	    margin-top: 0.1em;
+	}
+
+	.separator.separator-blue a {
+	    font-size: 1.8em;
+	    margin-left: 0.3em;
+	}
+
+	section#container section.comments h1 {
+	    font-size: 1.5em;
+	    margin-top: 1em;
+	}
+
+	section#container section.comments h2 {
+	    font-size: 1.15em;
+	    margin-bottom: 1.2em;
+	}
+
+	section#container section.comments form {
+	    width: 88%;
+	    padding: 0 6%;
+	    margin: 0;
+	}
+
+	section#container section.comments input {
+	    width: 95%;
+	    margin: 0.5em 0;
+	    padding: 0.7em 2%;
+	    display: block;
+	}
+
+	section#container section.comments .button {
+	    width: 90%;
+    	margin: 0.5em 5%;
+    	font-size: 1.2em;
+	}
+
+	section#container section.comments .list-comments h1 {
+	    text-align: center;
+	    font-size: 1.35em;
+	}
+
+	.comment span.letter-comment {
+	    font-size: 2em;
+	}
+
+	.comment .text-comment {
+	    width: 65%;
+	}
+
+	section#container article.comment .text-comment h2.name-comment {
+    	font-size: 1.04em;
+	}
+
+	article.comment.answer img {
+	    width: 4.6em;
+	}
+
+}
+
+
+
+
+
+    
+ 
+
+

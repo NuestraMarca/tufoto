@@ -129,7 +129,10 @@ return array(
 	'title'				=> 'nombre',
 	'tag'				=> 'etiqueta',
 	'tel'				=> 'teléfono',
-	'address'			=> 'dirección'
+	'address'			=> 'dirección',
+	'comment-name'		=> 'nombre',
+	'comment-email'		=> 'correo electrónico',
+	'comment-body'		=> 'comentario'
 
 ]
 
