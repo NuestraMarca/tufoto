@@ -40,6 +40,7 @@ var AppLanding = function() {
 	                	$("#form-comment #email").val("");
 	                	$("#form-comment #body").val("");
 	                	goog_report_conversion_3();
+	                	fbq('track', 'Lead');
 		            }
 		            else{
 		            	//notification('danger', data['message']);

@@ -220,6 +220,7 @@
 	  }
 	  // DO NOT CHANGE THE CODE BELOW.
 	  goog_report_conversion_2 = function(url) {
+	  	fbq('track', 'Lead');
 	    goog_snippet_vars_2();
 	    window.google_conversion_format = "3";
 	    var opt = new Object();
