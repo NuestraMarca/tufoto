@@ -195,22 +195,5 @@
 @endsection
 
 @section('extra-js')
-	<!-- Google Code for Ingreso a p&aacute;gina de reservas Conversion Page -->
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	var google_conversion_id = 1009818695;
-	var google_conversion_language = "en";
-	var google_conversion_format = "3";
-	var google_conversion_color = "ffffff";
-	var google_conversion_label = "qUGVCL7_yWMQx7jC4QM";
-	var google_remarketing_only = false;
-	/* ]]> */
-	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-	<div style="display:inline;">
-	<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1009818695/?label=qUGVCL7_yWMQx7jC4QM&amp;guid=ON&amp;script=0"/>
-	</div>
-	</noscript>
+	
 @endsection

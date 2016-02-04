@@ -46,7 +46,7 @@
 				{!! Form::textarea('comments', null, ['placeholder' => 'Comentarios', 'required', 'rows' => '4']) !!}
 				@include('_partials.error', ['name' => 'comments'])
 
-				{!! Form::submit('Enviar solicitud', ['class' => 'button']) !!}
+				{!! Form::submit('Enviar solicitud', ['class' => 'button', 'onclick' => 'goog_report_conversion_contacto()']) !!}
 
 			{!! Form::close() !!}
 			
@@ -68,23 +68,36 @@
 		});
 	</script>
 
-	<!-- Google Code for Ingreso a la p&aacute;gina de contacto Conversion Page -->
+	<!-- Google Code for Registro de Formulario en Contacto Conversion Page
+	In your html page, add the snippet and call
+	goog_report_conversion when someone clicks on the
+	chosen link or button. -->
 	<script type="text/javascript">
-	/* <![CDATA[ */
-	var google_conversion_id = 1009818695;
-	var google_conversion_language = "en";
-	var google_conversion_format = "3";
-	var google_conversion_color = "ffffff";
-	var google_conversion_label = "iFyHCIKmwGMQx7jC4QM";
-	var google_remarketing_only = false;
+	  /* <![CDATA[ */
+	  goog_snippet_vars_contacto = function() {
+	    var w = window;
+	    w.google_conversion_id = 948642113;
+	    w.google_conversion_label = "6KLmCJfyzWMQwcKsxAM";
+	    w.google_remarketing_only = false;
+	  }
+
+	  // DO NOT CHANGE THE CODE BELOW.
+	  goog_report_conversion_contacto = function(url) {
+	    goog_snippet_vars_contacto();
+	    window.google_conversion_format = "3";
+	    var opt = new Object();
+	    opt.onload_callback = function() {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  }
+	  var conv_handler = window['google_trackConversion'];
+	  if (typeof(conv_handler) == 'function') {
+	    conv_handler(opt);
+	  }
+	}
 	/* ]]> */
 	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-	<div style="display:inline;">
-	<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1009818695/?label=iFyHCIKmwGMQx7jC4QM&amp;guid=ON&amp;script=0"/>
-	</div>
-	</noscript>
+
 
 @endsection

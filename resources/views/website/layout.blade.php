@@ -64,7 +64,7 @@
 				</ul>
 				<section id="number-whatsapp" class="hidden-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="#" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
+					<a  href="#" onclick="goog_report_conversion_call('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 				<nav>
 					<ul id="main-menu">
@@ -101,14 +101,14 @@
 				<div class="hidden-mobile">
 					<p>Johannes Duque</p>
 					<p class="hidden-tablet">•</p>
-					<p>Cel: <a href="#" onclick="goog_report_conversion('tel:+573105518362')">310 551 8362</a> - <a href="#" onclick="goog_report_conversion('tel:+573133084219')">313 308 4219</a></p>
+					<p>Cel: <a href="#" onclick="goog_report_conversion_call('tel:+573105518362')">310 551 8362</a> - <a href="#" onclick="goog_report_conversion_call('tel:+573133084219')">313 308 4219</a></p>
 					<p class="hidden-tablet">•</p>
 					<p>Developer: @andrestntx</p>
 				</div>
 				
 				<section id="number-whatsapp" class="visible-mobile">
 					<img src="/images/whatsapp.png" id="image-whatsapp" alt="Escríbenos por WhtasApp a tufoto">
-					<a  href="#" onclick="goog_report_conversion('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
+					<a  href="#" onclick="goog_report_conversion_call('tel:+573105518362')" id="text-whatsapp">310 551 8362</a>
 				</section>
 			</footer>
 		</div>
@@ -161,21 +161,21 @@
 
 		</script>
 
-		<!-- Google Code for Click en el n&uacute;mero de Johannes dentro del sitio Conversion Page
+		<!-- Google Code for Llamada al n&uacute;mero de Whatsapp de la Pagina en General Conversion Page
 		In your html page, add the snippet and call
 		goog_report_conversion when someone clicks on the
 		phone number link or button. -->
 		<script type="text/javascript">
 		  /* <![CDATA[ */
-		  goog_snippet_vars = function() {
+		  goog_snippet_vars_call = function() {
 		    var w = window;
-		    w.google_conversion_id = 1009818695;
-		    w.google_conversion_label = "FpjQCMb4yWMQx7jC4QM";
+		    w.google_conversion_id = 948642113;
+		    w.google_conversion_label = "AD38CPPRzmMQwcKsxAM";
 		    w.google_remarketing_only = false;
 		  }
 		  // DO NOT CHANGE THE CODE BELOW.
-		  goog_report_conversion = function(url) {
-		    goog_snippet_vars();
+		  goog_report_conversion_call = function(url) {
+		    goog_snippet_vars_call();
 		    window.google_conversion_format = "3";
 		    var opt = new Object();
 		    opt.onload_callback = function() {
@@ -190,10 +190,10 @@
 		}
 		/* ]]> */
 		</script>
-
 		<script type="text/javascript"
 		  src="//www.googleadservices.com/pagead/conversion_async.js">
 		</script>
+
 
 		<script type="text/javascript">
 			function setCookie(name, value, days){
