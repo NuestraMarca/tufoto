@@ -13,8 +13,7 @@
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
  		<link rel="alternate" hreflang="es-co" href="/"> 
- 		<link rel="stylesheet" type="text/css" href="/css/website/normalize.min.css">
- 		<link rel="stylesheet" type="text/css" href="/css/website/landing.css">
+ 		<link rel="stylesheet" type="text/css" href="/css/website/landing.min.css">
  		@yield('extra-css')	
 
 		<!-- Facebook Pixel Code -->

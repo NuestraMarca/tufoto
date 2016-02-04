@@ -1,9 +1,5 @@
 @extends('website.landing.layout')
 
-@section('extra-css')
-	@include('_partials.photoswipe-css')
-@endsection
-
 @section('content')
 	<h1>Fotografía Profesional para tu Boda</h1>
 
