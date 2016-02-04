@@ -13,7 +13,7 @@
 			<h3>Cotiza aquí la fotografía para tu Boda</h3>
 			
 			{!! Form::open(['url' => 'contacto', 'method' => 'POST']) !!}
-
+				<input type="hidden" id="gclid_field" name="gclid_field" value="">
 				{!! Form::text('name', null, ['placeholder' => 'Nombre y Apellido']) !!} 
 				@include('_partials.error', ['name' => 'name'])
 
@@ -159,6 +159,7 @@
 
 		{!! Form::open(['url' => 'comentar', 'method' => 'POST', 'lang' => 'es', 'id' => 'form-comment']) !!}
 			{!! Form::hidden('post', 1, ['id' => 'post']) !!}
+			{!! Form::hidden('gclid_field', '', ['id' => 'gclid_field']) !!}
 
 			{!! Form::text('comment-name', null, ['placeholder' => 'Nombre y Apellido', 'id' => 'name', 'required']) !!} 
 

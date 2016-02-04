@@ -17,7 +17,7 @@ class Message extends Model {
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'date', 'comments', 'cel'];
+    protected $fillable = ['name', 'email', 'date', 'comments', 'cel', 'gclid_field'];
 
 	public $timestamps = true;
 	public $increments = true;

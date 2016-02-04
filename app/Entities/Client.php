@@ -37,7 +37,7 @@ class Client extends Model
         return $this->hasMany(Comment::class);
     }
 
-    public function newComment($post_id, $text)
+    public function newComment($post_id, $text, $gclid_field)
     {
         try{
             $post = Post::findOrFail($post_id);
@@ -45,6 +45,7 @@ class Client extends Model
             $comment = new Comment;
             $comment->body = $text;
             $comment->client_id = $this->id;
+            $comment->gclid_field = $gclid_field;
             $post->comments()->save($comment);  
             
         } catch (QueryException $e) {

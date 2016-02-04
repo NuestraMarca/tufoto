@@ -18,36 +18,6 @@ var AppLanding = function() {
 		);
 	};
 
-	var notification = function (type, message) {
-		$.bootstrapGrowl("<h4><strong>Atención</strong></h4> <p style='font-size:16px;'>" + message + "</p>", {
-	        type: type,
-	        delay: 7000,
-	        allow_dismiss: true,
-	        offset: {from: 'top', amount: 20}
-	    });
-	};
-
-	var dactivateQuestion = function (questionElement, state) {
-		if(state){
-			$(questionElement).removeClass('gi-thumbs_up').addClass('gi-thumbs_down');
-			$(questionElement)
-				.parent()
-					.removeClass('btn-success')
-					.addClass('btn-warning')
-					.attr('title', 'Desactivar Pregunta')
-					.attr('data-original-title', 'Desactivar Pregunta');
-		}
-		else{
-			$(questionElement).removeClass('gi-thumbs_down').addClass('gi-thumbs_up');
-			$(questionElement)
-				.parent()
-					.removeClass('btn-warning')
-					.addClass('btn-success')
-					.attr('title', 'Activar Pregunta')
-					.attr('data-original-title', 'Activar Pregunta');
-		}
-	};
-
 	var initFormComment = function () {
 		$("#form-comment").submit(function(e){
             e.preventDefault();
@@ -55,11 +25,12 @@ var AppLanding = function() {
             var email = $("#email").val();
             var text = $("#body").val();
             var post = $("#post").val();
+            var gclid_field = $('#form-comment #gclid_field').val();
 
             $.ajax({
                 type: "POST",
                 url : "/comentar",
-                data : {'comment-name': name, 'comment-email': email, 'comment-body': text, 'post': post},
+                data : {'comment-name': name, 'comment-email': email, 'comment-body': text, 'post': post, 'gclid_field': gclid_field},
                 success : function(data){
                 	if(data['success']) {
                 		console.log(data['comment']);

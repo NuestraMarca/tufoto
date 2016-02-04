@@ -30,7 +30,7 @@
 
 
 			{!! Form::open(['url' => 'contacto', 'method' => 'POST']) !!}
-
+				<input type="hidden" id="gclid_field" name="gclid_field" value="">
 				{!! Form::text('name', null, ['placeholder' => 'Nombre y Apellido', 'required']) !!} 
 				@include('_partials.error', ['name' => 'name'])
 

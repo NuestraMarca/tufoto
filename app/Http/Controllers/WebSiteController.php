@@ -137,7 +137,8 @@ class WebSiteController extends Controller {
 			return ['success' => false];	
 		}
 
-		if($comment = $client->newComment($request->input('post'), $request->input('comment-body'))) {
+		\Log::info($request->input('gclid_field'));
+		if($comment = $client->newComment($request->input('post'), $request->input('comment-body'), $request->input('gclid_field'))) {
 			return ['success' => true, 'comment' => $comment, 'client' => $client];	
 		}
 
