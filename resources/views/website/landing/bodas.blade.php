@@ -25,7 +25,7 @@
 
 				{!! Form::hidden('comments', 'Dese cotización desde la landing page') !!}
 
-				{!! Form::submit('Cotizar ahora', ['class' => 'button']) !!}
+				{!! Form::submit('Cotizar ahora', ['class' => 'button', 'onclick' => "goog_report_conversion_2()"]) !!}
 
 			{!! Form::close() !!}
 		</div>
@@ -104,7 +104,7 @@
 	</section>
 
 	<section class="plus">
-		<h1>Por qué debemos ser los fotografos de tu Boda</h1>
+		<h1>¿Por qué debemos ser los fotografos de tu Boda?</h1>
 
 		<h2><span class="icon-camera"></span> Siempre entregamos TODAS las fotografías</h2>
 		<p>Las fotografías de tu Boda son tuyas, por eso te entregamos todo el archivo en forma digital 
@@ -157,16 +157,16 @@
 		<h1>¿Tienes dudas?, déjanos tus comentarios aquí</h1>		
 		<h2>Escríbenos y te responderemos enseguida</h2>
 
-		{!! Form::open(['url' => 'comentar', 'method' => 'POST', 'lang' => 'es']) !!}
-			{!! Form::hidden('post', 1) !!}
+		{!! Form::open(['url' => 'comentar', 'method' => 'POST', 'lang' => 'es', 'id' => 'form-comment']) !!}
+			{!! Form::hidden('post', 1, ['id' => 'post']) !!}
 
 			{!! Form::text('comment-name', null, ['placeholder' => 'Nombre y Apellido', 'id' => 'name', 'required']) !!} 
 
-			{!! Form::email('comment-email', null, ['placeholder' => 'Correo electronico', 'required']) !!}
+			{!! Form::email('comment-email', null, ['placeholder' => 'Correo electronico', 'required', 'id' => 'email']) !!}
 			@include('_partials.error', ['name' => 'comment-name'])
 			@include('_partials.error', ['name' => 'comment-email'])
 
-			{!! Form::textarea('comment-body', null, ['placeholder' => 'Comentarios...', 'rows' => 4, 'required']) !!}
+			{!! Form::textarea('comment-body', null, ['placeholder' => 'Comentarios...', 'rows' => 4, 'required', 'id' => 'body']) !!}
 			@include('_partials.error', ['name' => 'comment-body'])
 
 			{!! Form::submit('Si! Quiero información', ['class' => 'button']) !!}
@@ -175,27 +175,94 @@
 
 		<section class="list-comments">
 			<h1>Comentarios sobre el Fotógrafo para tu Boda ...</h1>
-			@foreach($comments as $comment)
-				<article class="comment">
-					<span class="letter-comment">{{ $comment->client->first_letter }}</span>
-					<div class="text-comment">
-						<h2 class="name-comment">{{ $comment->client->name }} <span class="date">{{ $comment->created_at_hummans }}</span></h2>
-						<p class="body-comment">{{ $comment->body }}</p>
-					</div>
-					@foreach($comment->children as $child)
-						<article class="comment answer">
-							<img src="/images/logo-comentarios-tufoto.png">
-							<div class="text-comment">
-								<h2 class="name-comment">{{ $comment->client->name }} <span class="date">{{ $comment->created_at_hummans }}</span></h2>
-								<p class="body-comment">{{ $comment->body }}</p>
-							</div>
-						</article>
-					@endforeach
-				</article>
-			@endforeach
+			<div id="article-comments">
+				@foreach($comments as $comment)
+					<article class="comment">
+						<span class="letter-comment">{{ $comment->client->first_letter }}</span>
+						<div class="text-comment">
+							<h2 class="name-comment">{{ $comment->client->name }} <span class="date">{{ $comment->created_at_hummans }}</span></h2>
+							<p class="body-comment">{{ $comment->body }}</p>
+						</div>
+						@foreach($comment->children as $child)
+							<article class="comment answer">
+								<img src="/images/logo-comentarios-tufoto.png">
+								<div class="text-comment">
+									<h2 class="name-comment">{{ $comment->client->name }} <span class="date">{{ $comment->created_at_hummans }}</span></h2>
+									<p class="body-comment">{{ $comment->body }}</p>
+								</div>
+							</article>
+						@endforeach
+					</article>
+				@endforeach
+			</div>
 		</section>
 
 	</section>
 
 	@include('_partials.photoswipe')
+@endsection
+
+@section('extra-js')
+	<script> AppLanding.init() </script> 
+
+	<!-- Google Code for Formulario de contacto Landing Page Conversion Page
+	In your html page, add the snippet and call
+	goog_report_conversion when someone clicks on the
+	chosen link or button. -->
+	<script type="text/javascript">
+	  /* <![CDATA[ */
+	  goog_snippet_vars_2 = function() {
+	    var w = window;
+	    w.google_conversion_id = 948642113;
+	    w.google_conversion_label = "DRVWCKSC32MQwcKsxAM";
+	    w.google_remarketing_only = false;
+	  }
+	  // DO NOT CHANGE THE CODE BELOW.
+	  goog_report_conversion_2 = function(url) {
+	    goog_snippet_vars_2();
+	    window.google_conversion_format = "3";
+	    var opt = new Object();
+	    opt.onload_callback = function() {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  }
+	  var conv_handler = window['google_trackConversion'];
+	  if (typeof(conv_handler) == 'function') {
+	    conv_handler(opt);
+	  }
+	}
+	/* ]]> */
+	</script>
+
+	<!-- Google Code for Comentario al final de la Landing Bodas Conversion Page
+	In your html page, add the snippet and call
+	goog_report_conversion when someone clicks on the
+	chosen link or button. -->
+	<script type="text/javascript">
+	  /* <![CDATA[ */
+	  goog_snippet_vars_3 = function() {
+	    var w = window;
+	    w.google_conversion_id = 948642113;
+	    w.google_conversion_label = "KkjhCMGH32MQwcKsxAM";
+	    w.google_remarketing_only = false;
+	  }
+	  // DO NOT CHANGE THE CODE BELOW.
+	  goog_report_conversion_3 = function(url) {
+	    goog_snippet_vars_3();
+	    window.google_conversion_format = "3";
+	    var opt = new Object();
+	    opt.onload_callback = function() {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  }
+	  var conv_handler = window['google_trackConversion'];
+	  if (typeof(conv_handler) == 'function') {
+	    conv_handler(opt);
+	  }
+	}
+	/* ]]> */
+	</script>
+
 @endsection

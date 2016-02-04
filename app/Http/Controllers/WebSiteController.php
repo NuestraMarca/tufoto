@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\Landing\CommentRequest;  
+use Illuminate\Database\QueryException;
 
 use App\Entities\Gallery;
 use App\Entities\Provider;
@@ -125,20 +126,22 @@ class WebSiteController extends Controller {
 
 	public function postComment(CommentRequest $request)
 	{
-		$client = Client::firstOrNew(['email' => $request->input('comment-email')]);
+		try {
+			$client = Client::firstOrNew(['email' => $request->input('comment-email')]);
 
-		if(! $client->exists) {
-			$client->name = $request->input('comment-name');
-			$client->save();
+			if(! $client->exists) {
+				$client->name = $request->input('comment-name');
+				$client->save();
+			}
+		} catch (QueryException $e) {
+			return ['success' => false];	
 		}
 
-		$post = Post::findOrFail($request->input('post'));
+		if($comment = $client->newComment($request->input('post'), $request->input('comment-body'))) {
+			return ['success' => true, 'comment' => $comment, 'client' => $client];	
+		}
 
-		$comment = new \Lanz\Commentable\Comment;
-		$comment->body = $request->input('comment-body');
-		$comment->client_id = $client->id;
-		$post->comments()->save($comment);
-
-		return back();
+		return ['success' => false];
+		
 	}
 }
