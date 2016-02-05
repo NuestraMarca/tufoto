@@ -35,7 +35,8 @@
 		<section class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			@foreach($provider->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
+					<a onclick="ga('send', 'event', 'provider-{{ $provider->complete_url }}', 'click-image', '{{ $photo }}');"
+						href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
 						<img src="/{{ $photo }}" itemprop="thumbnail" title="{{ $provider->title_img }}" alt="{{ $provider->alt }}">
 					</a>
 					<figcaption itemprop="caption description">Proveedores tufoto para tu Matrimonio - {{ $provider->type->name }} - {{ $provider->name }} - (Bodas y Prebodas) </figcaption>

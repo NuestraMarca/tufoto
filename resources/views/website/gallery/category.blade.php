@@ -21,7 +21,7 @@
 		<p class="section-description">{!! $category->description !!}</p>
 
 		@foreach($category->galleries->sortByDesc('date') as $gallery)
-			<a onclick="ga('send', 'event', 'categoria-{{ $category->url }}', 'click-gallery', '{{ $gallery->complete_url }}');" 
+			<a onclick="ga('send', 'event', 'category-{{ $category->complete_url }}', 'click-gallery', '{{ $gallery->complete_url }}');" 
 				href=" {{ $gallery->complete_url }}">
 				<figure class="cover-photo">
 					<img src="{{ $gallery->cover_image }}" alt="{{ $gallery->alt }}" title="{{ $gallery->title_img }}">

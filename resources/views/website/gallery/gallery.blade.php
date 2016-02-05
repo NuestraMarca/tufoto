@@ -33,7 +33,8 @@
 		<section class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			@foreach($gallery->photos as $photo)
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800">
+					<a href="/{{ $photo }}" itemprop="contentUrl" data-size="1200x800"
+						onclick="ga('send', 'event', 'gallery-{{ $gallery->complete_url }}', 'click-image', '{{ $photo }}');" >
 						<img src="/{{ $photo }}" itemprop="thumbnail" alt="{{ $gallery->date }} - {{ $gallery->title }}">
 					</a>
 					<figcaption itemprop="caption description">{{ $gallery->date }} - {{$gallery->title_or_tag}} - {{ $gallery->title }} - Fotografías de {{ $gallery->category->title_singular }} </figcaption>
