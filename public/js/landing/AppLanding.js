@@ -39,6 +39,7 @@ var AppLanding = function() {
 	                	$("#form-comment #name").val("");
 	                	$("#form-comment #email").val("");
 	                	$("#form-comment #body").val("");
+	                	ga('send', 'event', 'landing-bodas', 'click-button', 'comentario');
 	                	goog_report_conversion_3();
 	                	fbq('track', 'Lead');
 		            }
@@ -52,8 +53,6 @@ var AppLanding = function() {
             },"json");
     	});
 	};
-
-
 
 	return {
 		
