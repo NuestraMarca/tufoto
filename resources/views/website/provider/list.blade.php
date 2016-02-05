@@ -26,7 +26,8 @@
 			@foreach($providerTypes as $type)
 				@if($type->providers->count() > 0)
 					<div itemscope itemtype="http://schema.org/Organization">
-						<a href="{{ $type->complete_url }}" itemprop="url">
+						<a onclick="ga('send', 'event', 'provider-types', 'click-provider', '{{ $type->complete_url }}');" 
+							href="{{ $type->complete_url }}" itemprop="url">
 							<figure class="cover-photo">
 								<div class="content-cover">
 									<img src="{{ $type->cover }}" alt="{{ $type->alt }}" title="{{ $type->title_img }}" itemprop="image">

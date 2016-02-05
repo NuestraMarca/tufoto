@@ -45,56 +45,64 @@
 		
 		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/joachim-y-diana--boda-en-villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-1');"
+					href="/images/fotografia-profesional-de-bodas/joachim-y-diana--boda-en-villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/joachim-y-diana--boda-en-villavicencio-300.jpg" itemprop="thumbnail" alt="Fotografías de la Boda de Joachi y Diana, Un sueco y una Colombiana." />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografías de la Boda de Joachi y Diana, Un sueco y una Colombiana</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-paulo-y-lucy.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-3');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-paulo-y-lucy.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-paulo-y-lucy-300.jpg" itemprop="thumbnail" alt="Fotografía de Preboda - Matrimonio de Paulo y Lucy" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía de Preboda - Matrimonio de Paulo y Lucy</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-daniel-y-tatiana--fiesta-y-hora-loca.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-3');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-daniel-y-tatiana--fiesta-y-hora-loca.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-daniel-y-tatiana--fiesta-y-hora-loca-300.jpg" itemprop="thumbnail" alt="Fotografía de la hora loca de daniel y tatiana - Boda en Villavicencio" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía de la hora loca de daniel y tatiana - Boda en Villavicencio</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-de-anillos-de-matrimonio--bodas-colombia.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-4');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-de-anillos-de-matrimonio--bodas-colombia.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-de-anillos-de-matrimonio--bodas-colombia-300.jpg" itemprop="thumbnail" alt="Fotografía de Anillos de Matrimonio - Preboda" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía de Anillos de Matrimonio - Preboda</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-especial-de-bodas-con-luces.jpg" itemprop="contentUrl" data-size="960x640">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-5');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-especial-de-bodas-con-luces.jpg" itemprop="contentUrl" data-size="960x640">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-especial-de-bodas-con-luces-300.jpg" itemprop="thumbnail" alt="Fotografía especial de Bodas con hermosas luces" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía especial de Bodas con hermosas luces</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-especial-bodas-en-bote-nocturna.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-6');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-especial-bodas-en-bote-nocturna.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-especial-bodas-en-bote-nocturna-300.jpg" itemprop="thumbnail" alt="Fotografía especial de Bodas en Bote" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía especial de Bodas en Bote</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-omar-y-edith--villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-7');"
+					href="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-omar-y-edith--villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-de-la-boda-de-omar-y-edith--villavicencio-300.jpg" itemprop="thumbnail" alt="Fotografía romantica de la Boda de Omar y Edith en Villavicencio" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía romantica de la Boda de Omar y Edith en Villavicencio</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/fotografia-de-bodas--fiesta-y-hora-loca.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-8');"
+		      		href="/images/fotografia-profesional-de-bodas/fotografia-de-bodas--fiesta-y-hora-loca.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/fotografia-de-bodas--fiesta-y-hora-loca-300.jpg" itemprop="thumbnail" alt="Fotografía de Fiesta de la Boda - Hora Loca" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Fotografía de Fiesta de la Boda - Hora Loca </figcaption>                                  
@@ -119,21 +127,24 @@
 		</p>
 		<div class="my-gallery gallery-features">
 			<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/maquillaje-de-la-boda-de-daniel-y-wendy--peluqueria-adn.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-9');" 
+		      		href="/images/fotografia-profesional-de-bodas/maquillaje-de-la-boda-de-daniel-y-wendy--peluqueria-adn.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/maquillaje-de-la-boda-de-daniel-y-wendy--peluqueria-adn-300.jpg" itemprop="thumbnail" alt="Fotografía especial de Bodas en Bote" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Maquillaje</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/ceremonia-de-boda--villavicencio-tufoto.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-10');" 
+		      		href="/images/fotografia-profesional-de-bodas/ceremonia-de-boda--villavicencio-tufoto.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/ceremonia-de-boda--villavicencio-tufoto-300.jpg" itemprop="thumbnail" alt="Fotografía romantica de la Boda de Omar y Edith en Villavicencio" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Ceremonia</figcaption>                                  
 		    </figure>
 
 		    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-		      	<a href="/images/fotografia-profesional-de-bodas/hora-loca-boda--oscar-y-helena--villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
+		      	<a onclick="ga('send', 'event', 'landing-bodas', 'click-image', 'image-11');" 
+		      		href="/images/fotografia-profesional-de-bodas/hora-loca-boda--oscar-y-helena--villavicencio.jpg" itemprop="contentUrl" data-size="1200x800">
 		          	<img src="/images/fotografia-profesional-de-bodas/hora-loca-boda--oscar-y-helena--villavicencio-300.jpg" itemprop="thumbnail" alt="Fotografía de Fiesta de la Boda - Hora Loca" />
 		      	</a>
 		    	<figcaption itemprop="caption description">Hora loca</figcaption>                                  
@@ -148,8 +159,8 @@
 
 	<div class="separator separator-blue">
 		<p>Suíguenos en nuestras redes sociales 
-			<a href="https://www.facebook.com/tufoto.co/" target="_blank" class="icon-facebook2"></a> 
-			<a href="https://www.instagram.com/tufoto.co/" target="_blank" class="icon-instagram"></a>
+			<a onclick="ga('send', 'event', 'landing-bodas', 'click-button', 'facebook');" href="https://www.facebook.com/tufoto.co/" target="_blank" class="icon-facebook2"></a> 
+			<a onclick="ga('send', 'event', 'landing-bodas', 'click-button', 'instagram');" href="https://www.instagram.com/tufoto.co/" target="_blank" class="icon-instagram"></a>
 		</p>
 	</div>
 

@@ -229,8 +229,7 @@
 		  } 
 
 		  window.onload = function() {      
-		      document.getElementById('gclid_field').value = 
-		  readCookie('gclid'); 
+		      document.getElementById('gclid_field').value = readCookie('gclid'); 
 		  } 
 		</script>
 

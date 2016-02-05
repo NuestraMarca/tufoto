@@ -19,7 +19,8 @@
 		<h1 class="section-title title-md">{{ $type->name }} que recomendamos</h1>
 		<h2 class="section-description">{!! $type->description !!}</h2>
 		@foreach($type->providers->sortByDesc('date') as $provider)
-			<a href=" {{ $provider->complete_url }}">
+			<a  onclick="ga('send', 'event', 'provider-type-{{ $type->complete_url }}', 'click-provider', '{{ $provider->complete_url }}');"
+				href=" {{ $provider->complete_url }}">
 				<figure class="cover-photo">
 					<img src="{{ $provider->cover_image }}" alt="{{ $provider->alt }}" title="{{ $provider->title_img }}">
 					<h2 class="cover-text">{{ $provider->name }}</h2>
