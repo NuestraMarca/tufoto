@@ -4,7 +4,8 @@
         @foreach ($breadcrumbs as $count => $breadcrumb)
             @if (!$breadcrumb->last)
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a href="{{{ $breadcrumb->url }}}" itemprop="item"> 
+                    <a onclick="ga('send', 'event', 'layout', 'click-breadcrumbs', '{{ $breadcrumb->title }}');" 
+                        href="{{{ $breadcrumb->url }}}" itemprop="item"> 
                         <span itemprop="name">{{ $breadcrumb->title }} </span>
                     </a>
                     <meta itemprop="position" content="{{ $count + 1 }}" />

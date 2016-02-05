@@ -54,11 +54,11 @@
 				@yield('breadcrumbs')
 			</section>
 			<header>
-				<figure id="header-logo"><a href="/" hreflang="es-co" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional para Bodas y Matrimonios"></a></figure>
+				<figure id="header-logo"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'logo');" href="/" hreflang="es-co" itemprop="url"><img src="/images/logo_tufoto_co.gif" alt="Logo tufoto - Fotografía Profesional para Bodas y Matrimonios"></a></figure>
 				<h2 id="title-menu"><span>Fotografía</span> para toda la vida</h2>
 				<ul class="social-icons">
-					<li><a href="https://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
-					<li><a href="https://instagram.com/tufoto.co" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
+					<li><a onclick="ga('send', 'event', 'layout', 'click-menu', 'facebook');" href="https://www.facebook.com/tufoto.co" class="icon-facebook2" title="Facebook Oficial de tufoto" target="_blank"></a></li>
+					<li><a onclick="ga('send', 'event', 'layout', 'click-menu', 'instagram');" href="https://instagram.com/tufoto.co" class="icon-instagram" title="Instagram Oficial de tufoto" target="_blank"></a></li>
 					<!-- <li><a href="#" class="icon-blogger2"></a></li>
 					<li><a href="#" class="icon-pinterest2"></a></li> !-->
 				</ul>
@@ -68,13 +68,14 @@
 				</section>
 				<nav>
 					<ul id="main-menu">
-						<li class="li-menu"><a class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
-						<li class="li-menu"><a href="/galerias" hreflang="es-co">Galerías</a></li>
-						<li class="li-menu"><a href="/producto" hreflang="es-co">Producto</a></li>
-						<li class="li-menu"><a href="/tarifas" hreflang="es-co">Paquetes y Preguntas</a></li>
-						<li class="li-menu"><a href="/contacto" hreflang="es-co">Contacto</a></li>
-						<li class="li-menu"><a href="/nosotros" hreflang="es-co">Quiénes somos</a></li>
-						<li class="li-menu"><a href="/proveedores" hreflang="es-co">Proveedores</a></li>
+
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'inicio');" class="current-menu" href="/" hreflang="es-co">Inicio</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'galerias');" href="/galerias" hreflang="es-co">Galerías</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'producto);" href="/producto" hreflang="es-co">Producto</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'tarifas');" href="/tarifas" hreflang="es-co">Paquetes y Preguntas</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'contacto');" href="/contacto" hreflang="es-co">Contacto</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'quienes-somos');" href="/nosotros" hreflang="es-co">Quiénes somos</a></li>
+						<li class="li-menu"><a onclick="ga('send', 'event', 'layout', 'click-menu', 'proveedores');" href="/proveedores" hreflang="es-co">Proveedores</a></li>
 
 						<li > <hr> </li>
 						<li itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction"> 

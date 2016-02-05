@@ -35,7 +35,7 @@
 								<li>* 50 fotos impresas 15x20 cm</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+						<a onclick="ga('send', 'event', 'producto', 'click-button', 'plata');" class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="STARTER_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 
@@ -50,7 +50,7 @@
 								<li>* Estuche de cuero</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+						<a onclick="ga('send', 'event', 'producto', 'click-button', 'oro');" class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="ENHANCED_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 					</th>
@@ -68,7 +68,7 @@
 								<li>* Obsequios especiales</li>
 							</ul>
 						</div>
-						<a class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
+						<a onclick="ga('send', 'event', 'producto', 'click-button', 'diamante');" class="plans-signup-button webs-ext-btn webs-ext-btn-green" title="COTIZAR" href="/contacto" onclick="fbq('track', 'InitiateCheckout');">
 							<span class="plan-sign-up" data-sku="PRO_TWO_YEAR_R1">COTIZAR</span>
 						</a>
 					</th>

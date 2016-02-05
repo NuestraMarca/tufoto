@@ -17,7 +17,9 @@
 		
 		<section class="cover-gallery">
 			@foreach($categories as $category)
-				<a href=" {{ $category->complete_url }}" title="Galería Fotográfica de {{ $category->title_plural }} realizadas por tufoto">
+				<a 
+					onclick="ga('send', 'event', 'categorias', 'click-category', '{{ $category->complete_url }}');"
+					href=" {{ $category->complete_url }}" title="Galería Fotográfica de {{ $category->title_plural }} realizadas por tufoto">
 					<figure class="cover-photo">
 						<div class="content-cover">
 							<img src="{{ $category->cover }}" 
