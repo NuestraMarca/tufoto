@@ -96,6 +96,16 @@ class WebSiteController extends Controller {
 	{		
 		$message = Message::create($request->all());
 		
+		return redirect()->to('gracias');
+	}
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getThanks()
+	{				
 		return view('website.thanks');
 	}
 

@@ -28,6 +28,7 @@ Route::get('tarifas', 'WebSiteController@pricing');
 Route::get('nosotros', 'WebSiteController@we');
 Route::get('contacto', 'WebSiteController@contact');
 Route::post('contacto', 'WebSiteController@postContact');
+Route::get('gracias', 'WebSiteController@getThanks');
 Route::get('buscar', 'WebSiteController@search');
 
 Route::get('fotografia-profesional-de-bodas-en-colombia', 'WebSiteController@landingBodas');
