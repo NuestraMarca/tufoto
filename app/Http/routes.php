@@ -47,10 +47,8 @@ Route::group(['namespace' => 'Dashboard', 'prefix' => 'admin', 'middleware' => '
 			return view('dashboard/pages/home');
 	});
 
-	Route::get('messages', function(){
-		$messages = Message::orderBy('date', 'desc')->get();
-		return view('dashboard/pages/messages', compact('messages'));
-	});
+	Route::get('messages', ['uses' => 'MessagesController@index', 'as' => 'messages.index']);
+	Route::post('messages/change/{messages}', ['uses' => 'MessagesController@change', 'as' => 'messages.change']);
 
 	Route::resource('categories', 'CategoriesController');
 	Route::resource('categories.galleries', 'CategoriesGalleriesController');

@@ -13,7 +13,7 @@
  		<meta property="article:publisher" content="https://www.facebook.com/tufotoco"/>
 
  		<link rel="alternate" hreflang="es-co" href="/"> 
-		<link rel="stylesheet" type="text/css" href="/css/website/website.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/website/style.css">
 			
 		<!-- Facebook Pixel Code -->
 		<script>

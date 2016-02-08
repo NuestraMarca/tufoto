@@ -5,7 +5,23 @@
 
 	<div id="first-action">
 		<div class="video-youtube">
-			<iframe width="100%" height="310" src="https://www.youtube.com/embed/9120G_stCTM" frameborder="0" allowfullscreen></iframe>
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/tufoto.co/videos/2521764337861180/">
+				<div class="fb-xfbml-parse-ignore">
+					<blockquote cite="https://www.facebook.com/tufoto.co/videos/2521764337861180/">
+						<a href="https://www.facebook.com/tufoto.co/videos/2521764337861180/">
+							El Mejor Recuerdo para tu Boda - Inolvidable !!
+						</a>
+						<p>El día más especial de nuestras Vidas debe tener los más Hermosos Recuerdos.. 
+							¿Te gustaría esto para tu Boda :) ??  Llámanos al 310 551 8362 o Déjanos 
+							tu número y te llamamos enseguida
+						</p>
+						Posted by <a href="https://www.facebook.com/tufoto.co/">tufoto.co</a> 
+						on jueves, 28 de enero de 2016
+					</blockquote>
+				</div>
+			</div>
 		</div>
 		
 		<div class="form-action">
@@ -25,7 +41,7 @@
 
 				{!! Form::hidden('comments', 'Dese cotización desde la landing page') !!}
 
-				{!! Form::submit('Cotizar ahora', ['class' => 'button', 'onclick' => "goog_report_conversion_2()"]) !!}
+				{!! Form::submit('Cotizar ahora', ['class' => 'button', 'onclick' => "goog_report_conversion_2(); ga('send', 'event', 'landing-bodas', 'click-button', 'cotizacion');"]) !!}
 
 			{!! Form::close() !!}
 		</div>

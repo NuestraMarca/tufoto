@@ -95,7 +95,7 @@ class WebSiteController extends Controller {
 	public function postContact(ContactRequest $request)
 	{		
 		$message = Message::create($request->all());
-		
+
 		return redirect()->to('gracias');
 	}
 

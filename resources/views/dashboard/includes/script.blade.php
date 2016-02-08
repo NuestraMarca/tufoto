@@ -15,5 +15,9 @@
 {!! Html::script('assets/js/admin.js') !!}
 {!! Html::script('/assets/js/services/AppServices.js') !!}
 
+<script type="text/javascript">
+	$.ajaxSetup({headers:{"X-CSRF-TOKEN":$('meta[name="csrf-token"]').attr("content")}});
+</script>
+
 
 

@@ -124,10 +124,22 @@ article.frequently-asked-questions p
 	margin-left: 1em;
 }
 
+.social-buttons
+{
+	width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.social-buttons div
+{
+	margin: 0 0.4em;
+	display: inline-block;
+}
+
 .fb-like
 {
-	text-align: center;
-  	width: 100%;
+  	width: 75px;
 }
 
 section#main-slide { 
@@ -703,10 +715,10 @@ section#gallery-detail h2
 	margin: 0.1em 0 0.5em 0;
 } 
 
-section#gallery-detail figure 
-{
-	margin: 1em 2.5%;
-	width: 95%;
+section#gallery-detail figure {
+    margin: 0.1em 0.2%;
+    width: 49%;
+    display: inline-block;
 }
 
 section#gallery-detail figure.product-gallery
@@ -1026,6 +1038,12 @@ section.cover-gallery .tag-image
 	#galleria
 	{
 		height:400px
+	}
+	
+	section#gallery-detail figure {
+	    margin: 0em;
+	    width: 49.4%;
+	    display: inline-block;
 	}
 
 	section#gallery-detail figure.product-gallery

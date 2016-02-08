@@ -22,9 +22,13 @@ class Message extends Model {
 	public $timestamps = true;
 	public $increments = true;
 
-    public function setDateAttribute($value)
+    public function isState($state)
     {
-        $this->attributes['date'] = '2016/01/09';
+        if($this->state == $state) {
+            return true;
+        }
+
+        return false;
     }
 
 	/*public function sendEmail()
