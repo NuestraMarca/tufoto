@@ -31,7 +31,7 @@ Route::post('contacto', 'WebSiteController@postContact');
 Route::get('gracias', 'WebSiteController@getThanks');
 Route::get('buscar', 'WebSiteController@search');
 
-Route::get('fotografia-profesional-de-bodas-en-colombia', 'WebSiteController@landingBodas');
+//Route::get('fotografia-profesional-de-bodas-en-colombia', 'WebSiteController@landingBodas');
 Route::post('comentar', 'WebSiteController@postComment');
 
 Route::resource('galerias', 'CategoriesController', ['only' => ['index', 'show']]);
